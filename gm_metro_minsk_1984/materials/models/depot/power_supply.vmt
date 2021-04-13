@@ -2,4 +2,12 @@ VertexLitGeneric
 {
 	$basetexture models/depot/power_supply
 	$bumpmap models/depot/power_supply_n
+	$phong 1
+	$phongexponent 70
+	$phongboost 0.2
+	$phongfresnelranges "[1 1 1]"
+	$envmap	env_cubemap
+	$envmaptint "[.1 .1 .1]"
+	$rimlight 1
+	$rimlightboost .5
 }
