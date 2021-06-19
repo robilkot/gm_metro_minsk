@@ -23,17 +23,17 @@ function socket:onMessage(txt)
     if txt == "" then
         SendSWInfo()
     end
-	                                                  --    RunConsoleCommand("say","Received: ", txt)
+	                                                                          --    RunConsoleCommand("say","Received: ", txt)
                             GetMessageFromServer(txt)
 end
 
 function socket:onError(txt)
-	                                                            print("Error: ", txt)
+	                                                                                    print("Error: ", txt)
 end
 
 function socket:onConnected()
-	                                                            print("Connected to server")
-	                                                            socket:write("Connected [metropacksrv]!")
+	                                                                                    print("Connected to server")
+	                                                                                    socket:write("Connected [metropacksrv]!")
     SOCKET_OPENED = 1
                             timer.Simple( 1, function()
                                 OLD_MESSAGE = "" 
@@ -44,13 +44,13 @@ function socket:onConnected()
 end
 
 function socket:onDisconnected()
-	                                                            RunConsoleCommand("say","ERROR :: ","WebSocket disconnected")
+	                                                                                    RunConsoleCommand("say","ERROR :: ","WebSocket disconnected")
                                                           SOCKET_OPENED = 0
                                                           ReconnectToServer()
 end
 
 function socket:onError()
-	                                                            RunConsoleCommand("say","ERROR :: ",errMessage)
+	                                                                                    RunConsoleCommand("say","ERROR :: ",errMessage)
 end
 
 ReconnectToServer()
@@ -198,7 +198,12 @@ RCSwitchNamesInMap = {
         "trackswitch_d36",
         "trackswitch_d40"},
     IK = {
-        "trackswitch_i1",
+        "trackswitch_ik1",
+        "trackswitch_ik2",
+        "trackswitch_ik3",
+        "trackswitch_ik4",
+        "trackswitch_ik5",
+        "trackswitch_ik6",
     }
 }
 
@@ -218,11 +223,13 @@ function SendRCInfo(ACTIVATOR,CALLER,INFO)
 end
 
 function SendSWInfo()
+ local WriteInSock = ""
+ for k0, v0 in pairs(RCSwitchNamesInMap) do
     in4 = "_"
     in5 = {}
     in6 = {}
     str01 = "0000000000000000000000000000000000000000000000000000000000000000"
-    for k, v in pairs (RCSwitchNamesInMap.DM) do
+    for k, v in pairs (v0) do
         for k1, v1 in pairs(ents.FindByName(v)) do
             if in4 ~= v1:GetName() then
                 in4 = v1:GetName() -- -- --
@@ -251,28 +258,43 @@ function SendSWInfo()
             --RunConsoleCommand("say",(k1 * 2))
         --end
     end   
-    WriteToSocket("SWDM"..Bin2Hex(str01))
+    WriteInSock = WriteInSock.."SW"..k0..Bin2Hex(str01)..";"
+    
     --RunConsoleCommand("say",str01,"bbb")
+   end
+WriteToSocket(WriteInSock)
 end
 
 function GetMessageFromServer(msg1)
-    --SendSWInfo()
-  --  RunConsoleCommand("say","MESSAGE :: ",msg1)
+    --endSWInfo()
+ if msg1[1] == "L" and msg1[2] == "T" then
+    for k,v in pairs(string.Split(msg1, ";" )) do
+        signalmessage = string.Split(v, "-")
+        
+        signal = Metrostroi.GetSignalByName(signalmessage[1]) 
+        if signal then
+            signal.ControllerLogic = true
+            signal.Sig = tostring(signalmessage[2])
+        end
+    end
+ elseif msg1[1] == "S" and msg1[2] == "W" then
     msg2 = string.Split( msg1, ";" )
     for k0,msg in pairs(msg2) do
         if msg[1] == "S" and msg[2] == "W" then
             RunConsoleCommand("say",msg,string.sub(msg, 5, -2),string.sub(msg, -1, -1))
-            if msg[3] == "D" then
+            if msg[3] == "D" or msg[3] == "I" then
                 local change_sw = 0
-                local number_sw = "trackswitch_d"..string.sub( msg, 5, -2)
-                --RunConsoleCommand("say",number_sw)
+                local dobnumber = string.lower(msg[3])
+                if dobnumber == "i" then dobnumber = string.lower(msg[3])..string.lower(msg[4]) end
+                local number_sw = "trackswitch_"..dobnumber..string.sub( msg, 5, -2)
+                RunConsoleCommand("say",number_sw)
                 if string.sub( msg, -1, -1) == "+" then
                     change_sw = 1
                 else
                     change_sw = 0
                 end
                 for k, v in ipairs( ents.FindByClass( "prop_door_rotating" ) ) do
- 	                              if v:GetName() == number_sw then
+ 	                                                      if v:GetName() == number_sw then
                         if string.sub( msg, -1, -1) == "+" then
                             v:Fire("Open")
                             timer.Simple( 0.2, function() 
@@ -293,5 +315,5 @@ function GetMessageFromServer(msg1)
             end
         end
     end
-    
+ end    
 end
