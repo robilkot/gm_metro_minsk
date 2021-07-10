@@ -1,8 +1,7 @@
 ﻿local Map = game.GetMap() or ""
 if Map:find("gm_metro_minsk_1984") then
-    Metrostroi.PlatformMap = "minsk_1984"
-    Metrostroi.CurrentMap = "minsk_1984"
-	print("true")
+    Metrostroi.PlatformMap = "gm_metro_minsk_1984"
+    Metrostroi.CurrentMap = "gm_metro_minsk_1984"
 else
     return
 end
@@ -167,7 +166,7 @@ Metrostroi.StationConfigurations = {
 		}
 	},
 	pto = {
-		names = {"ПТО"},
+		names = {"Депо Московское", "Depo Moskovskoye"},
 		positions = {
 			{Vector(1720,-15540,2180-54),Angle(0,180,0)}
 		}
