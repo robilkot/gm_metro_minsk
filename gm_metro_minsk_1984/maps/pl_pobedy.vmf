@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8538"
-	"mapversion" "918"
+	"mapversion" "919"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -44,7 +44,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "918"
+	"mapversion" "919"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -13618,16 +13618,6 @@ world
 	}
 	group
 	{
-		"id" "353413"
-		editor
-		{
-			"color" "164 245 0"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	group
-	{
 		"id" "353531"
 		editor
 		{
@@ -13672,6 +13662,16 @@ world
 		editor
 		{
 			"color" "159 216 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "353413"
+		editor
+		{
+			"color" "164 245 0"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -17958,204 +17958,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[3500 14500]"
-	}
-}
-entity
-{
-	"id" "353414"
-	"classname" "prop_door_rotating"
-	"ajarangles" "0 0 0"
-	"angles" "0 270 0"
-	"axis" "-18.56 3321.51 -33.37, -18.56 3321.51 -33.37"
-	"disableshadows" "1"
-	"distance" "95"
-	"dmg" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"forceclosed" "0"
-	"gmod_allowphysgun" "0"
-	"hardware" "1"
-	"health" "0"
-	"model" "models/stations/station_pristanz3_door2.mdl"
-	"opendir" "1"
-	"returndelay" "-1"
-	"skin" "1"
-	"soundcloseoverride" "doors/default_stop.wav"
-	"spawnflags" "8192"
-	"spawnpos" "0"
-	"speed" "125"
-	"origin" "-18.5502 3321.5 -33.3752"
-	editor
-	{
-		"color" "164 245 0"
-		"groupid" "353413"
-		"visgroupid" "17"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 6000]"
-	}
-}
-entity
-{
-	"id" "353420"
-	"classname" "prop_static"
-	"angles" "0 270 0"
-	"disableselfshadowing" "1"
-	"disableshadows" "1"
-	"disablevertexlighting" "1"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"ignorenormals" "0"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"model" "models/stations/station_pristanz3_inv.mdl"
-	"screenspacefade" "0"
-	"skin" "1"
-	"solid" "6"
-	"origin" "59.6508 4021.86 -73.3651"
-	editor
-	{
-		"color" "164 245 0"
-		"groupid" "353413"
-		"visgroupid" "17"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 6000]"
-	}
-}
-entity
-{
-	"id" "353424"
-	"classname" "prop_door_rotating"
-	"ajarangles" "0 0 0"
-	"angles" "0 90 0"
-	"axis" "-58.4 4453.47 -33.85, -58.4 4453.47 -33.85"
-	"disableshadows" "1"
-	"distance" "95"
-	"dmg" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"forceclosed" "0"
-	"gmod_allowphysgun" "0"
-	"hardware" "1"
-	"health" "0"
-	"model" "models/stations/station_pristanz3_door4.mdl"
-	"opendir" "1"
-	"returndelay" "-1"
-	"skin" "1"
-	"soundcloseoverride" "doors/default_stop.wav"
-	"spawnflags" "8192"
-	"spawnpos" "0"
-	"speed" "125"
-	"origin" "-58.3895 4453.47 -33.8594"
-	editor
-	{
-		"color" "164 245 0"
-		"groupid" "353413"
-		"visgroupid" "17"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 6000]"
-	}
-}
-entity
-{
-	"id" "353430"
-	"classname" "prop_door_rotating"
-	"ajarangles" "0 0 0"
-	"angles" "0 90 0"
-	"axis" "-486.6 4453.55 -33.37, -486.6 4453.55 -33.37"
-	"disableshadows" "1"
-	"distance" "95"
-	"dmg" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"forceclosed" "0"
-	"gmod_allowphysgun" "0"
-	"hardware" "1"
-	"health" "0"
-	"model" "models/stations/station_pristanz3_door3.mdl"
-	"opendir" "1"
-	"returndelay" "-1"
-	"skin" "1"
-	"soundcloseoverride" "doors/default_stop.wav"
-	"spawnflags" "8192"
-	"spawnpos" "0"
-	"speed" "125"
-	"origin" "-486.605 4453.56 -33.3752"
-	editor
-	{
-		"color" "164 245 0"
-		"groupid" "353413"
-		"visgroupid" "17"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 6000]"
-	}
-}
-entity
-{
-	"id" "353436"
-	"classname" "prop_door_rotating"
-	"ajarangles" "0 0 0"
-	"angles" "0 270 0"
-	"axis" "-526.23 3321.77 -33.66, -526.23 3321.77 -33.66"
-	"disableshadows" "1"
-	"distance" "95"
-	"dmg" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"forceclosed" "0"
-	"gmod_allowphysgun" "0"
-	"hardware" "1"
-	"health" "0"
-	"model" "models/stations/station_pristanz3_door1.mdl"
-	"opendir" "1"
-	"returndelay" "-1"
-	"skin" "1"
-	"soundcloseoverride" "doors/default_stop.wav"
-	"spawnflags" "8192"
-	"spawnpos" "0"
-	"speed" "125"
-	"origin" "-526.224 3321.78 -33.6645"
-	editor
-	{
-		"color" "164 245 0"
-		"groupid" "353413"
-		"visgroupid" "17"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 6000]"
-	}
-}
-entity
-{
-	"id" "353442"
-	"classname" "prop_static"
-	"angles" "0 270 0"
-	"disableselfshadowing" "1"
-	"disableshadows" "1"
-	"disablevertexlighting" "1"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"ignorenormals" "0"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"model" "models/stations/station_pristanz3.mdl"
-	"screenspacefade" "0"
-	"skin" "1"
-	"solid" "6"
-	"origin" "-604.5 4021.67 -73.2663"
-	editor
-	{
-		"color" "164 245 0"
-		"groupid" "353413"
-		"visgroupid" "17"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 6000]"
 	}
 }
 entity
@@ -43559,40 +43361,6 @@ entity
 }
 entity
 {
-	"id" "353373"
-	"classname" "prop_door_rotating"
-	"ajarangles" "0 0 0"
-	"angles" "0 270 0"
-	"axis" "-486.34 -3055.69 -33.7, -486.34 -3055.69 -33.7"
-	"disableshadows" "1"
-	"distance" "95"
-	"dmg" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"forceclosed" "0"
-	"gmod_allowphysgun" "0"
-	"hardware" "1"
-	"health" "0"
-	"model" "models/stations/station_pristanz3_door4.mdl"
-	"opendir" "1"
-	"returndelay" "-1"
-	"skin" "0"
-	"soundcloseoverride" "doors/default_stop.wav"
-	"spawnflags" "8192"
-	"spawnpos" "0"
-	"speed" "125"
-	"origin" "-486.331 -3055.67 -33.7138"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupid" "17"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 6000]"
-	}
-}
-entity
-{
 	"id" "353379"
 	"classname" "prop_door_rotating"
 	"ajarangles" "0 0 0"
@@ -43610,7 +43378,7 @@ entity
 	"model" "models/stations/station_pristanz3_door2.mdl"
 	"opendir" "1"
 	"returndelay" "-1"
-	"skin" "0"
+	"skin" "1"
 	"soundcloseoverride" "doors/default_stop.wav"
 	"spawnflags" "8192"
 	"spawnpos" "0"
@@ -43641,7 +43409,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/stations/station_pristanz3_inv.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "1"
 	"solid" "6"
 	"origin" "-604.371 -2624.06 -73.2195"
 	editor
@@ -43669,7 +43437,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/stations/station_pristanz3.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "1"
 	"solid" "6"
 	"origin" "59.7498 -2623.87 -73.1789"
 	editor
@@ -43700,46 +43468,12 @@ entity
 	"model" "models/stations/station_pristanz3_door1.mdl"
 	"opendir" "1"
 	"returndelay" "-1"
-	"skin" "0"
+	"skin" "1"
 	"soundcloseoverride" "doors/default_stop.wav"
 	"spawnflags" "8192"
 	"spawnpos" "0"
 	"speed" "125"
 	"origin" "-18.5262 -1923.98 -33.5771"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupid" "17"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 6000]"
-	}
-}
-entity
-{
-	"id" "353399"
-	"classname" "prop_door_rotating"
-	"ajarangles" "0 0 0"
-	"angles" "0 270 0"
-	"axis" "-58.17 -3055.77 -33.28, -58.17 -3055.77 -33.28"
-	"disableshadows" "1"
-	"distance" "95"
-	"dmg" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"forceclosed" "0"
-	"gmod_allowphysgun" "0"
-	"hardware" "1"
-	"health" "0"
-	"model" "models/stations/station_pristanz3_door3.mdl"
-	"opendir" "1"
-	"returndelay" "-1"
-	"skin" "0"
-	"soundcloseoverride" "doors/default_stop.wav"
-	"spawnflags" "8192"
-	"spawnpos" "0"
-	"speed" "125"
-	"origin" "-58.1452 -3055.77 -33.2878"
 	editor
 	{
 		"color" "220 30 220"
@@ -44742,6 +44476,134 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "353414"
+	"classname" "prop_door_rotating"
+	"ajarangles" "0 0 0"
+	"angles" "0 270 0"
+	"axis" "-18.56 3321.51 -33.37, -18.56 3321.51 -33.37"
+	"disableshadows" "1"
+	"distance" "95"
+	"dmg" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"forceclosed" "0"
+	"gmod_allowphysgun" "0"
+	"hardware" "1"
+	"health" "0"
+	"model" "models/stations/station_pristanz3_door2.mdl"
+	"opendir" "1"
+	"returndelay" "-1"
+	"skin" "1"
+	"soundcloseoverride" "doors/default_stop.wav"
+	"spawnflags" "8192"
+	"spawnpos" "0"
+	"speed" "125"
+	"origin" "-18.5502 3321.5 -33.3752"
+	editor
+	{
+		"color" "164 245 0"
+		"groupid" "353413"
+		"visgroupid" "17"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 6000]"
+	}
+}
+entity
+{
+	"id" "353420"
+	"classname" "prop_static"
+	"angles" "0 270 0"
+	"disableselfshadowing" "1"
+	"disableshadows" "1"
+	"disablevertexlighting" "1"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/stations/station_pristanz3_inv.mdl"
+	"screenspacefade" "0"
+	"skin" "1"
+	"solid" "6"
+	"origin" "59.6508 4021.86 -73.3651"
+	editor
+	{
+		"color" "164 245 0"
+		"groupid" "353413"
+		"visgroupid" "17"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 6000]"
+	}
+}
+entity
+{
+	"id" "353436"
+	"classname" "prop_door_rotating"
+	"ajarangles" "0 0 0"
+	"angles" "0 270 0"
+	"axis" "-526.23 3321.77 -33.66, -526.23 3321.77 -33.66"
+	"disableshadows" "1"
+	"distance" "95"
+	"dmg" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"forceclosed" "0"
+	"gmod_allowphysgun" "0"
+	"hardware" "1"
+	"health" "0"
+	"model" "models/stations/station_pristanz3_door1.mdl"
+	"opendir" "1"
+	"returndelay" "-1"
+	"skin" "1"
+	"soundcloseoverride" "doors/default_stop.wav"
+	"spawnflags" "8192"
+	"spawnpos" "0"
+	"speed" "125"
+	"origin" "-526.224 3321.78 -33.6645"
+	editor
+	{
+		"color" "164 245 0"
+		"groupid" "353413"
+		"visgroupid" "17"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 6000]"
+	}
+}
+entity
+{
+	"id" "353442"
+	"classname" "prop_static"
+	"angles" "0 270 0"
+	"disableselfshadowing" "1"
+	"disableshadows" "1"
+	"disablevertexlighting" "1"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/stations/station_pristanz3.mdl"
+	"screenspacefade" "0"
+	"skin" "1"
+	"solid" "6"
+	"origin" "-604.5 4021.67 -73.2663"
+	editor
+	{
+		"color" "164 245 0"
+		"groupid" "353413"
+		"visgroupid" "17"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 6000]"
 	}
 }
 cameras
