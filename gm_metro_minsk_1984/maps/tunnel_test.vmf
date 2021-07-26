@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8538"
-	"mapversion" "146"
+	"mapversion" "148"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "146"
+	"mapversion" "148"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -19452,11 +19452,11 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn2.mdl"
+	"model" "models/mn_r/mn_t_rn2_sb1.mdl"
 	"screenspacefade" "0"
 	"skin" "2"
 	"solid" "6"
-	"origin" "-2334.4 -315.737 310.597"
+	"origin" "-2209.44 -315.746 313.814"
 	editor
 	{
 		"color" "255 255 0"
@@ -19502,34 +19502,6 @@ entity
 	editor
 	{
 		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "158034"
-	"classname" "prop_static"
-	"_light" "255 247 230 250"
-	"angles" "0 180 0"
-	"disableselfshadowing" "1"
-	"disableshadows" "1"
-	"disablevertexlighting" "1"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"ignorenormals" "0"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn2.mdl"
-	"screenspacefade" "0"
-	"skin" "1"
-	"solid" "6"
-	"origin" "-3830.4 -315.737 310.597"
-	editor
-	{
-		"color" "255 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -20235,6 +20207,90 @@ entity
 	"skin" "0"
 	"solid" "6"
 	"origin" "-2458.51 -315.748 310.597"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "170100"
+	"classname" "prop_static"
+	"_light" "255 247 230 250"
+	"angles" "0 180 0"
+	"disableselfshadowing" "1"
+	"disableshadows" "1"
+	"disablevertexlighting" "1"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_l_nogravel.mdl"
+	"screenspacefade" "0"
+	"skin" "3"
+	"solid" "6"
+	"origin" "-2334.52 -315.729 310.597"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "170130"
+	"classname" "prop_static"
+	"_light" "255 247 230 250"
+	"angles" "0 180 0"
+	"disableselfshadowing" "1"
+	"disableshadows" "1"
+	"disablevertexlighting" "1"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_rn2_sb1.mdl"
+	"screenspacefade" "0"
+	"skin" "2"
+	"solid" "6"
+	"origin" "-3705.44 -315.746 313.814"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "170134"
+	"classname" "prop_static"
+	"_light" "255 247 230 250"
+	"angles" "0 180 0"
+	"disableselfshadowing" "1"
+	"disableshadows" "1"
+	"disablevertexlighting" "1"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_l_nogravel.mdl"
+	"screenspacefade" "0"
+	"skin" "3"
+	"solid" "6"
+	"origin" "-3830.52 -315.729 310.597"
 	editor
 	{
 		"color" "255 255 0"
