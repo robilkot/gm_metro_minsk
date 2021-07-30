@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8849"
-	"mapversion" "698"
+	"mapversion" "700"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -55,7 +55,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "698"
+	"mapversion" "700"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -50551,64 +50551,23 @@ entity
 }
 entity
 {
-	"id" "226526"
-	"classname" "prop_door_rotating"
-	"ajarangles" "0 0 0"
-	"angles" "0 270 0"
-	"axis" "-486.53 1861.28 -32.83, -486.53 1861.28 -32.83"
+	"id" "226544"
+	"classname" "prop_static"
+	"angles" "0 90 0"
+	"disableselfshadowing" "1"
 	"disableshadows" "1"
-	"distance" "95"
-	"dmg" "0"
+	"disablevertexlighting" "1"
+	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
-	"forceclosed" "0"
-	"gmod_allowphysgun" "0"
-	"hardware" "1"
-	"health" "0"
-	"model" "models/stations/station_pristanz3_door4.mdl"
-	"opendir" "1"
-	"returndelay" "-1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/stations/station_pristanz3.mdl"
+	"screenspacefade" "0"
 	"skin" "1"
-	"soundcloseoverride" "doors/default_stop.wav"
-	"spawnflags" "8192"
-	"spawnpos" "0"
-	"speed" "125"
-	"origin" "-486.535 1861.29 -32.829"
-	editor
-	{
-		"color" "164 245 0"
-		"groupid" "226515"
-		"visgroupid" "17"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 6000]"
-	}
-}
-entity
-{
-	"id" "226532"
-	"classname" "prop_door_rotating"
-	"ajarangles" "0 0 0"
-	"angles" "0 270 0"
-	"axis" "-59.7 1861.02 -32.71, -59.7 1861.02 -32.71"
-	"disableshadows" "1"
-	"distance" "95"
-	"dmg" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"forceclosed" "0"
-	"gmod_allowphysgun" "0"
-	"hardware" "1"
-	"health" "0"
-	"model" "models/stations/station_pristanz3_door3.mdl"
-	"opendir" "1"
-	"returndelay" "-1"
-	"skin" "1"
-	"soundcloseoverride" "doors/default_stop.wav"
-	"spawnflags" "8192"
-	"spawnpos" "0"
-	"speed" "125"
-	"origin" "-59.6816 1861.02 -32.7071"
+	"solid" "6"
+	"origin" "58.2138 2292.92 -72.5982"
 	editor
 	{
 		"color" "164 245 0"
@@ -50644,35 +50603,6 @@ entity
 	"spawnpos" "0"
 	"speed" "125"
 	"origin" "-20.0622 2992.8 -32.9964"
-	editor
-	{
-		"color" "164 245 0"
-		"groupid" "226515"
-		"visgroupid" "17"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 6000]"
-	}
-}
-entity
-{
-	"id" "226544"
-	"classname" "prop_static"
-	"angles" "0 90 0"
-	"disableselfshadowing" "1"
-	"disableshadows" "1"
-	"disablevertexlighting" "1"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"ignorenormals" "0"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"model" "models/stations/station_pristanz3.mdl"
-	"screenspacefade" "0"
-	"skin" "1"
-	"solid" "6"
-	"origin" "58.2138 2292.92 -72.5982"
 	editor
 	{
 		"color" "164 245 0"
@@ -50737,76 +50667,6 @@ entity
 	"skin" "1"
 	"solid" "6"
 	"origin" "59.1756 9242.81 -72.7669"
-	editor
-	{
-		"color" "164 245 0"
-		"groupid" "226624"
-		"visgroupid" "17"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 6000]"
-	}
-}
-entity
-{
-	"id" "226635"
-	"classname" "prop_door_rotating"
-	"ajarangles" "0 0 0"
-	"angles" "0 90 0"
-	"axis" "-58.87 9674.43 -33.26, -58.87 9674.43 -33.26"
-	"disableshadows" "1"
-	"distance" "95"
-	"dmg" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"forceclosed" "0"
-	"gmod_allowphysgun" "0"
-	"hardware" "1"
-	"health" "0"
-	"model" "models/stations/station_pristanz3_door4.mdl"
-	"opendir" "1"
-	"returndelay" "-1"
-	"skin" "1"
-	"soundcloseoverride" "doors/default_stop.wav"
-	"spawnflags" "8192"
-	"spawnpos" "0"
-	"speed" "125"
-	"origin" "-58.8643 9674.43 -33.2612"
-	editor
-	{
-		"color" "164 245 0"
-		"groupid" "226624"
-		"visgroupid" "17"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 6000]"
-	}
-}
-entity
-{
-	"id" "226641"
-	"classname" "prop_door_rotating"
-	"ajarangles" "0 0 0"
-	"angles" "0 90 0"
-	"axis" "-486.58 9672.02 -32.78, -486.58 9672.02 -32.78"
-	"disableshadows" "1"
-	"distance" "95"
-	"dmg" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"forceclosed" "0"
-	"gmod_allowphysgun" "0"
-	"hardware" "1"
-	"health" "0"
-	"model" "models/stations/station_pristanz3_door3.mdl"
-	"opendir" "1"
-	"returndelay" "-1"
-	"skin" "1"
-	"soundcloseoverride" "doors/default_stop.wav"
-	"spawnflags" "8192"
-	"spawnpos" "0"
-	"speed" "125"
-	"origin" "-486.598 9672.02 -32.777"
 	editor
 	{
 		"color" "164 245 0"
@@ -73019,7 +72879,7 @@ entity
 {
 	"id" "226511"
 	"classname" "prop_static"
-	"angles" "0 90 0"
+	"angles" "0 89.95 0"
 	"disableselfshadowing" "0"
 	"disableshadows" "1"
 	"disablevertexlighting" "0"
@@ -73034,7 +72894,7 @@ entity
 	"screenspacefade" "0"
 	"skin" "3"
 	"solid" "6"
-	"origin" "59.5784 2137.75 -159.979"
+	"origin" "59.2205 2137.71 -159.979"
 	editor
 	{
 		"color" "255 255 0"
@@ -73589,7 +73449,7 @@ entity
 {
 	"id" "229154"
 	"classname" "prop_static"
-	"angles" "0 90 0"
+	"angles" "0 89.95 0"
 	"disableselfshadowing" "0"
 	"disableshadows" "1"
 	"disablevertexlighting" "0"
@@ -73604,7 +73464,7 @@ entity
 	"screenspacefade" "0"
 	"skin" "3"
 	"solid" "6"
-	"origin" "59.6233 2304.01 -159.979"
+	"origin" "59.4105 2303.97 -159.979"
 	editor
 	{
 		"color" "255 255 0"
@@ -73769,7 +73629,7 @@ hidden
 				{
 					"color" "0 255 255"
 					"visgroupshown" "1"
-					"visgroupautoshown" "0"
+					"visgroupautoshown" "1"
 				}
 			}
 		}
@@ -73908,7 +73768,7 @@ hidden
 				{
 					"color" "0 255 255"
 					"visgroupshown" "1"
-					"visgroupautoshown" "0"
+					"visgroupautoshown" "1"
 				}
 			}
 		}
@@ -127345,7 +127205,7 @@ entity
 	"screenspacefade" "0"
 	"skin" "0"
 	"solid" "6"
-	"origin" "60.236 11401.8 -156.593"
+	"origin" "60.236 11401.8 -157.545"
 	editor
 	{
 		"color" "255 255 0"
@@ -127942,6 +127802,35 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "244671"
+	"classname" "prop_static"
+	"angles" "0 90 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "1"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"lightingorigin" "mosk_prist_rails1"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/rail_double_noall.mdl"
+	"screenspacefade" "0"
+	"skin" "1"
+	"solid" "6"
+	"origin" "58.8911 1480.11 -159.979"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupid" "17"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 4000]"
