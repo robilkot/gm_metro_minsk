@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8538"
-	"mapversion" "2418"
+	"mapversion" "2443"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -122,7 +122,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "2418"
+	"mapversion" "2443"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -60313,6 +60313,7 @@ world
 		editor
 		{
 			"color" "0 111 216"
+			"visgroupid" "74"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -60389,6 +60390,7 @@ world
 		editor
 		{
 			"color" "0 111 216"
+			"visgroupid" "74"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -60693,6 +60695,7 @@ world
 		editor
 		{
 			"color" "0 113 250"
+			"visgroupid" "74"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -60769,6 +60772,7 @@ world
 		editor
 		{
 			"color" "0 175 120"
+			"visgroupid" "74"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -60997,6 +61001,7 @@ world
 		editor
 		{
 			"color" "0 102 115"
+			"visgroupid" "74"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -61073,6 +61078,7 @@ world
 		editor
 		{
 			"color" "0 236 153"
+			"visgroupid" "74"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -61301,6 +61307,7 @@ world
 		editor
 		{
 			"color" "0 144 221"
+			"visgroupid" "74"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -61377,6 +61384,7 @@ world
 		editor
 		{
 			"color" "0 144 221"
+			"visgroupid" "74"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -61529,6 +61537,7 @@ world
 		editor
 		{
 			"color" "0 251 220"
+			"visgroupid" "74"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -61605,6 +61614,7 @@ world
 		editor
 		{
 			"color" "0 149 118"
+			"visgroupid" "74"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -66121,6 +66131,16 @@ world
 			"visgroupautoshown" "1"
 		}
 	}
+	group
+	{
+		"id" "1156591"
+		editor
+		{
+			"color" "241 174 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
 }
 entity
 {
@@ -67267,11 +67287,11 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn2.mdl"
+	"model" "models/mn_r/mn_r_l_nogravel.mdl"
 	"screenspacefade" "0"
-	"skin" "1"
+	"skin" "3"
 	"solid" "6"
-	"origin" "-16123.5 3719.9 7154.36"
+	"origin" "-16123.5 3720.42 7154.24"
 	editor
 	{
 		"color" "227 236 0"
@@ -70227,7 +70247,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn2.mdl"
 	"screenspacefade" "0"
-	"skin" "1"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-15341.2 2055.79 7131.56"
 	editor
@@ -70256,7 +70276,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn2.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-15346.1 2803.66 7144.61"
 	editor
@@ -70312,11 +70332,11 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn2.mdl"
+	"model" "models/mn_r/mn_t_rn2_sb2.mdl"
 	"screenspacefade" "0"
-	"skin" "1"
+	"skin" "0"
 	"solid" "6"
-	"origin" "-15356.1 4299.4 7170.72"
+	"origin" "-15353 3800.48 7162.6"
 	editor
 	{
 		"color" "227 236 0"
@@ -71530,11 +71550,11 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_rn2_sb1.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
 	"solid" "6"
-	"origin" "-6546.25 -15326 6179.09"
+	"origin" "-6421.51 -15326 6181.2"
 	editor
 	{
 		"color" "103 124 0"
@@ -74082,11 +74102,11 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_rn2_sb2.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
 	"solid" "6"
-	"origin" "-5923.36 -16117.4 6178.72"
+	"origin" "-6421.9 -16117.2 6180.48"
 	editor
 	{
 		"color" "103 124 0"
@@ -80375,11 +80395,11 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn2.mdl"
+	"model" "models/mn_r/mn_t_rn2_sb2.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
 	"solid" "6"
-	"origin" "-2889.16 14496.3 5979.66"
+	"origin" "-2391.19 14496.1 5979.66"
 	editor
 	{
 		"color" "199 216 0"
@@ -92178,11 +92198,11 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn3.mdl"
+	"model" "models/mn_r/mn_t_rn2_sb2.mdl"
 	"screenspacefade" "0"
 	"skin" "1"
 	"solid" "6"
-	"origin" "110.517 16072.9 7849.8"
+	"origin" "609.165 16074.4 7850.71"
 	editor
 	{
 		"color" "176 237 0"
@@ -99537,9 +99557,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_r_l_nogravel.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "4"
 	"solid" "6"
 	"origin" "-4484.53 15169.4 6273.54"
 	editor
@@ -99565,9 +99585,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_kv1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "-3737.57 15169.3 6247.49"
 	editor
@@ -99593,9 +99613,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_kv1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "-2991.35 15169.3 6221.43"
 	editor
@@ -99621,9 +99641,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_kv1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "-2246.18 15169.3 6195.4"
 	editor
@@ -99649,9 +99669,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_kv1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "-8.42603 15169.2 6117.27"
 	editor
@@ -99677,9 +99697,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_kv1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "-753.6 15169.2 6143.3"
 	editor
@@ -99705,9 +99725,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_kv1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "-1499.82 15169.3 6169.37"
 	editor
@@ -99733,9 +99753,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_kv1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "2229.19 15169.1 6039.14"
 	editor
@@ -99761,9 +99781,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_kv1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "1484.02 15169.1 6065.17"
 	editor
@@ -99789,9 +99809,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_kv1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "737.793 15169.2 6091.23"
 	editor
@@ -99845,9 +99865,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_r_l_nogravel.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "3"
 	"solid" "6"
 	"origin" "3721.33 15169.1 6004.42"
 	editor
@@ -99873,9 +99893,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_kv1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "2975.04 15169.1 6018.55"
 	editor
@@ -101010,11 +101030,11 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_r_l_nogravel.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "4"
 	"solid" "6"
-	"origin" "-4849.09 15949.9 6309.27"
+	"origin" "-4848.5 15950 6309.25"
 	editor
 	{
 		"color" "255 255 0"
@@ -101038,9 +101058,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_kv1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "-4102.63 15949.9 6288.69"
 	editor
@@ -101066,9 +101086,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_kv1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "-3356.74 15949.9 6262.68"
 	editor
@@ -101094,9 +101114,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_kv1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "-2609.91 15949.9 6236.66"
 	editor
@@ -101122,9 +101142,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_kv1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "-1863.79 15949.9 6210.6"
 	editor
@@ -101150,9 +101170,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_kv1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "-1117.46 15949.9 6184.53"
 	editor
@@ -101178,9 +101198,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_kv1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "-371.572 15949.9 6158.52"
 	editor
@@ -101206,9 +101226,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_kv1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "375.253 15949.9 6132.5"
 	editor
@@ -101234,9 +101254,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_kv1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "1121.37 15949.9 6106.44"
 	editor
@@ -101262,9 +101282,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_kv1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "1869.09 15949.9 6080.36"
 	editor
@@ -101290,9 +101310,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_kv1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "2616.24 15949.9 6055.36"
 	editor
@@ -101318,9 +101338,9 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_r_l_nogravel.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "3"
 	"solid" "6"
 	"origin" "3363.85 15949.9 6036.9"
 	editor
@@ -101810,34 +101830,6 @@ entity
 }
 entity
 {
-	"id" "853038"
-	"classname" "prop_static"
-	"angles" "0 180 0"
-	"disableselfshadowing" "1"
-	"disableshadows" "1"
-	"disablevertexlighting" "1"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"ignorenormals" "0"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn2.mdl"
-	"screenspacefade" "0"
-	"skin" "0"
-	"solid" "6"
-	"origin" "-5234.56 -6892.23 5979.82"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupid" "14"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
 	"id" "863057"
 	"classname" "prop_static"
 	"angles" "0 90 0"
@@ -101995,34 +101987,6 @@ entity
 	"skin" "0"
 	"solid" "6"
 	"origin" "-13357.8 4805.08 5979.65"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupid" "14"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "868653"
-	"classname" "prop_static"
-	"angles" "0 0 0"
-	"disableselfshadowing" "1"
-	"disableshadows" "1"
-	"disablevertexlighting" "1"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"ignorenormals" "0"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn2.mdl"
-	"screenspacefade" "0"
-	"skin" "0"
-	"solid" "6"
-	"origin" "-4746.08 -7556.52 5979.82"
 	editor
 	{
 		"color" "255 255 0"
@@ -102354,11 +102318,11 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn2.mdl"
+	"model" "models/mn_r/mn_t_rn2_sb1.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
 	"solid" "6"
-	"origin" "-2410.24 13675.3 5979.66"
+	"origin" "-2534.53 13675.3 5982.92"
 	editor
 	{
 		"color" "255 255 0"
@@ -102466,39 +102430,11 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_link_kv1rn2.mdl"
+	"model" "models/mn_r/mn_t_link_s_kv1rn2.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
 	"solid" "6"
-	"origin" "-3989.46 -6891.83 5979.91"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupid" "14"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 4000]"
-	}
-}
-entity
-{
-	"id" "897105"
-	"classname" "prop_static"
-	"angles" "0 180 0"
-	"disableselfshadowing" "0"
-	"disableshadows" "1"
-	"disablevertexlighting" "0"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"ignorenormals" "0"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"model" "models/mn_r/mn_r_l_nogravel.mdl"
-	"screenspacefade" "0"
-	"skin" "3"
-	"solid" "6"
-	"origin" "-4488.57 -6892.24 5979.93"
+	"origin" "-5073.01 -6891.96 5979.91"
 	editor
 	{
 		"color" "255 255 0"
@@ -102522,39 +102458,11 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_link_rn2kv1.mdl"
+	"model" "models/mn_r/mn_t_link_s_rn2kv1.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
 	"solid" "6"
-	"origin" "-4004.3 -7556.67 5979.82"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupid" "14"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 4000]"
-	}
-}
-entity
-{
-	"id" "897136"
-	"classname" "prop_static"
-	"angles" "0 0 0"
-	"disableselfshadowing" "0"
-	"disableshadows" "1"
-	"disablevertexlighting" "0"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"ignorenormals" "0"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"model" "models/mn_r/mn_r_l_nogravel.mdl"
-	"screenspacefade" "0"
-	"skin" "3"
-	"solid" "6"
-	"origin" "-4004.43 -7556.63 5979.84"
+	"origin" "-5084.1 -7556.97 5979.82"
 	editor
 	{
 		"color" "255 255 0"
@@ -103015,11 +102923,11 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_rn2_sb1.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
 	"solid" "6"
-	"origin" "13185.1 1872.8 6314.45"
+	"origin" "13185.2 1997.82 6317.64"
 	editor
 	{
 		"color" "255 255 0"
@@ -103508,11 +103416,11 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_rn2_sb2.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
 	"solid" "6"
-	"origin" "14388.5 2232.42 6314.61"
+	"origin" "14391.6 1733.27 6315.11"
 	editor
 	{
 		"color" "255 255 0"
@@ -104012,11 +103920,11 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_rn2_sb2.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
 	"solid" "6"
-	"origin" "-813.854 287 6621.44"
+	"origin" "-1243.84 535.464 6613.24"
 	editor
 	{
 		"color" "255 255 0"
@@ -105748,11 +105656,11 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1.mdl"
+	"model" "models/mn_r/mn_t_rn2_sb1.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
 	"solid" "6"
-	"origin" "-929.355 1073.06 6638.96"
+	"origin" "-173.507 638.641 6657.38"
 	editor
 	{
 		"color" "255 255 0"
@@ -105766,7 +105674,7 @@ entity
 {
 	"id" "970882"
 	"classname" "prop_static"
-	"angles" "1 150.08 0"
+	"angles" "0.999999 150.08 0"
 	"disableselfshadowing" "0"
 	"disableshadows" "0"
 	"disablevertexlighting" "0"
@@ -105780,7 +105688,7 @@ entity
 	"screenspacefade" "0"
 	"skin" "0"
 	"solid" "6"
-	"origin" "-280.767 700.319 6652"
+	"origin" "-929.79 1073.5 6639.23"
 	editor
 	{
 		"color" "255 255 0"
@@ -107014,11 +106922,11 @@ entity
 	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn3.mdl"
+	"model" "models/mn_r/mn_t_rn2_sb1.mdl"
 	"screenspacefade" "0"
 	"skin" "1"
 	"solid" "6"
-	"origin" "555.755 15231.7 7855.73"
+	"origin" "430.646 15232.2 7858.23"
 	editor
 	{
 		"color" "255 255 0"
@@ -109906,6 +109814,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "15"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -109936,6 +109845,671 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1155551"
+	"classname" "prop_static"
+	"angles" "-1 90.382 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_l_nogravel.mdl"
+	"screenspacefade" "0"
+	"skin" "3"
+	"solid" "6"
+	"origin" "-15356.1 4299.6 7170.71"
+	editor
+	{
+		"color" "227 236 0"
+		"visgroupid" "9"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "1155681"
+	"classname" "prop_static"
+	"angles" "1 270 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_rn2_sb1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-16123.5 3844.82 7159.82"
+	editor
+	{
+		"color" "227 236 0"
+		"visgroupid" "9"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "1155824"
+	"classname" "prop_static"
+	"angles" "0.15 0 0"
+	"disableselfshadowing" "1"
+	"disableshadows" "1"
+	"disablevertexlighting" "1"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_l_nogravel.mdl"
+	"screenspacefade" "0"
+	"skin" "3"
+	"solid" "6"
+	"origin" "-5923.72 -16117.3 6178.58"
+	editor
+	{
+		"color" "103 124 0"
+		"visgroupid" "10"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "1155867"
+	"classname" "prop_static"
+	"angles" "-0.5 180 0"
+	"disableselfshadowing" "1"
+	"disableshadows" "1"
+	"disablevertexlighting" "1"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_l_nogravel.mdl"
+	"screenspacefade" "0"
+	"skin" "3"
+	"solid" "6"
+	"origin" "-6546.48 -15326 6179.08"
+	editor
+	{
+		"color" "103 124 0"
+		"visgroupid" "10"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "1156224"
+	"classname" "prop_static"
+	"angles" "2 0 0"
+	"disableselfshadowing" "1"
+	"disableshadows" "1"
+	"disablevertexlighting" "1"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_link_rn2kv1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-4484.53 15169.4 6273.54"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupid" "12"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "1156228"
+	"classname" "prop_static"
+	"angles" "1.5 0 0"
+	"disableselfshadowing" "1"
+	"disableshadows" "1"
+	"disablevertexlighting" "1"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_link_kv1rn2.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-4349.48 15949.6 6296.17"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupid" "12"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "1156433"
+	"classname" "prop_static"
+	"angles" "-1 180 0"
+	"disableselfshadowing" "1"
+	"disableshadows" "1"
+	"disablevertexlighting" "1"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_link_rn2kv1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "3363.85 15949.9 6036.9"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupid" "12"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "1156437"
+	"classname" "prop_static"
+	"angles" "-1 180 0"
+	"disableselfshadowing" "1"
+	"disableshadows" "1"
+	"disablevertexlighting" "1"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_link_kv1rn2.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "3219.07 15169.3 6013.16"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupid" "12"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "1156592"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "1"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_l_nogravel.mdl"
+	"screenspacefade" "0"
+	"skin" "3"
+	"solid" "6"
+	"origin" "-4488.59 -6892.04 5979.86"
+	editor
+	{
+		"color" "241 174 0"
+		"groupid" "1156591"
+		"visgroupid" "14"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "1156596"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "1"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_nogravel.mdl"
+	"screenspacefade" "0"
+	"skin" "3"
+	"solid" "6"
+	"origin" "-4737.85 -6892.04 5979.87"
+	editor
+	{
+		"color" "241 174 0"
+		"groupid" "1156591"
+		"visgroupid" "14"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "1156600"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "1"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_nogravel.mdl"
+	"screenspacefade" "0"
+	"skin" "3"
+	"solid" "6"
+	"origin" "-4987.21 -6892.04 5979.86"
+	editor
+	{
+		"color" "241 174 0"
+		"groupid" "1156591"
+		"visgroupid" "14"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "1156604"
+	"classname" "prop_static"
+	"angles" "0 270 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "1"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_kv1_sb1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-4488.33 -7224.74 6087.3"
+	editor
+	{
+		"color" "241 174 0"
+		"groupid" "1156591"
+		"visgroupid" "14"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "1156608"
+	"classname" "prop_static"
+	"angles" "0 0 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "1"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_nogravel.mdl"
+	"screenspacefade" "0"
+	"skin" "3"
+	"solid" "6"
+	"origin" "-4238.98 -7556.6 5979.86"
+	editor
+	{
+		"color" "241 174 0"
+		"groupid" "1156591"
+		"visgroupid" "14"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "1156612"
+	"classname" "prop_static"
+	"angles" "0 0 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "1"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_l_nogravel.mdl"
+	"screenspacefade" "0"
+	"skin" "3"
+	"solid" "6"
+	"origin" "-4488.24 -7556.7 5979.86"
+	editor
+	{
+		"color" "241 174 0"
+		"groupid" "1156591"
+		"visgroupid" "14"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "1156616"
+	"classname" "prop_static"
+	"angles" "0 0 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "1"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_nogravel.mdl"
+	"screenspacefade" "0"
+	"skin" "3"
+	"solid" "6"
+	"origin" "-3989.62 -7556.7 5979.86"
+	editor
+	{
+		"color" "241 174 0"
+		"groupid" "1156591"
+		"visgroupid" "14"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "1157004"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"disableselfshadowing" "1"
+	"disableshadows" "1"
+	"disablevertexlighting" "1"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_l_nogravel.mdl"
+	"screenspacefade" "0"
+	"skin" "3"
+	"solid" "6"
+	"origin" "-2889.16 14496.3 5979.66"
+	editor
+	{
+		"color" "199 216 0"
+		"visgroupid" "14"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "1157008"
+	"classname" "prop_static"
+	"angles" "0 0 0"
+	"disableselfshadowing" "1"
+	"disableshadows" "1"
+	"disablevertexlighting" "1"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_l_nogravel.mdl"
+	"screenspacefade" "0"
+	"skin" "3"
+	"solid" "6"
+	"origin" "-2410.24 13675.3 5979.66"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupid" "14"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "1157148"
+	"classname" "prop_static"
+	"angles" "0 90.382 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_l_nogravel.mdl"
+	"screenspacefade" "0"
+	"skin" "3"
+	"solid" "6"
+	"origin" "14388.5 2232.42 6314.61"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupid" "15"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "1157152"
+	"classname" "prop_static"
+	"angles" "0 270 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_l_nogravel.mdl"
+	"screenspacefade" "0"
+	"skin" "3"
+	"solid" "6"
+	"origin" "13185.1 1872.8 6314.45"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupid" "15"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "1157380"
+	"classname" "prop_static"
+	"angles" "1 150.13 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_l_nogravel.mdl"
+	"screenspacefade" "0"
+	"skin" "4"
+	"solid" "6"
+	"origin" "-281.642 700.903 6652.14"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupid" "55"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "1157384"
+	"classname" "prop_static"
+	"angles" "-1 330 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_l_nogravel.mdl"
+	"screenspacefade" "0"
+	"skin" "4"
+	"solid" "6"
+	"origin" "-813.854 287 6621.44"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupid" "55"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "1157588"
+	"classname" "prop_static"
+	"angles" "-0.499998 359.85 0.00100361"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_l_nogravel.mdl"
+	"screenspacefade" "0"
+	"skin" "3"
+	"solid" "6"
+	"origin" "555.755 15231.7 7855.73"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupid" "74"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "1157592"
+	"classname" "prop_static"
+	"angles" "0 180.2 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_l_nogravel.mdl"
+	"screenspacefade" "0"
+	"skin" "3"
+	"solid" "6"
+	"origin" "110.517 16072.9 7849.8"
+	editor
+	{
+		"color" "176 237 0"
+		"visgroupid" "74"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
 	}
 }
 cameras
