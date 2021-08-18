@@ -239,7 +239,7 @@ function TOOL:BuildCPanelCustom()
         tool:SendSettings()
     end
 
-    local VZOffT = CPanel:NumSlider("Z Offset:",nil,-50,50,0)
+    local VZOffT = CPanel:NumSlider("Z Offset:",nil,-100,100,0)
     VZOffT:SetValue(tool.Picket.ZOffset or 0)
     VZOffT.OnValueChanged = function(num)
         tool.Picket.ZOffset = VZOffT:GetValue()
