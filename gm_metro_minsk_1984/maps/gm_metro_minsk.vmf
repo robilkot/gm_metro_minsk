@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8538"
-	"mapversion" "2533"
+	"mapversion" "2576"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -122,7 +122,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "2533"
+	"mapversion" "2576"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -66239,7 +66239,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c2_main2.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "1"
 	"solid" "6"
 	"origin" "-15449.8 12456.7 7360.34"
 	editor
@@ -66355,7 +66355,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c2_main2.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "1"
 	"solid" "6"
 	"origin" "-13444.2 14712.9 7360.34"
 	editor
@@ -67689,7 +67689,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn2.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "1"
 	"solid" "6"
 	"origin" "-16123.5 -6749.92 6989.2"
 	editor
@@ -68733,7 +68733,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn2_c3_pk21.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "1"
 	"solid" "6"
 	"origin" "-16106 -7315.66 7121.06"
 	editor
@@ -68762,7 +68762,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn2_c3_pk23.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "1"
 	"solid" "6"
 	"origin" "-15967.4 -8460.16 7115.34"
 	editor
@@ -68791,7 +68791,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn2_c3_pk22.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "1"
 	"solid" "6"
 	"origin" "-16071.5 -7752.25 7099.32"
 	editor
@@ -68820,7 +68820,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn2_c3_pk24.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "1"
 	"solid" "6"
 	"origin" "-15809.3 -9217.28 7115.34"
 	editor
@@ -74446,7 +74446,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c3_main1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "1"
 	"solid" "6"
 	"origin" "-9497.22 15452.5 6442.65"
 	editor
@@ -74533,7 +74533,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c3_pk24.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "-8793.42 15642.4 6444.38"
 	editor
@@ -74549,21 +74549,37 @@ entity
 entity
 {
 	"id" "831463"
-	"classname" "prop_static"
+	"classname" "prop_dynamic"
 	"angles" "0 0 0"
-	"disableselfshadowing" "0"
-	"disableshadows" "0"
-	"disablevertexlighting" "0"
+	"DefaultAnim" "idle"
+	"DisableBoneFollowers" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "1"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
-	"ignorenormals" "0"
+	"gmod_allowphysgun" "0"
+	"HoldAnimation" "1"
+	"MaxAnimTime" "10"
 	"maxdxlevel" "0"
+	"MinAnimTime" "5"
 	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_rn1_c3_pk23.mdl"
-	"screenspacefade" "0"
-	"skin" "2"
+	"model" "models/mn_r/mn_t_mk10.mdl"
+	"modelscale" "1.0"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"skin" "0"
 	"solid" "6"
+	"spawnflags" "0"
+	"StartDisabled" "0"
 	"origin" "-8071.25 15791.5 6444.32"
 	editor
 	{
@@ -74591,7 +74607,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c3_pk22.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "-7386.13 15892.5 6444.67"
 	editor
@@ -74620,7 +74636,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c3_pk21.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "1"
 	"solid" "6"
 	"origin" "-6767.92 15944.2 6442.69"
 	editor
@@ -82624,7 +82640,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c4_main1.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "1"
 	"solid" "6"
 	"origin" "-12323.2 6193.14 6186.79"
 	editor
@@ -82653,7 +82669,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c4_main2.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-12439.9 5558.99 6178.91"
 	editor
@@ -82682,7 +82698,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c4_main3.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-12500.7 4919.84 6171.1"
 	editor
@@ -83407,7 +83423,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c1_main2.mdl"
 	"screenspacefade" "0"
-	"skin" "1"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-12211.4 2717.49 6148.41"
 	editor
@@ -83436,7 +83452,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c1_main1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "1"
 	"solid" "6"
 	"origin" "-11087.2 739.572 6130.57"
 	editor
@@ -83465,7 +83481,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c1_main2.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-11547 1347.11 6136.2"
 	editor
@@ -83581,7 +83597,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c1_main2.mdl"
 	"screenspacefade" "0"
-	"skin" "1"
+	"skin" "0"
 	"solid" "6"
 	"origin" "-9290.71 -656.387 6115.73"
 	editor
@@ -83610,7 +83626,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c1_pk12.mdl"
 	"screenspacefade" "0"
-	"skin" "1"
+	"skin" "0"
 	"solid" "6"
 	"origin" "-7775.47 -1169.99 6102.51"
 	editor
@@ -83639,7 +83655,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c1_pk11_vsh1.mdl"
 	"screenspacefade" "0"
-	"skin" "2"
+	"skin" "0"
 	"solid" "6"
 	"origin" "-6867.27 -1304.29 6094.58"
 	editor
@@ -83755,7 +83771,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c3_main1.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-10887.7 9990.53 6236.16"
 	editor
@@ -83784,7 +83800,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c3_main3.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-11350 9445.13 6230.45"
 	editor
@@ -83813,7 +83829,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c3_main2.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-11756.1 8872.13 6226.21"
 	editor
@@ -83842,7 +83858,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c3_main1.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "1"
 	"solid" "6"
 	"origin" "-12114.9 8260.63 6215.41"
 	editor
@@ -83929,7 +83945,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c3_pk21.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-4601.78 12720.3 6304.72"
 	editor
@@ -83958,7 +83974,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c3_pk22.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-5219.96 12668.6 6299.15"
 	editor
@@ -83987,7 +84003,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c3_pk23.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-5905.03 12567.6 6290.43"
 	editor
@@ -84016,7 +84032,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c3_pk24.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-6627.15 12418.5 6281.66"
 	editor
@@ -84045,7 +84061,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c3_main1.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-7329.45 12228.5 6272.16"
 	editor
@@ -84074,7 +84090,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c3_main3.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-8001.78 11987.1 6267.08"
 	editor
@@ -84103,7 +84119,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c3_main2.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-8639.69 11694 6264.08"
 	editor
@@ -84132,7 +84148,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c3_main1.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-9255.73 11343.5 6254.59"
 	editor
@@ -84161,7 +84177,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c3_main3.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-9843.01 10936.6 6249.15"
 	editor
@@ -84190,7 +84206,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c3_main2.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-10383 10488.1 6245.77"
 	editor
@@ -84219,7 +84235,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-3426.92 12726 6208.4"
 	editor
@@ -84248,7 +84264,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-2678.98 12726 6217.54"
 	editor
@@ -84277,7 +84293,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-1931.03 12726 6226.68"
 	editor
@@ -84306,7 +84322,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-1183.09 12726 6235.82"
 	editor
@@ -84335,7 +84351,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-435.143 12726 6244.96"
 	editor
@@ -84364,7 +84380,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "312.801 12726 6254.1"
 	editor
@@ -84393,7 +84409,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "1060.74 12726 6263.23"
 	editor
@@ -84422,7 +84438,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "1808.69 12726 6272.37"
 	editor
@@ -84451,7 +84467,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "2556.63 12726 6281.51"
 	editor
@@ -84480,7 +84496,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "1"
 	"solid" "6"
 	"origin" "3304.57 12726 6290.65"
 	editor
@@ -84509,7 +84525,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1.mdl"
 	"screenspacefade" "0"
-	"skin" "0"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-4174.87 12726 6199.27"
 	editor
@@ -103461,7 +103477,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn1_c1_main2.mdl"
 	"screenspacefade" "0"
-	"skin" "1"
+	"skin" "2"
 	"solid" "6"
 	"origin" "-12498.5 4212.84 6161.46"
 	editor
@@ -108219,6 +108235,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -108246,6 +108263,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -108273,6 +108291,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -108300,6 +108319,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -108327,6 +108347,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -108354,6 +108375,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -108381,6 +108403,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -108408,6 +108431,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -108543,6 +108567,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -108570,6 +108595,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -108597,6 +108623,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -108624,6 +108651,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -108651,6 +108679,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -110053,6 +110082,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -112831,6 +112861,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -112858,6 +112889,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -113777,6 +113809,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -113804,6 +113837,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -113831,6 +113865,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -113858,6 +113893,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -114020,6 +114056,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -114047,6 +114084,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -114074,6 +114112,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -114398,6 +114437,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -114479,6 +114519,7 @@ entity
 	editor
 	{
 		"color" "255 255 0"
+		"visgroupid" "100"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -114530,6 +114571,1918 @@ entity
 	"skin" "0"
 	"solid" "6"
 	"origin" "-6470 16092 6452"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupid" "100"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197123"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_stuff1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-4376.88 -6988 5977.22"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "1197127"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_stuff1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-4376 -7006 5977.37"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "1197131"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_stuff2.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-4841.88 -6982 5976.96"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "1197135"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_stuff2.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-4841 -7000 5977.11"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "1197327"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/stations/station_prop9.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-4597 -7099 5998"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "1197370"
+	"classname" "prop_static"
+	"angles" "-7 90 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_signs/mn_sign_signal_r.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-5135 -6780 6099"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197406"
+	"classname" "prop_static"
+	"angles" "3 0 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_signs/mn_sign_signal_r.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-13216 5541 6111"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupid" "100"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197446"
+	"classname" "prop_static"
+	"angles" "3 271 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_signs/mn_sign_signal_r.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "5028 13529 6100"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197478"
+	"classname" "prop_static"
+	"angles" "3 271 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_signs/mn_sign_signal_r.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "4845 -2111 6091"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197520"
+	"classname" "prop_static"
+	"angles" "3 91 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_signs/mn_sign_signal_r.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-5117 14637 6101"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupid" "100"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197548"
+	"classname" "prop_static"
+	"angles" "3 181 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_signs/mn_sign_signal_r.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-14335 1472 6106"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupid" "100"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197580"
+	"classname" "prop_static"
+	"angles" "0 1.991 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/stations/station_prop9.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-5602 -6781 6012"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197616"
+	"classname" "prop_static"
+	"angles" "0 278.491 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/stations/station_prop9.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-13173 44 6018.12"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197632"
+	"classname" "prop_static"
+	"angles" "0 233.991 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/stations/station_prop9.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-11903 10270 6006"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197656"
+	"classname" "prop_static"
+	"angles" "0 179.991 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/stations/station_prop9.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "618 13572 6013"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197680"
+	"classname" "prop_static"
+	"angles" "0 256.491 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/stations/station_prop9.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "12858 4911 6007"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197696"
+	"classname" "prop_static"
+	"angles" "0 256.491 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/stations/station_prop9.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "13825 4719 6018"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197708"
+	"classname" "prop_static"
+	"angles" "0 179.991 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/stations/station_prop9.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "606 14603 6012"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197720"
+	"classname" "prop_static"
+	"angles" "0 233.991 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/stations/station_prop9.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-12828 10696 6017"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197740"
+	"classname" "prop_static"
+	"angles" "0 278.491 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/stations/station_prop9.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-14031 -839 6015.68"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197756"
+	"classname" "prop_static"
+	"angles" "0 145.5 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-10291 -6016.39 6044"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197807"
+	"classname" "prop_static"
+	"angles" "0 95.5 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-14041 833 6051"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197827"
+	"classname" "prop_static"
+	"angles" "0 75.5 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-13779 7668 6045"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197847"
+	"classname" "prop_static"
+	"angles" "0 17.5 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-8338 13841 6044"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197879"
+	"classname" "prop_static"
+	"angles" "0 0.500002 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-2291 14360 6051.05"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197907"
+	"classname" "prop_static"
+	"angles" "0 0.500002 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "5102 14360 6052"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197943"
+	"classname" "prop_static"
+	"angles" "0 309.5 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "11977 11251 6043.94"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1197983"
+	"classname" "prop_static"
+	"angles" "0 250.5 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "13343.9 3823 6044.22"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1198019"
+	"classname" "prop_static"
+	"angles" "0 192 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "7009 -1643.03 6047"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1198035"
+	"classname" "prop_static"
+	"angles" "0 12 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "6957 -1258 6056"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1198059"
+	"classname" "prop_static"
+	"angles" "0 70.5 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "12861.6 3921.09 6059.55"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1198087"
+	"classname" "prop_static"
+	"angles" "0 129.5 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "11531.3 10919.4 6058.18"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1198103"
+	"classname" "prop_static"
+	"angles" "0 180.5 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "4614.68 13811.1 6052"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1198119"
+	"classname" "prop_static"
+	"angles" "0 180.5 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-2323 13811 6051.05"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1198131"
+	"classname" "prop_static"
+	"angles" "0 197.5 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-8220.22 13324.7 6057.35"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1198155"
+	"classname" "prop_static"
+	"angles" "0 255.5 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-13275 7576 6058"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1198175"
+	"classname" "prop_static"
+	"angles" "0 275.5 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-13484 823 6051"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1198187"
+	"classname" "prop_static"
+	"angles" "0 325.5 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-10035 -5668 6057"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1198226"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"DisableBoneFollowers" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "1"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"gmod_allowphysgun" "0"
+	"HoldAnimation" "1"
+	"MaxAnimTime" "10"
+	"maxdxlevel" "0"
+	"MinAnimTime" "5"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_mk10_2.mdl"
+	"modelscale" "1.0"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"skin" "0"
+	"solid" "6"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"origin" "-8071.25 15791.5 6444.32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupid" "12"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "1198256"
+	"classname" "prop_static"
+	"angles" "0 188.5 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_konc1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-7707.62 15850.5 6330.38"
+	editor
+	{
+		"color" "237 106 0"
+		"visgroupid" "12"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "1198346"
+	"classname" "prop_static"
+	"angles" "0 191 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_r_konc2.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-8434.71 15723.8 6329.2"
+	editor
+	{
+		"color" "237 106 0"
+		"visgroupid" "12"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "1198673"
+	"classname" "prop_static"
+	"angles" "0 102.477 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_signs/mn_sign_danger_r.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-7725 15979 6444"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1198712"
+	"classname" "prop_static"
+	"angles" "0 282.477 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_signs/mn_sign_danger_r.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-8410 15585 6444"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1198824"
+	"classname" "prop_static"
+	"angles" "-4 84 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_signs/mn_sign_signal_r.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-6384 -1184 6105"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1198844"
+	"classname" "prop_static"
+	"angles" "-3 270 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_signs/mn_sign_signal_r.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "5126 11920 6442"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1198884"
+	"classname" "prop_static"
+	"angles" "-3 180.5 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_signs/mn_sign_signal_r.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "13039 -3618 6441"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1198924"
+	"classname" "prop_static"
+	"angles" "-3 272 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_signs/mn_sign_signal_r.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "5117 -12307 6435"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1198952"
+	"classname" "prop_static"
+	"angles" "-3 4.49999 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_signs/mn_sign_signal_r.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "14522 3763 6438"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1198976"
+	"classname" "prop_static"
+	"angles" "-3 90.5 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_signs/mn_sign_signal_r.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-4253 12870 6326"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1199008"
+	"classname" "prop_static"
+	"angles" "0 345 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-8247.9 -1205.25 6075.57"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1199044"
+	"classname" "prop_static"
+	"angles" "0 269 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-12646 4772.61 6135"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1199060"
+	"classname" "prop_static"
+	"angles" "0 204.5 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-8203 11413 6227"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1199092"
+	"classname" "prop_static"
+	"angles" "0 180.5 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "656 12196 6350"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1199124"
+	"classname" "prop_static"
+	"angles" "0 162 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "8019 11717 6393"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1199148"
+	"classname" "prop_static"
+	"angles" "0 95.5 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "13291 4659 6388"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1199176"
+	"classname" "prop_static"
+	"angles" "0 89.5 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "13322.9 -2777 6386.93"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1199208"
+	"classname" "prop_static"
+	"angles" "0 26 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "9169 -10661 6392.81"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1199240"
+	"classname" "prop_static"
+	"angles" "0 203.5 15"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "9361.12 -11236 6378"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1199280"
+	"classname" "prop_static"
+	"angles" "0 270 15"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "14287 -2800 6386.93"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1199296"
+	"classname" "prop_static"
+	"angles" "0 276.5 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "14184.3 4743 6389.89"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1199316"
+	"classname" "prop_static"
+	"angles" "0 342 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "8121 12219 6377"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1199344"
+	"classname" "prop_static"
+	"angles" "0 0.500007 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "670 12588 6330"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1199364"
+	"classname" "prop_static"
+	"angles" "0 27 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-8398.69 11662 6214.31"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1199392"
+	"classname" "prop_static"
+	"angles" "0 89 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-12916.3 4658 6124.11"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1199416"
+	"classname" "prop_static"
+	"angles" "0 176 10"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/rails/tunnel_pya.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-7074.74 -1854.84 6051.16"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1199464"
+	"classname" "prop_static"
+	"angles" "0 246.853 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/stations/station_prop9.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "12553 -6447 6341"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1199500"
+	"classname" "prop_static"
+	"angles" "0 307.853 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/stations/station_prop9.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "11326 9169.99 6343"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1199516"
+	"classname" "prop_static"
+	"angles" "0 14.853 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/stations/station_prop9.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-6051 11810 6217"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1199536"
+	"classname" "prop_static"
+	"angles" "0 325.853 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/stations/station_prop9.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-10010 -113 6038"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1199564"
+	"classname" "prop_static"
+	"angles" "0 325.853 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/stations/station_prop9.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-10567 -965 6051"
 	editor
 	{
 		"color" "255 255 0"
