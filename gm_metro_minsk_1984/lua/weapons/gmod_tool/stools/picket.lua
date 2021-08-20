@@ -144,6 +144,10 @@ function TOOL:Reload(trace)
     self.Picket.RightNumber = ent.RightNumber
     self.Picket.LeftNumber = ent.LeftNumber
 
+    if (self.Picket.RightNumber ~= self.Picket.LeftNumber) then
+        self.Picket.LeftNumberCheck = true   
+    end
+
     net.Start("metrostroi-stool-picket")
         net.WriteTable(self.Picket)
     net.Send(self:GetOwner())
