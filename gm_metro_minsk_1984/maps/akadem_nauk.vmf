@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8538"
-	"mapversion" "912"
+	"mapversion" "914"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -62,7 +62,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "912"
+	"mapversion" "914"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -14576,6 +14576,394 @@ world
 			"visgroupautoshown" "1"
 		}
 	}
+	hidden
+	{
+		solid
+		{
+			"id" "313198"
+			side
+			{
+				"id" "39775"
+				"plane" "(-43 2948 -95) (-503 2948 -95) (-503 3084 -95)"
+				"material" "STATIONS/AKADEM_NAUK_PLATFORM2_REF"
+				"uaxis" "[1 0 0 47] 0.255371"
+				"vaxis" "[0 -1 0 -467] -0.225098"
+				"rotation" "0"
+				"lightmapscale" "256"
+				"smoothing_groups" "0"
+			}
+			side
+			{
+				"id" "39774"
+				"plane" "(-43 3084 -110) (-503 3084 -110) (-503 2948 -110)"
+				"material" "TUNNELS/TUNNEL1"
+				"uaxis" "[-1 0 0 -314.684] 0.201154"
+				"vaxis" "[0 1 0 -733.363] 0.2"
+				"rotation" "0"
+				"lightmapscale" "512"
+				"smoothing_groups" "0"
+			}
+			side
+			{
+				"id" "39773"
+				"plane" "(-43 3084 -95) (-43 3084 -110) (-43 2948 -110)"
+				"material" "TOOLS/TOOLSNODRAW"
+				"uaxis" "[0 1 0 -29] 0.2"
+				"vaxis" "[0 0 -1 0] 0.2"
+				"rotation" "0"
+				"lightmapscale" "512"
+				"smoothing_groups" "0"
+			}
+			side
+			{
+				"id" "39772"
+				"plane" "(-503 2948 -95) (-503 2948 -110) (-503 3084 -110)"
+				"material" "TOOLS/TOOLSNODRAW"
+				"uaxis" "[0 1 0 -29.363] 0.2"
+				"vaxis" "[0 0 -1 0] 0.2"
+				"rotation" "0"
+				"lightmapscale" "512"
+				"smoothing_groups" "0"
+			}
+			side
+			{
+				"id" "39771"
+				"plane" "(-43 2948 -95) (-43 2948 -110) (-503 2948 -110)"
+				"material" "TOOLS/TOOLSNODRAW"
+				"uaxis" "[1 0 0 -59.7479] 0.251442"
+				"vaxis" "[0 0 -1 0] 0.25"
+				"rotation" "0"
+				"lightmapscale" "512"
+				"smoothing_groups" "0"
+			}
+			side
+			{
+				"id" "39770"
+				"plane" "(-503 3084 -95) (-503 3084 -110) (-43 3084 -110)"
+				"material" "TUNNELS/TUNNEL1"
+				"uaxis" "[1 0 0 0] 0.2"
+				"vaxis" "[0 0 -1 0] 0.2"
+				"rotation" "0"
+				"lightmapscale" "512"
+				"smoothing_groups" "0"
+			}
+			editor
+			{
+				"color" "0 208 233"
+				"visgroupid" "18"
+				"visgroupshown" "0"
+				"visgroupautoshown" "1"
+			}
+		}
+	}
+	solid
+	{
+		"id" "313199"
+		side
+		{
+			"id" "39781"
+			"plane" "(-43 -2083 -95) (-503 -2083 -95) (-503 2948 -95)"
+			"material" "STATIONS/AKADEM_NAUK_PLATFORM"
+			"uaxis" "[1 0 0 47] 0.255371"
+			"vaxis" "[0 -1 0 472] 0.225098"
+			"rotation" "0"
+			"lightmapscale" "256"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39780"
+			"plane" "(-43 2948 -110) (-503 2948 -110) (-503 -2083 -110)"
+			"material" "TUNNELS/TUNNEL1"
+			"uaxis" "[-1 0 0 -314.684] 0.201154"
+			"vaxis" "[0 1 0 879.637] 0.2"
+			"rotation" "0"
+			"lightmapscale" "512"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39779"
+			"plane" "(-43 2948 -95) (-43 2948 -110) (-43 -2083 -110)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0 1 0 48] 0.2"
+			"vaxis" "[0 0 -1 0] 0.2"
+			"rotation" "0"
+			"lightmapscale" "512"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39778"
+			"plane" "(-503 -2083 -95) (-503 -2083 -110) (-503 2948 -110)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0 1 0 47.637] 0.2"
+			"vaxis" "[0 0 -1 0] 0.2"
+			"rotation" "0"
+			"lightmapscale" "512"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39777"
+			"plane" "(-43 -2083 -95) (-43 -2083 -110) (-503 -2083 -110)"
+			"material" "TUNNELS/TUNNEL1"
+			"uaxis" "[1 0 0 -60] 0.251"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "512"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39776"
+			"plane" "(-503 2948 -95) (-503 2948 -110) (-43 2948 -110)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[1 0 0 -59] 0.2"
+			"vaxis" "[0 0 -1 0] 0.2"
+			"rotation" "0"
+			"lightmapscale" "512"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 162 143"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	hidden
+	{
+		solid
+		{
+			"id" "313200"
+			side
+			{
+				"id" "39787"
+				"plane" "(-85 3084 -95) (-460 3084 -95) (-460 3384.53 -95)"
+				"material" "STATIONS/AKADEM_NAUK_PLATFORM2_REF"
+				"uaxis" "[1 0 0 47] 0.255371"
+				"vaxis" "[0 -1 0 1892.08] -0.271901"
+				"rotation" "0"
+				"lightmapscale" "256"
+				"smoothing_groups" "0"
+			}
+			side
+			{
+				"id" "39786"
+				"plane" "(-85 3384.53 -100) (-460 3384.53 -100) (-460 3084 -100)"
+				"material" "TOOLS/TOOLSNODRAW"
+				"uaxis" "[-1 0 0 -58.684] 0.201154"
+				"vaxis" "[0 1 0 51.9675] 0.334424"
+				"rotation" "0"
+				"lightmapscale" "512"
+				"smoothing_groups" "0"
+			}
+			side
+			{
+				"id" "39785"
+				"plane" "(-85 3384.53 -95) (-85 3384.53 -100) (-85 3084 -100)"
+				"material" "TOOLS/TOOLSNODRAW"
+				"uaxis" "[0 1 0 51.9675] 0.334424"
+				"vaxis" "[0 0 -1 0] 0.2"
+				"rotation" "0"
+				"lightmapscale" "512"
+				"smoothing_groups" "0"
+			}
+			side
+			{
+				"id" "39784"
+				"plane" "(-460 3084 -95) (-460 3084 -100) (-460 3384.53 -100)"
+				"material" "TOOLS/TOOLSNODRAW"
+				"uaxis" "[0 1 0 51.9675] 0.334424"
+				"vaxis" "[0 0 -1 0] 0.2"
+				"rotation" "0"
+				"lightmapscale" "512"
+				"smoothing_groups" "0"
+			}
+			side
+			{
+				"id" "39783"
+				"plane" "(-85 3084 -95) (-85 3084 -100) (-460 3084 -100)"
+				"material" "TOOLS/TOOLSNODRAW"
+				"uaxis" "[1 0 0 -59.7479] 0.251442"
+				"vaxis" "[0 0 -1 0] 0.25"
+				"rotation" "0"
+				"lightmapscale" "512"
+				"smoothing_groups" "0"
+			}
+			side
+			{
+				"id" "39782"
+				"plane" "(-460 3384.53 -95) (-460 3384.53 -100) (-85 3384.53 -100)"
+				"material" "TOOLS/TOOLSNODRAW"
+				"uaxis" "[1 0 0 -59] 0.2"
+				"vaxis" "[0 0 -1 0] 0.2"
+				"rotation" "0"
+				"lightmapscale" "512"
+				"smoothing_groups" "0"
+			}
+			editor
+			{
+				"color" "0 160 133"
+				"visgroupid" "18"
+				"visgroupshown" "0"
+				"visgroupautoshown" "1"
+			}
+		}
+	}
+	solid
+	{
+		"id" "313226"
+		side
+		{
+			"id" "39805"
+			"plane" "(-43 2948 -95) (-503 2948 -95) (-503 3084 -95)"
+			"material" "STATIONS/AKADEM_NAUK_PLATFORM2"
+			"uaxis" "[1 0 0 47] 0.255371"
+			"vaxis" "[0 -1 0 -467] -0.225098"
+			"rotation" "0"
+			"lightmapscale" "256"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39804"
+			"plane" "(-43 3084 -110) (-503 3084 -110) (-503 2948 -110)"
+			"material" "TUNNELS/TUNNEL1"
+			"uaxis" "[-1 0 0 -314.684] 0.201154"
+			"vaxis" "[0 1 0 -733.363] 0.2"
+			"rotation" "0"
+			"lightmapscale" "512"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39803"
+			"plane" "(-43 3084 -95) (-43 3084 -110) (-43 2948 -110)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0 1 0 -29] 0.2"
+			"vaxis" "[0 0 -1 0] 0.2"
+			"rotation" "0"
+			"lightmapscale" "512"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39802"
+			"plane" "(-503 2948 -95) (-503 2948 -110) (-503 3084 -110)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0 1 0 -29.363] 0.2"
+			"vaxis" "[0 0 -1 0] 0.2"
+			"rotation" "0"
+			"lightmapscale" "512"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39801"
+			"plane" "(-43 2948 -95) (-43 2948 -110) (-503 2948 -110)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[1 0 0 -59.7479] 0.251442"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "512"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39800"
+			"plane" "(-503 3084 -95) (-503 3084 -110) (-43 3084 -110)"
+			"material" "TUNNELS/TUNNEL1"
+			"uaxis" "[1 0 0 0] 0.2"
+			"vaxis" "[0 0 -1 0] 0.2"
+			"rotation" "0"
+			"lightmapscale" "512"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 208 233"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	solid
+	{
+		"id" "313227"
+		side
+		{
+			"id" "39811"
+			"plane" "(-85 3084 -95) (-460 3084 -95) (-460 3384.53 -95)"
+			"material" "STATIONS/AKADEM_NAUK_PLATFORM2"
+			"uaxis" "[1 0 0 47] 0.255371"
+			"vaxis" "[0 -1 0 1892.08] -0.271901"
+			"rotation" "0"
+			"lightmapscale" "256"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39810"
+			"plane" "(-85 3384.53 -100) (-460 3384.53 -100) (-460 3084 -100)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[-1 0 0 -58.684] 0.201154"
+			"vaxis" "[0 1 0 51.9675] 0.334424"
+			"rotation" "0"
+			"lightmapscale" "512"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39809"
+			"plane" "(-85 3384.53 -95) (-85 3384.53 -100) (-85 3084 -100)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0 1 0 51.9675] 0.334424"
+			"vaxis" "[0 0 -1 0] 0.2"
+			"rotation" "0"
+			"lightmapscale" "512"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39808"
+			"plane" "(-460 3084 -95) (-460 3084 -100) (-460 3384.53 -100)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0 1 0 51.9675] 0.334424"
+			"vaxis" "[0 0 -1 0] 0.2"
+			"rotation" "0"
+			"lightmapscale" "512"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39807"
+			"plane" "(-85 3084 -95) (-85 3084 -100) (-460 3084 -100)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[1 0 0 -59.7479] 0.251442"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "512"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39806"
+			"plane" "(-460 3384.53 -95) (-460 3384.53 -100) (-85 3384.53 -100)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[1 0 0 -59] 0.2"
+			"vaxis" "[0 0 -1 0] 0.2"
+			"rotation" "0"
+			"lightmapscale" "512"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 160 133"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
 	solid
 	{
 		"id" "128947"
@@ -18758,394 +19146,6 @@ world
 			"color" "132 109 0"
 			"groupid" "260219"
 			"visgroupid" "8"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	hidden
-	{
-		solid
-		{
-			"id" "313198"
-			side
-			{
-				"id" "39775"
-				"plane" "(-43 2948 -95) (-503 2948 -95) (-503 3084 -95)"
-				"material" "STATIONS/AKADEM_NAUK_PLATFORM2_REF"
-				"uaxis" "[1 0 0 47] 0.255371"
-				"vaxis" "[0 -1 0 -467] -0.225098"
-				"rotation" "0"
-				"lightmapscale" "256"
-				"smoothing_groups" "0"
-			}
-			side
-			{
-				"id" "39774"
-				"plane" "(-43 3084 -110) (-503 3084 -110) (-503 2948 -110)"
-				"material" "TUNNELS/TUNNEL1"
-				"uaxis" "[-1 0 0 -314.684] 0.201154"
-				"vaxis" "[0 1 0 -733.363] 0.2"
-				"rotation" "0"
-				"lightmapscale" "512"
-				"smoothing_groups" "0"
-			}
-			side
-			{
-				"id" "39773"
-				"plane" "(-43 3084 -95) (-43 3084 -110) (-43 2948 -110)"
-				"material" "TOOLS/TOOLSNODRAW"
-				"uaxis" "[0 1 0 -29] 0.2"
-				"vaxis" "[0 0 -1 0] 0.2"
-				"rotation" "0"
-				"lightmapscale" "512"
-				"smoothing_groups" "0"
-			}
-			side
-			{
-				"id" "39772"
-				"plane" "(-503 2948 -95) (-503 2948 -110) (-503 3084 -110)"
-				"material" "TOOLS/TOOLSNODRAW"
-				"uaxis" "[0 1 0 -29.363] 0.2"
-				"vaxis" "[0 0 -1 0] 0.2"
-				"rotation" "0"
-				"lightmapscale" "512"
-				"smoothing_groups" "0"
-			}
-			side
-			{
-				"id" "39771"
-				"plane" "(-43 2948 -95) (-43 2948 -110) (-503 2948 -110)"
-				"material" "TOOLS/TOOLSNODRAW"
-				"uaxis" "[1 0 0 -59.7479] 0.251442"
-				"vaxis" "[0 0 -1 0] 0.25"
-				"rotation" "0"
-				"lightmapscale" "512"
-				"smoothing_groups" "0"
-			}
-			side
-			{
-				"id" "39770"
-				"plane" "(-503 3084 -95) (-503 3084 -110) (-43 3084 -110)"
-				"material" "TUNNELS/TUNNEL1"
-				"uaxis" "[1 0 0 0] 0.2"
-				"vaxis" "[0 0 -1 0] 0.2"
-				"rotation" "0"
-				"lightmapscale" "512"
-				"smoothing_groups" "0"
-			}
-			editor
-			{
-				"color" "0 208 233"
-				"visgroupid" "18"
-				"visgroupshown" "0"
-				"visgroupautoshown" "1"
-			}
-		}
-	}
-	solid
-	{
-		"id" "313199"
-		side
-		{
-			"id" "39781"
-			"plane" "(-43 -2083 -95) (-503 -2083 -95) (-503 2948 -95)"
-			"material" "STATIONS/AKADEM_NAUK_PLATFORM"
-			"uaxis" "[1 0 0 47] 0.255371"
-			"vaxis" "[0 -1 0 472] 0.225098"
-			"rotation" "0"
-			"lightmapscale" "256"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "39780"
-			"plane" "(-43 2948 -110) (-503 2948 -110) (-503 -2083 -110)"
-			"material" "TUNNELS/TUNNEL1"
-			"uaxis" "[-1 0 0 -314.684] 0.201154"
-			"vaxis" "[0 1 0 879.637] 0.2"
-			"rotation" "0"
-			"lightmapscale" "512"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "39779"
-			"plane" "(-43 2948 -95) (-43 2948 -110) (-43 -2083 -110)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0 1 0 48] 0.2"
-			"vaxis" "[0 0 -1 0] 0.2"
-			"rotation" "0"
-			"lightmapscale" "512"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "39778"
-			"plane" "(-503 -2083 -95) (-503 -2083 -110) (-503 2948 -110)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0 1 0 47.637] 0.2"
-			"vaxis" "[0 0 -1 0] 0.2"
-			"rotation" "0"
-			"lightmapscale" "512"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "39777"
-			"plane" "(-43 -2083 -95) (-43 -2083 -110) (-503 -2083 -110)"
-			"material" "TUNNELS/TUNNEL1"
-			"uaxis" "[1 0 0 -60] 0.251"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "512"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "39776"
-			"plane" "(-503 2948 -95) (-503 2948 -110) (-43 2948 -110)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[1 0 0 -59] 0.2"
-			"vaxis" "[0 0 -1 0] 0.2"
-			"rotation" "0"
-			"lightmapscale" "512"
-			"smoothing_groups" "0"
-		}
-		editor
-		{
-			"color" "0 162 143"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	hidden
-	{
-		solid
-		{
-			"id" "313200"
-			side
-			{
-				"id" "39787"
-				"plane" "(-85 3084 -95) (-460 3084 -95) (-460 3384.53 -95)"
-				"material" "STATIONS/AKADEM_NAUK_PLATFORM2_REF"
-				"uaxis" "[1 0 0 47] 0.255371"
-				"vaxis" "[0 -1 0 1892.08] -0.271901"
-				"rotation" "0"
-				"lightmapscale" "256"
-				"smoothing_groups" "0"
-			}
-			side
-			{
-				"id" "39786"
-				"plane" "(-85 3384.53 -100) (-460 3384.53 -100) (-460 3084 -100)"
-				"material" "TOOLS/TOOLSNODRAW"
-				"uaxis" "[-1 0 0 -58.684] 0.201154"
-				"vaxis" "[0 1 0 51.9675] 0.334424"
-				"rotation" "0"
-				"lightmapscale" "512"
-				"smoothing_groups" "0"
-			}
-			side
-			{
-				"id" "39785"
-				"plane" "(-85 3384.53 -95) (-85 3384.53 -100) (-85 3084 -100)"
-				"material" "TOOLS/TOOLSNODRAW"
-				"uaxis" "[0 1 0 51.9675] 0.334424"
-				"vaxis" "[0 0 -1 0] 0.2"
-				"rotation" "0"
-				"lightmapscale" "512"
-				"smoothing_groups" "0"
-			}
-			side
-			{
-				"id" "39784"
-				"plane" "(-460 3084 -95) (-460 3084 -100) (-460 3384.53 -100)"
-				"material" "TOOLS/TOOLSNODRAW"
-				"uaxis" "[0 1 0 51.9675] 0.334424"
-				"vaxis" "[0 0 -1 0] 0.2"
-				"rotation" "0"
-				"lightmapscale" "512"
-				"smoothing_groups" "0"
-			}
-			side
-			{
-				"id" "39783"
-				"plane" "(-85 3084 -95) (-85 3084 -100) (-460 3084 -100)"
-				"material" "TOOLS/TOOLSNODRAW"
-				"uaxis" "[1 0 0 -59.7479] 0.251442"
-				"vaxis" "[0 0 -1 0] 0.25"
-				"rotation" "0"
-				"lightmapscale" "512"
-				"smoothing_groups" "0"
-			}
-			side
-			{
-				"id" "39782"
-				"plane" "(-460 3384.53 -95) (-460 3384.53 -100) (-85 3384.53 -100)"
-				"material" "TOOLS/TOOLSNODRAW"
-				"uaxis" "[1 0 0 -59] 0.2"
-				"vaxis" "[0 0 -1 0] 0.2"
-				"rotation" "0"
-				"lightmapscale" "512"
-				"smoothing_groups" "0"
-			}
-			editor
-			{
-				"color" "0 160 133"
-				"visgroupid" "18"
-				"visgroupshown" "0"
-				"visgroupautoshown" "1"
-			}
-		}
-	}
-	solid
-	{
-		"id" "313226"
-		side
-		{
-			"id" "39805"
-			"plane" "(-43 2948 -95) (-503 2948 -95) (-503 3084 -95)"
-			"material" "STATIONS/AKADEM_NAUK_PLATFORM2"
-			"uaxis" "[1 0 0 47] 0.255371"
-			"vaxis" "[0 -1 0 -467] -0.225098"
-			"rotation" "0"
-			"lightmapscale" "256"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "39804"
-			"plane" "(-43 3084 -110) (-503 3084 -110) (-503 2948 -110)"
-			"material" "TUNNELS/TUNNEL1"
-			"uaxis" "[-1 0 0 -314.684] 0.201154"
-			"vaxis" "[0 1 0 -733.363] 0.2"
-			"rotation" "0"
-			"lightmapscale" "512"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "39803"
-			"plane" "(-43 3084 -95) (-43 3084 -110) (-43 2948 -110)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0 1 0 -29] 0.2"
-			"vaxis" "[0 0 -1 0] 0.2"
-			"rotation" "0"
-			"lightmapscale" "512"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "39802"
-			"plane" "(-503 2948 -95) (-503 2948 -110) (-503 3084 -110)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0 1 0 -29.363] 0.2"
-			"vaxis" "[0 0 -1 0] 0.2"
-			"rotation" "0"
-			"lightmapscale" "512"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "39801"
-			"plane" "(-43 2948 -95) (-43 2948 -110) (-503 2948 -110)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[1 0 0 -59.7479] 0.251442"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "512"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "39800"
-			"plane" "(-503 3084 -95) (-503 3084 -110) (-43 3084 -110)"
-			"material" "TUNNELS/TUNNEL1"
-			"uaxis" "[1 0 0 0] 0.2"
-			"vaxis" "[0 0 -1 0] 0.2"
-			"rotation" "0"
-			"lightmapscale" "512"
-			"smoothing_groups" "0"
-		}
-		editor
-		{
-			"color" "0 208 233"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	solid
-	{
-		"id" "313227"
-		side
-		{
-			"id" "39811"
-			"plane" "(-85 3084 -95) (-460 3084 -95) (-460 3384.53 -95)"
-			"material" "STATIONS/AKADEM_NAUK_PLATFORM2"
-			"uaxis" "[1 0 0 47] 0.255371"
-			"vaxis" "[0 -1 0 1892.08] -0.271901"
-			"rotation" "0"
-			"lightmapscale" "256"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "39810"
-			"plane" "(-85 3384.53 -100) (-460 3384.53 -100) (-460 3084 -100)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[-1 0 0 -58.684] 0.201154"
-			"vaxis" "[0 1 0 51.9675] 0.334424"
-			"rotation" "0"
-			"lightmapscale" "512"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "39809"
-			"plane" "(-85 3384.53 -95) (-85 3384.53 -100) (-85 3084 -100)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0 1 0 51.9675] 0.334424"
-			"vaxis" "[0 0 -1 0] 0.2"
-			"rotation" "0"
-			"lightmapscale" "512"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "39808"
-			"plane" "(-460 3084 -95) (-460 3084 -100) (-460 3384.53 -100)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0 1 0 51.9675] 0.334424"
-			"vaxis" "[0 0 -1 0] 0.2"
-			"rotation" "0"
-			"lightmapscale" "512"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "39807"
-			"plane" "(-85 3084 -95) (-85 3084 -100) (-460 3084 -100)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[1 0 0 -59.7479] 0.251442"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "512"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "39806"
-			"plane" "(-460 3384.53 -95) (-460 3384.53 -100) (-85 3384.53 -100)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[1 0 0 -59] 0.2"
-			"vaxis" "[0 0 -1 0] 0.2"
-			"rotation" "0"
-			"lightmapscale" "512"
-			"smoothing_groups" "0"
-		}
-		editor
-		{
-			"color" "0 160 133"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -29652,7 +29652,7 @@ hidden
 				editor
 				{
 					"color" "220 30 220"
-					"visgroupshown" "0"
+					"visgroupshown" "1"
 					"visgroupautoshown" "1"
 				}
 			}
@@ -29731,7 +29731,7 @@ hidden
 				editor
 				{
 					"color" "220 30 220"
-					"visgroupshown" "0"
+					"visgroupshown" "1"
 					"visgroupautoshown" "1"
 				}
 			}
@@ -29810,7 +29810,7 @@ hidden
 				editor
 				{
 					"color" "220 30 220"
-					"visgroupshown" "0"
+					"visgroupshown" "1"
 					"visgroupautoshown" "1"
 				}
 			}
@@ -43857,6 +43857,87 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "314604"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "4"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "ambient/transf_tunnel.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "1700"
+	"spawnflags" "0"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "stp4"
+	"volstart" "10"
+	"origin" "-269 -4539 -8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "314607"
+	"classname" "logic_auto"
+	"spawnflags" "1"
+	connections
+	{
+		"OnMapSpawn" "an_esc1,PlaySound,,0,-1"
+		"OnMapSpawn" "stp4,PlaySound,,0,-1"
+	}
+	"origin" "-269 3271 -29"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "314609"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "ambient/station_escalator1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "2200"
+	"spawnflags" "0"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "an_esc1"
+	"volstart" "10"
+	"origin" "-271 3450.12 22"
+	editor
+	{
+		"color" "175 140 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
 	}
 }
 cameras

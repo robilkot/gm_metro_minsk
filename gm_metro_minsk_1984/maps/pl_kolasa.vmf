@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8538"
-	"mapversion" "944"
+	"mapversion" "946"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -38,7 +38,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "944"
+	"mapversion" "946"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -16550,6 +16550,16 @@ world
 			"visgroupautoshown" "1"
 		}
 	}
+	group
+	{
+		"id" "345082"
+		editor
+		{
+			"color" "175 140 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
 }
 entity
 {
@@ -29140,7 +29150,7 @@ entity
 	"classname" "prop_door_rotating"
 	"ajarangles" "0 0 0"
 	"angles" "0 180.5 0"
-	"axis" "-74.01 4194 -57, -74.01 4194 -57"
+	"axis" "-69.01 4194 -57, -69.01 4194 -57"
 	"disableshadows" "1"
 	"distance" "85"
 	"dmg" "0"
@@ -29158,7 +29168,7 @@ entity
 	"spawnflags" "10240"
 	"spawnpos" "0"
 	"speed" "125"
-	"origin" "-74 4194 -57"
+	"origin" "-69 4194 -57"
 	editor
 	{
 		"color" "220 30 220"
@@ -43175,6 +43185,56 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "345083"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "ambient/station_escalator1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "2200"
+	"spawnflags" "0"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "pk_esc1"
+	"volstart" "10"
+	"origin" "-277 3258 7"
+	editor
+	{
+		"color" "175 140 0"
+		"groupid" "345082"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "345102"
+	"classname" "logic_auto"
+	"spawnflags" "1"
+	connections
+	{
+		"OnMapSpawn" "pk_esc1,PlaySound,,0,-1"
+	}
+	"origin" "-275 3078.88 -44"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
 	}
 }
 cameras
