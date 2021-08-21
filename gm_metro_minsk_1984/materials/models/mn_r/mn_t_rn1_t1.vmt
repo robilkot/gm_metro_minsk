@@ -9,4 +9,28 @@ VertexlitGeneric
 	$detailscale 16
 	$detailblendfactor 0.25
 	$detailblendmode 0
+	
+	//Я ебал рот этой хуйни, сами ебитесь. LessorEqual не работает. (c) robilkot
+	//
+	//$temp 0	//стартовое временное значение, обязательно ноль
+	//$random 2 //еще одно временное, не обязательно единица
+	//
+	//Proxies
+	//{
+	//	UniformNoise
+	//	{
+	//		minVal 1
+	//		maxVal 3
+	//		resultVar "$random" //генерация рандомного значения для цвета
+	//	}
+	//	LessOrEqual //сравнение рандомного значения с нулем. таким образом первое сгенерированное должно отправляться в переменную рандом и больше не вызывать эту штуку
+	//	{
+	//		lessEqualVar "$random"
+	//		greaterVar "$temp"
+	//		srcVar1 "$temp"
+	//		srcVar2 "$random"
+	//		resultVar "$random"
+	//	}
+	//}
+	//$color2 "$random"
 }
