@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8538"
-	"mapversion" "178"
+	"mapversion" "186"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "178"
+	"mapversion" "186"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -17490,7 +17490,7 @@ entity
 	"renderfx" "0"
 	"rendermode" "0"
 	"sounds" "0"
-	"spawnflags" "1024"
+	"spawnflags" "1056"
 	"speed" "5"
 	"targetname" "start"
 	"unlocked_sentence" "0"
@@ -17498,10 +17498,13 @@ entity
 	"wait" "3"
 	connections
 	{
-		"OnPressed" "green,ShowSprite,,2,-1"
+		"OnIn" "green,ShowSprite,,2,-1"
 		"OnPressed" "vent_start,PlaySound,,0,-1"
 		"OnPressed" "vent_loop,PlaySound,,39.5,-1"
-		"OnPressed" "red,ToggleSprite,,0,-1"
+		"OnIn" "red,HideSprite,,0,-1"
+		"OnIn" "stop,PressOut,,0.5,-1"
+		"OnIn" "stop,Unlock,,0,-1"
+		"OnOut" "stop,Lock,,0.5,-1"
 	}
 	solid
 	{
@@ -17604,7 +17607,7 @@ entity
 	"renderfx" "0"
 	"rendermode" "0"
 	"sounds" "0"
-	"spawnflags" "1024"
+	"spawnflags" "1056"
 	"speed" "5"
 	"targetname" "stop"
 	"unlocked_sentence" "0"
@@ -17613,9 +17616,12 @@ entity
 	connections
 	{
 		"OnPressed" "vent_loop,StopSound,,0,-1"
-		"OnPressed" "red,ShowSprite,,2,-1"
-		"OnPressed" "green,ToggleSprite,,0,-1"
+		"OnIn" "red,ShowSprite,,2,-1"
+		"OnIn" "green,HideSprite,,0,-1"
 		"OnPressed" "vent_stop,PlaySound,,0,-1"
+		"OnIn" "start,PressOut,,0,-1"
+		"OnOut" "start,Lock,,0.5,-1"
+		"OnIn" "start,Unlock,,0,-1"
 	}
 	solid
 	{
@@ -17792,6 +17798,27 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[1000 6500]"
+	}
+}
+entity
+{
+	"id" "178990"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "relay1"
+	connections
+	{
+		"OnSpawn" "red,ShowSprite,,0,-1"
+		"OnSpawn" "green,HideSprite,,0,-1"
+	}
+	"origin" "-2188 -180 340"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
 	}
 }
 cameras
