@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8538"
-	"mapversion" "2651"
+	"mapversion" "2664"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -122,7 +122,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "2651"
+	"mapversion" "2664"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -104956,6 +104956,467 @@ hidden
 		}
 	}
 }
+entity
+{
+	"id" "1253304"
+	"classname" "prop_dynamic"
+	"angles" "0 90 0"
+	"DisableBoneFollowers" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "1"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"gmod_allowphysgun" "0"
+	"HoldAnimation" "0"
+	"MaxAnimTime" "10"
+	"maxdxlevel" "0"
+	"MinAnimTime" "5"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_sb2_vent1.mdl"
+	"modelscale" "1"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"skin" "0"
+	"solid" "6"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "vent1"
+	"origin" "-14627 4237 7247"
+	editor
+	{
+		"color" "135 136 0"
+		"groupid" "1253280"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "1253299"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "ambient/tunnel_vent_start1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "3500"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "vent1_start"
+	"volstart" "0"
+	"origin" "-15025 4149 7209"
+	editor
+	{
+		"color" "135 136 0"
+		"groupid" "1253280"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 6500]"
+	}
+}
+entity
+{
+	"id" "1253296"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "0"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "ambient/tunnel_vent_loop1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "3500"
+	"spawnflags" "32"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "vent1_loop"
+	"volstart" "0"
+	"origin" "-15025 4165 7209"
+	editor
+	{
+		"color" "135 136 0"
+		"groupid" "1253280"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 6500]"
+	}
+}
+entity
+{
+	"id" "1253293"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "ambient/tunnel_vent_stop1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "3500"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "vent1_stop"
+	"volstart" "0"
+	"origin" "-15025 4181 7209"
+	editor
+	{
+		"color" "135 136 0"
+		"groupid" "1253280"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 6500]"
+	}
+}
+entity
+{
+	"id" "1253647"
+	"classname" "func_button"
+	"disablereceiveshadows" "0"
+	"gmod_allowphysgun" "1"
+	"health" "0"
+	"lip" "0"
+	"locked_sentence" "0"
+	"locked_sound" "0"
+	"movedir" "0 0 0"
+	"origin" "-1444.07 12314.1 7500.33"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"sounds" "0"
+	"spawnflags" "1025"
+	"speed" "5"
+	"targetname" "vent1_startbtn"
+	"unlocked_sentence" "0"
+	"unlocked_sound" "0"
+	"wait" "3"
+	connections
+	{
+		"OnPressed" "vent1_start,PlaySound,,0,-1"
+		"OnPressed" "vent1_loop,Volume,10,40.7,1"
+		"OnPressed" "vent1_stop,StopSound,,0,-1"
+		"OnPressed" "vent1_green,ShowSprite,,2,-1"
+		"OnPressed" "vent1,SetAnimation,working,1,-1"
+		"OnPressed" "vent1_startbtn,Lock,,0,-1"
+		"OnPressed" "vent1_stopbtn,Unlock,,40,-1"
+		"OnPressed" "vent1_red,HideSprite,,0,-1"
+	}
+	solid
+	{
+		"id" "1253648"
+		side
+		{
+			"id" "105028"
+			"plane" "(-1444.06 12316.7 7501.83) (-1441.52 12314.1 7501.83) (-1444.06 12311.6 7501.83)"
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 0] 0.1"
+			"vaxis" "[0 -1 0 0] 0.1"
+			"rotation" "0"
+			"lightmapscale" "4096"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "105027"
+			"plane" "(-1441.52 12314.1 7498.83) (-1444.06 12316.7 7498.83) (-1446.61 12314.1 7498.83)"
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 0] 0.1"
+			"vaxis" "[0 -1 0 0] 0.1"
+			"rotation" "0"
+			"lightmapscale" "4096"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "105026"
+			"plane" "(-1444.06 12316.7 7498.83) (-1441.52 12314.1 7498.83) (-1441.52 12314.1 7501.83)"
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 0] 0.1"
+			"vaxis" "[0 0 -1 40] 0.1"
+			"rotation" "0"
+			"lightmapscale" "4096"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "105025"
+			"plane" "(-1444.06 12311.6 7498.83) (-1446.61 12314.1 7498.83) (-1446.61 12314.1 7501.83)"
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[0 1 0 0] 0.1"
+			"vaxis" "[0 0 -1 40] 0.1"
+			"rotation" "0"
+			"lightmapscale" "4096"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "105024"
+			"plane" "(-1441.52 12314.1 7498.83) (-1444.06 12311.6 7498.83) (-1444.06 12311.6 7501.83)"
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[0 1 0 0] 0.1"
+			"vaxis" "[0 0 -1 40] 0.1"
+			"rotation" "0"
+			"lightmapscale" "4096"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "105023"
+			"plane" "(-1446.61 12314.1 7498.83) (-1444.06 12316.7 7498.83) (-1444.06 12316.7 7501.83)"
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[0 1 0 0] 0.1"
+			"vaxis" "[0 0 -1 40] 0.1"
+			"rotation" "0"
+			"lightmapscale" "4096"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "240 189 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "240 189 0"
+		"groupid" "1253646"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "1253650"
+	"classname" "func_button"
+	"disablereceiveshadows" "0"
+	"gmod_allowphysgun" "1"
+	"health" "0"
+	"lip" "0"
+	"locked_sentence" "0"
+	"locked_sound" "0"
+	"movedir" "0 0 0"
+	"origin" "-1441.2 12317.1 7500.33"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"sounds" "0"
+	"spawnflags" "3073"
+	"speed" "5"
+	"targetname" "vent1_stopbtn"
+	"unlocked_sentence" "0"
+	"unlocked_sound" "0"
+	"wait" "3"
+	connections
+	{
+		"OnPressed" "vent1_startbtn,Unlock,,40,-1"
+		"OnPressed" "vent1_loop,Volume,0,0,-1"
+		"OnPressed" "vent1_green,HideSprite,,0,-1"
+		"OnPressed" "vent1,SetAnimation,idle,1,-1"
+		"OnPressed" "vent1_stopbtn,Lock,,0,-1"
+		"OnPressed" "vent1_stop,PlaySound,,0,-1"
+		"OnPressed" "vent1_start,StopSound,,0,-1"
+		"OnPressed" "vent1_red,ShowSprite,,2,-1"
+	}
+	solid
+	{
+		"id" "1253651"
+		side
+		{
+			"id" "105034"
+			"plane" "(-1441.2 12319.6 7501.83) (-1438.65 12317.1 7501.83) (-1441.2 12314.6 7501.83)"
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 8] 0.1"
+			"vaxis" "[0 -1 0 0] 0.1"
+			"rotation" "0"
+			"lightmapscale" "4096"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "105033"
+			"plane" "(-1438.65 12317.1 7498.83) (-1441.2 12319.6 7498.83) (-1443.75 12317.1 7498.83)"
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 8] 0.1"
+			"vaxis" "[0 -1 0 0] 0.1"
+			"rotation" "0"
+			"lightmapscale" "4096"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "105032"
+			"plane" "(-1441.2 12319.6 7498.83) (-1438.65 12317.1 7498.83) (-1438.65 12317.1 7501.83)"
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[0 1 0 0] 0.1"
+			"vaxis" "[0 0 -1 40] 0.1"
+			"rotation" "0"
+			"lightmapscale" "4096"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "105031"
+			"plane" "(-1441.2 12314.6 7498.83) (-1443.75 12317.1 7498.83) (-1443.75 12317.1 7501.83)"
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 0] 0.1"
+			"vaxis" "[0 0 -1 40] 0.1"
+			"rotation" "0"
+			"lightmapscale" "4096"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "105030"
+			"plane" "(-1438.65 12317.1 7498.83) (-1441.2 12314.6 7498.83) (-1441.2 12314.6 7501.83)"
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[1 0 0 8] 0.1"
+			"vaxis" "[0 0 -1 40] 0.1"
+			"rotation" "0"
+			"lightmapscale" "4096"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "105029"
+			"plane" "(-1443.75 12317.1 7498.83) (-1441.2 12319.6 7498.83) (-1441.2 12319.6 7501.83)"
+			"material" "TOOLS/TOOLSINVISIBLE"
+			"uaxis" "[0 1 0 8] 0.1"
+			"vaxis" "[0 0 -1 40] 0.1"
+			"rotation" "0"
+			"lightmapscale" "4096"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "240 189 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "240 189 0"
+		"groupid" "1253646"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "1253653"
+	"classname" "env_sprite"
+	"_light" "255 247 230 250"
+	"disablereceiveshadows" "1"
+	"framerate" "10.0"
+	"GlowProxySize" "16.0"
+	"gmod_allowphysgun" "0"
+	"HDRColorScale" "1.0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "sprites/glow03.vmt"
+	"renderamt" "255"
+	"rendercolor" "255 83 83"
+	"renderfx" "0"
+	"rendermode" "9"
+	"scale" "0.3"
+	"spawnflags" "0"
+	"targetname" "vent1_red"
+	"origin" "-1441.17 12315.6 7503.13"
+	editor
+	{
+		"color" "240 189 0"
+		"groupid" "1253646"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 6500]"
+	}
+}
+entity
+{
+	"id" "1253656"
+	"classname" "env_sprite"
+	"_light" "255 247 230 250"
+	"disablereceiveshadows" "1"
+	"framerate" "10.0"
+	"GlowProxySize" "16.0"
+	"gmod_allowphysgun" "0"
+	"HDRColorScale" "1.0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "sprites/glow03.vmt"
+	"renderamt" "255"
+	"rendercolor" "208 255 202"
+	"renderfx" "0"
+	"rendermode" "9"
+	"scale" "0.3"
+	"spawnflags" "0"
+	"targetname" "vent1_green"
+	"origin" "-1442.07 12313.9 7503.09"
+	editor
+	{
+		"color" "240 189 0"
+		"groupid" "1253646"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 6500]"
+	}
+}
+entity
+{
+	"id" "1253659"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "relay1"
+	connections
+	{
+		"OnSpawn" "red,ShowSprite,,0,1"
+		"OnSpawn" "green,HideSprite,,0,1"
+		"OnSpawn" "vent1,SetAnimation,idle,0,1"
+	}
+	"origin" "-1466.6 12314.3 7448.78"
+	editor
+	{
+		"color" "240 189 0"
+		"groupid" "1253646"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
 hidden
 {
 	entity
@@ -131272,146 +131733,6 @@ entity
 }
 entity
 {
-	"id" "1253304"
-	"classname" "prop_dynamic"
-	"angles" "0 90 0"
-	"DisableBoneFollowers" "0"
-	"disablereceiveshadows" "0"
-	"disableshadows" "1"
-	"ExplodeDamage" "0"
-	"ExplodeRadius" "0"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"gmod_allowphysgun" "0"
-	"HoldAnimation" "0"
-	"MaxAnimTime" "10"
-	"maxdxlevel" "0"
-	"MinAnimTime" "5"
-	"mindxlevel" "0"
-	"model" "models/mn_r/mn_t_sb2_vent1.mdl"
-	"modelscale" "1"
-	"PerformanceMode" "0"
-	"pressuredelay" "0"
-	"RandomAnimation" "0"
-	"renderamt" "255"
-	"rendercolor" "255 255 255"
-	"renderfx" "0"
-	"rendermode" "0"
-	"SetBodyGroup" "0"
-	"skin" "0"
-	"solid" "6"
-	"spawnflags" "0"
-	"StartDisabled" "0"
-	"targetname" "vent1"
-	"origin" "-14627 4237 7247"
-	editor
-	{
-		"color" "135 136 0"
-		"groupid" "1253280"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "1253299"
-	"classname" "ambient_generic"
-	"cspinup" "0"
-	"fadeinsecs" "0"
-	"fadeoutsecs" "0"
-	"health" "10"
-	"lfomodpitch" "0"
-	"lfomodvol" "0"
-	"lforate" "0"
-	"lfotype" "0"
-	"message" "ambient/tunnel_vent_start1.wav"
-	"pitch" "100"
-	"pitchstart" "100"
-	"preset" "0"
-	"radius" "3500"
-	"spawnflags" "48"
-	"spindown" "0"
-	"spinup" "0"
-	"targetname" "vent1_start"
-	"volstart" "0"
-	"origin" "-15025 4149 7209"
-	editor
-	{
-		"color" "135 136 0"
-		"groupid" "1253280"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[1000 6500]"
-	}
-}
-entity
-{
-	"id" "1253296"
-	"classname" "ambient_generic"
-	"cspinup" "0"
-	"fadeinsecs" "0"
-	"fadeoutsecs" "0"
-	"health" "0"
-	"lfomodpitch" "0"
-	"lfomodvol" "0"
-	"lforate" "0"
-	"lfotype" "0"
-	"message" "ambient/tunnel_vent_loop1.wav"
-	"pitch" "100"
-	"pitchstart" "100"
-	"preset" "0"
-	"radius" "3500"
-	"spawnflags" "32"
-	"spindown" "0"
-	"spinup" "0"
-	"targetname" "vent1_loop"
-	"volstart" "0"
-	"origin" "-15025 4165 7209"
-	editor
-	{
-		"color" "135 136 0"
-		"groupid" "1253280"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[1000 6500]"
-	}
-}
-entity
-{
-	"id" "1253293"
-	"classname" "ambient_generic"
-	"cspinup" "0"
-	"fadeinsecs" "0"
-	"fadeoutsecs" "0"
-	"health" "10"
-	"lfomodpitch" "0"
-	"lfomodvol" "0"
-	"lforate" "0"
-	"lfotype" "0"
-	"message" "ambient/tunnel_vent_stop1.wav"
-	"pitch" "100"
-	"pitchstart" "100"
-	"preset" "0"
-	"radius" "3500"
-	"spawnflags" "48"
-	"spindown" "0"
-	"spinup" "0"
-	"targetname" "vent1_stop"
-	"volstart" "0"
-	"origin" "-15025 4181 7209"
-	editor
-	{
-		"color" "135 136 0"
-		"groupid" "1253280"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[1000 6500]"
-	}
-}
-entity
-{
 	"id" "1253424"
 	"classname" "prop_dynamic"
 	"angles" "0 90 0"
@@ -131447,7 +131768,7 @@ entity
 	"origin" "-14922 4091 7244"
 	editor
 	{
-		"color" "135 136 0"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -131455,323 +131776,488 @@ entity
 }
 entity
 {
-	"id" "1253647"
-	"classname" "func_button"
-	"disablereceiveshadows" "0"
-	"gmod_allowphysgun" "1"
-	"health" "0"
-	"lip" "0"
-	"locked_sentence" "0"
-	"locked_sound" "0"
-	"movedir" "0 0 0"
-	"origin" "-1444.07 12314.1 7500.33"
-	"renderamt" "255"
-	"rendercolor" "255 255 255"
-	"renderfx" "0"
-	"rendermode" "0"
-	"sounds" "0"
-	"spawnflags" "1025"
-	"speed" "5"
-	"targetname" "vent1_startbtn"
-	"unlocked_sentence" "0"
-	"unlocked_sound" "0"
-	"wait" "3"
-	connections
-	{
-		"OnPressed" "vent1_start,PlaySound,,0,-1"
-		"OnPressed" "vent1_loop,Volume,10,40.7,1"
-		"OnPressed" "vent1_stop,StopSound,,0,-1"
-		"OnPressed" "vent1_green,ShowSprite,,2,-1"
-		"OnPressed" "vent1,SetAnimation,working,1,-1"
-		"OnPressed" "vent1_startbtn,Lock,,0,-1"
-		"OnPressed" "vent1_stopbtn,Unlock,,40,-1"
-		"OnPressed" "vent1_red,HideSprite,,0,-1"
-	}
-	solid
-	{
-		"id" "1253648"
-		side
-		{
-			"id" "105028"
-			"plane" "(-1444.06 12316.7 7501.83) (-1441.52 12314.1 7501.83) (-1444.06 12311.6 7501.83)"
-			"material" "TOOLS/TOOLSINVISIBLE"
-			"uaxis" "[1 0 0 0] 0.1"
-			"vaxis" "[0 -1 0 0] 0.1"
-			"rotation" "0"
-			"lightmapscale" "4096"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "105027"
-			"plane" "(-1441.52 12314.1 7498.83) (-1444.06 12316.7 7498.83) (-1446.61 12314.1 7498.83)"
-			"material" "TOOLS/TOOLSINVISIBLE"
-			"uaxis" "[1 0 0 0] 0.1"
-			"vaxis" "[0 -1 0 0] 0.1"
-			"rotation" "0"
-			"lightmapscale" "4096"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "105026"
-			"plane" "(-1444.06 12316.7 7498.83) (-1441.52 12314.1 7498.83) (-1441.52 12314.1 7501.83)"
-			"material" "TOOLS/TOOLSINVISIBLE"
-			"uaxis" "[1 0 0 0] 0.1"
-			"vaxis" "[0 0 -1 40] 0.1"
-			"rotation" "0"
-			"lightmapscale" "4096"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "105025"
-			"plane" "(-1444.06 12311.6 7498.83) (-1446.61 12314.1 7498.83) (-1446.61 12314.1 7501.83)"
-			"material" "TOOLS/TOOLSINVISIBLE"
-			"uaxis" "[0 1 0 0] 0.1"
-			"vaxis" "[0 0 -1 40] 0.1"
-			"rotation" "0"
-			"lightmapscale" "4096"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "105024"
-			"plane" "(-1441.52 12314.1 7498.83) (-1444.06 12311.6 7498.83) (-1444.06 12311.6 7501.83)"
-			"material" "TOOLS/TOOLSINVISIBLE"
-			"uaxis" "[0 1 0 0] 0.1"
-			"vaxis" "[0 0 -1 40] 0.1"
-			"rotation" "0"
-			"lightmapscale" "4096"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "105023"
-			"plane" "(-1446.61 12314.1 7498.83) (-1444.06 12316.7 7498.83) (-1444.06 12316.7 7501.83)"
-			"material" "TOOLS/TOOLSINVISIBLE"
-			"uaxis" "[0 1 0 0] 0.1"
-			"vaxis" "[0 0 -1 40] 0.1"
-			"rotation" "0"
-			"lightmapscale" "4096"
-			"smoothing_groups" "0"
-		}
-		editor
-		{
-			"color" "240 189 0"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	editor
-	{
-		"color" "240 189 0"
-		"groupid" "1253646"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "1253650"
-	"classname" "func_button"
-	"disablereceiveshadows" "0"
-	"gmod_allowphysgun" "1"
-	"health" "0"
-	"lip" "0"
-	"locked_sentence" "0"
-	"locked_sound" "0"
-	"movedir" "0 0 0"
-	"origin" "-1441.2 12317.1 7500.33"
-	"renderamt" "255"
-	"rendercolor" "255 255 255"
-	"renderfx" "0"
-	"rendermode" "0"
-	"sounds" "0"
-	"spawnflags" "3073"
-	"speed" "5"
-	"targetname" "vent1_stopbtn"
-	"unlocked_sentence" "0"
-	"unlocked_sound" "0"
-	"wait" "3"
-	connections
-	{
-		"OnPressed" "vent1_startbtn,Unlock,,40,-1"
-		"OnPressed" "vent1_loop,Volume,0,0,-1"
-		"OnPressed" "vent1_green,HideSprite,,0,-1"
-		"OnPressed" "vent1,SetAnimation,idle,1,-1"
-		"OnPressed" "vent1_stopbtn,Lock,,0,-1"
-		"OnPressed" "vent1_stop,PlaySound,,0,-1"
-		"OnPressed" "vent1_start,StopSound,,0,-1"
-		"OnPressed" "vent1_red,ShowSprite,,2,-1"
-	}
-	solid
-	{
-		"id" "1253651"
-		side
-		{
-			"id" "105034"
-			"plane" "(-1441.2 12319.6 7501.83) (-1438.65 12317.1 7501.83) (-1441.2 12314.6 7501.83)"
-			"material" "TOOLS/TOOLSINVISIBLE"
-			"uaxis" "[1 0 0 8] 0.1"
-			"vaxis" "[0 -1 0 0] 0.1"
-			"rotation" "0"
-			"lightmapscale" "4096"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "105033"
-			"plane" "(-1438.65 12317.1 7498.83) (-1441.2 12319.6 7498.83) (-1443.75 12317.1 7498.83)"
-			"material" "TOOLS/TOOLSINVISIBLE"
-			"uaxis" "[1 0 0 8] 0.1"
-			"vaxis" "[0 -1 0 0] 0.1"
-			"rotation" "0"
-			"lightmapscale" "4096"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "105032"
-			"plane" "(-1441.2 12319.6 7498.83) (-1438.65 12317.1 7498.83) (-1438.65 12317.1 7501.83)"
-			"material" "TOOLS/TOOLSINVISIBLE"
-			"uaxis" "[0 1 0 0] 0.1"
-			"vaxis" "[0 0 -1 40] 0.1"
-			"rotation" "0"
-			"lightmapscale" "4096"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "105031"
-			"plane" "(-1441.2 12314.6 7498.83) (-1443.75 12317.1 7498.83) (-1443.75 12317.1 7501.83)"
-			"material" "TOOLS/TOOLSINVISIBLE"
-			"uaxis" "[1 0 0 0] 0.1"
-			"vaxis" "[0 0 -1 40] 0.1"
-			"rotation" "0"
-			"lightmapscale" "4096"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "105030"
-			"plane" "(-1438.65 12317.1 7498.83) (-1441.2 12314.6 7498.83) (-1441.2 12314.6 7501.83)"
-			"material" "TOOLS/TOOLSINVISIBLE"
-			"uaxis" "[1 0 0 8] 0.1"
-			"vaxis" "[0 0 -1 40] 0.1"
-			"rotation" "0"
-			"lightmapscale" "4096"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "105029"
-			"plane" "(-1443.75 12317.1 7498.83) (-1441.2 12319.6 7498.83) (-1441.2 12319.6 7501.83)"
-			"material" "TOOLS/TOOLSINVISIBLE"
-			"uaxis" "[0 1 0 8] 0.1"
-			"vaxis" "[0 0 -1 40] 0.1"
-			"rotation" "0"
-			"lightmapscale" "4096"
-			"smoothing_groups" "0"
-		}
-		editor
-		{
-			"color" "240 189 0"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	editor
-	{
-		"color" "240 189 0"
-		"groupid" "1253646"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
-	"id" "1253653"
-	"classname" "env_sprite"
-	"_light" "255 247 230 250"
-	"disablereceiveshadows" "1"
-	"framerate" "10.0"
-	"GlowProxySize" "16.0"
-	"gmod_allowphysgun" "0"
-	"HDRColorScale" "1.0"
+	"id" "1259177"
+	"classname" "prop_static"
+	"angles" "0 154 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "sprites/glow03.vmt"
-	"renderamt" "255"
-	"rendercolor" "255 83 83"
-	"renderfx" "0"
-	"rendermode" "9"
-	"scale" "0.3"
-	"spawnflags" "0"
-	"targetname" "vent1_red"
-	"origin" "-1441.17 12315.6 7503.13"
+	"model" "models/mn_r/mn_t_phone1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-4223 15219 7348"
 	editor
 	{
-		"color" "240 189 0"
-		"groupid" "1253646"
+		"color" "255 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[1000 6500]"
+		"logicalpos" "[0 0]"
 	}
 }
 entity
 {
-	"id" "1253656"
-	"classname" "env_sprite"
-	"_light" "255 247 230 250"
-	"disablereceiveshadows" "1"
-	"framerate" "10.0"
-	"GlowProxySize" "16.0"
-	"gmod_allowphysgun" "0"
-	"HDRColorScale" "1.0"
+	"id" "1259240"
+	"classname" "prop_static"
+	"angles" "0 178.5 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "sprites/glow03.vmt"
-	"renderamt" "255"
-	"rendercolor" "208 255 202"
-	"renderfx" "0"
-	"rendermode" "9"
-	"scale" "0.3"
-	"spawnflags" "0"
-	"targetname" "vent1_green"
-	"origin" "-1442.07 12313.9 7503.09"
+	"model" "models/mn_r/mn_t_phone1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-9869.96 15865.7 7290.46"
 	editor
 	{
-		"color" "240 189 0"
-		"groupid" "1253646"
+		"color" "255 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[1000 6500]"
+		"logicalpos" "[0 0]"
 	}
 }
 entity
 {
-	"id" "1253659"
-	"classname" "logic_relay"
-	"spawnflags" "0"
-	"StartDisabled" "0"
-	"targetname" "relay1"
-	connections
-	{
-		"OnSpawn" "red,ShowSprite,,0,1"
-		"OnSpawn" "green,HideSprite,,0,1"
-		"OnSpawn" "vent1,SetAnimation,idle,0,1"
-	}
-	"origin" "-1466.6 12314.3 7448.78"
+	"id" "1259288"
+	"classname" "prop_static"
+	"angles" "0 250 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_phone1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-15849 11818 7294"
 	editor
 	{
-		"color" "240 189 0"
-		"groupid" "1253646"
+		"color" "255 255 0"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 1500]"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1259324"
+	"classname" "prop_static"
+	"angles" "0 269 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_phone1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-16237 3608 7193"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1259348"
+	"classname" "prop_static"
+	"angles" "0 269 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_phone1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-16238 -1706 7099"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1259368"
+	"classname" "prop_static"
+	"angles" "0 277 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_phone1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-16140 -8141 7028"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1259388"
+	"classname" "prop_static"
+	"angles" "0 316 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_phone1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-13637 -13410 7034.92"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1259408"
+	"classname" "prop_static"
+	"angles" "0 9.99999 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_phone1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-6545 -15672 7034"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1259448"
+	"classname" "prop_static"
+	"angles" "0 56 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_phone1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-1058 -12195 7033"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1259469"
+	"classname" "prop_static"
+	"angles" "0 235 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_phone1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-1879 -11738 7024"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1259497"
+	"classname" "prop_static"
+	"angles" "0 189 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_phone1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-6731 -14673 7024"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1259513"
+	"classname" "prop_static"
+	"angles" "0 136.5 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_phone1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-12826 -12707 7024"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1259537"
+	"classname" "prop_static"
+	"angles" "0 99.5 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_phone1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-15078 -8043 7028"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1259549"
+	"classname" "prop_static"
+	"angles" "0 90.5 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_phone1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-15199 -1703 7104"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1259569"
+	"classname" "prop_static"
+	"angles" "0 90.5 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_phone1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-15236 3587 7196"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1259589"
+	"classname" "prop_static"
+	"angles" "0 68 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_phone1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-14731 11466 7284"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1259609"
+	"classname" "prop_static"
+	"angles" "0 10 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_phone1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-9797 14930 7285"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1259625"
+	"classname" "prop_static"
+	"angles" "0 331.5 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/mn_r/mn_t_phone1.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "-4603 14479 7338"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
 	}
 }
 cameras
