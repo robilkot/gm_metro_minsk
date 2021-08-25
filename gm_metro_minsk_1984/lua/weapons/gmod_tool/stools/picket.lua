@@ -236,7 +236,7 @@ function TOOL:BuildCPanelCustom()
         tool:BuildCPanelCustom()
     end
 
-    local VYOffT = CPanel:NumSlider("Y Offset:",nil,-100,100,0)
+    local VYOffT = CPanel:NumSlider("Y Offset:",nil,-50,50,0)
     VYOffT:SetValue(tool.Picket.YOffset or 0)
     VYOffT.OnValueChanged = function(num)
         tool.Picket.YOffset = VYOffT:GetValue()
@@ -250,14 +250,14 @@ function TOOL:BuildCPanelCustom()
         tool:SendSettings()
     end
 
-    local VPAngle = CPanel:NumSlider("Pitch angle:",nil,-90,90,0)
+    local VPAngle = CPanel:NumSlider("Pitch angle:",nil,-10,10,0)
     VPAngle:SetValue(tool.Picket.PAngle or 0)
     VPAngle.OnValueChanged = function(num)
         tool.Picket.PAngle = VPAngle:GetValue()
         tool:SendSettings()
     end
 
-    local VYAngle = CPanel:NumSlider("Yaw angle:",nil,-90,90,0)
+    local VYAngle = CPanel:NumSlider("Yaw angle:",nil,-15,15,0)
     VYAngle:SetValue(tool.Picket.YAngle or 0)
     VYAngle.OnValueChanged = function(num)
         tool.Picket.YAngle = VYAngle:GetValue()
