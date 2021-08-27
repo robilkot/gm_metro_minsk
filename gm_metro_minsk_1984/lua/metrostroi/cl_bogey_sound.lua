@@ -48,10 +48,8 @@ function ENT:Think()
     local soundName = self:GetNW2String("BogeySound:SoundName", "")
     local tunnel_pitch, tunnel_volume
     
-    --tunnel_pitch = (0.01*speed)+0.5
-	--tunnel_volume = (speed+20)/50
-	tunnel_pitch = 1
-	tunnel_volume = 1
+    tunnel_pitch = (0.01*speed)+0.5
+	if speed<30 then tunnel_volume = speed/30 elseif speed>=30 then tunnel_volume=(speed+20)/50 end
 
     if (soundName ~= "") then
         self:SoundReload(soundName)
