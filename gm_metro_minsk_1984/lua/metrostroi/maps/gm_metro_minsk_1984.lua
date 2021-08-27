@@ -170,14 +170,14 @@ Metrostroi.StationConfigurations = {
 			{Vector(-9183, -7688, 7779-54),Angle(0,-90,0)}
 		}
 	},
-	oborot1 = {
-		names = {"Оборот1 Институт Культуры", "Oborot1 Institut Kultury", "obinstitut","ob1"},
+	tupik1 = {
+		names = {"Тупик1 Институт Культуры", "Tupik1 Institut Kultury", "obinstitut","tupik1","t1"},
 		positions = {
 			{Vector(8692, 2765, 7494-56),Angle(0,135,0)}
 		}
 	},
-	oborot2 = {
-		names = {"Оборот2 Московская", "Oborot2 Moskovskaya", "obmoskovskaya", "ob2"},
+	tupik2 = {
+		names = {"Тупик2 Московская", "Tupik2 Moskovskaya", "obmoskovskaya", "ob2", "tupik2", "t2"},
 		positions = {
 			{Vector(10363, -77, 8361-56),Angle(0,180,0)}
 		}
