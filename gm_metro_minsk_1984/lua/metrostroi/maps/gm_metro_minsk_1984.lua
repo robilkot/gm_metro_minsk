@@ -89,7 +89,7 @@ Metrostroi.AddANSPAnnouncer("ASNP Minsk",
 			},
 			{
 				118,
-				"Площадь Якуба Коласа",
+				"Пл. Якуба Коласа",
 				arr = {{"arr_pk", "spec_attention_exit"}, {"arr_pk", "spec_attention_exit"}},
 				dep = {{"odz", "next_an"}, {"odz", "next_pp", "spec_attention_politeness"}}
 			},
@@ -123,7 +123,7 @@ Metrostroi.StationConfigurations = {
 		}
 	},
 	[115] = {
-		names = {"Площадь Ленина","Lenina Square","pl","ln"},
+		names = {"Площадь Ленина","Lenina Square","pl","len"},
 		positions = {
 			{Vector(52, -1173, 7118-56),Angle(0,-90,0)}
 		}
@@ -147,7 +147,7 @@ Metrostroi.StationConfigurations = {
 		}
 	},
 	[119] = {
-		names = {"Академия Наук","Akademiya Nauk","ak","an","akn"},
+		names = {"Академия Наук","Akademiya Nauk","an","akn"},
 		positions = {
 			{Vector(-2744, -11831, 6444-56),Angle(0,180,0)}
 		}
@@ -165,19 +165,27 @@ Metrostroi.StationConfigurations = {
 		}
 	},
 	depot = {
-		names = {"Депо Московское", "Depo Moskovskoye", "dm", "depot"},
+		names = {"Депо Московское", "Depo Moskovskoye", "dm", "depot", "tch1"},
 		positions = {
 			{Vector(-9183, -7688, 7779-54),Angle(0,-90,0)}
 		}
 	},
 	tupik1 = {
+<<<<<<< HEAD
 		names = {"Тупик Институт Культуры", "oborot1 Institut Kultury", "obinstitut","t1", "ob1"},
+=======
+		names = {"Тупик Институт Культуры", "Tupik Institut Kultury", "obinstitut","tupik1","t1", "ob1"},
+>>>>>>> 1f4871471b2241d6747a9ede87016c1290c47276
 		positions = {
 			{Vector(8692, 2765, 7494-56),Angle(0,135,0)}
 		}
 	},
 	tupik2 = {
+<<<<<<< HEAD
 		names = {"Тупик Московская", "oborot2 Moskovskaya", "obmoskovskaya", "ob2", "t2"},
+=======
+		names = {"Тупик Московская", "Tupik Moskovskaya", "obmoskovskaya", "ob2", "tupik2", "t2"},
+>>>>>>> 1f4871471b2241d6747a9ede87016c1290c47276
 		positions = {
 			{Vector(10363, -77, 8361-56),Angle(0,180,0)}
 		}
