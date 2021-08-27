@@ -115,60 +115,71 @@ Metrostroi.AddANSPAnnouncer("ASNP Minsk",
 	}
 )
 
-
 Metrostroi.StationConfigurations = {
 	[114] = {
-		names = {"Институт Культуры","Institut Kultury"},
+		names = {"Институт Культуры","Institut Kultury","ik"},
 		positions = {
-			{Vector(-10870,770,2200-56),Angle(0,90,0)}
+			{Vector(858,10201,7486-56),Angle(0,-43,0)}
 		}
 	},
 	[115] = {
-		names = {"Площадь Ленина","Lenina Square"},
+		names = {"Площадь Ленина","Lenina Square","pl","ln"},
 		positions = {
-			{Vector(11450,-1170,2200-56),Angle(0,0,0)}
+			{Vector(52, -1173, 7118-56),Angle(0,-90,0)}
 		}
 	},
 	[116] = {
-		names = {"Октябрьская","Oktyabrskaya"},
+		names = {"Октябрьская","Oktyabrskaya","okt","ok"},
 		positions = {
-			{Vector(-14360,-3980,610-56),Angle(0,90,0)}
+			{Vector(-15000, -1338, 6461-56),Angle(0,90,0)}
 		}
 	},
 	[117] = {
-		names = {"Площадь Победы","Pobedy Square"},
+		names = {"Площадь Победы","Pobedy Square","pp"},
 		positions = {
-			{Vector(165,2635,980-56),Angle(0,180,0)}
+			{Vector(2038, -7218, 6109-56),Angle(0,-180,0)}
 		}
 	},
 	[118] = {
-		names = {"Площадь Якуба Коласа","Yakuba Kolasa Square"},
+		names = {"Площадь Якуба Коласа","yak","pyak"},
 		positions = {
-			{Vector(7820,-14210,-54-56),Angle(0,180,0)}
+			{Vector(1909, -7209, 6109-56),Angle(0,-180,0)}
 		}
 	},
 	[119] = {
-		names = {"Академия Наук","Akademiya Nauk"},
+		names = {"Академия Наук","Akademiya Nauk","ak","akn"},
 		positions = {
-			{Vector(7820,-14210,-54-56),Angle(0,180,0)}
+			{Vector(-2744, -11831, 6444-56),Angle(0,180,0)}
 		}
 	},
 	[120] = {
-		names = {"Парк Челюскинцев","Park Cheluskintsev"},
+		names = {"Парк Челюскинцев","Park Cheluskintsev","pch","pc"},
 		positions = {
-			{Vector(7820,-14210,-54-56),Angle(0,180,0)}
+			{Vector(-1959, -814, 7869-56),Angle(0,165,0)}
 		}
 	},
 	[121] = {
-		names = {"Московская","Moskovskaya"},
+		names = {"Московская","Moskovskaya","ms","mos",",msk"},
 		positions = {
-			{Vector(2790,-11135,-1090-56),Angle(0,180,0)}
+			{Vector(-198, -66, 8354-56),Angle(0,180,0)}
 		}
 	},
-	pto = {
-		names = {"Депо Московское", "Depo Moskovskoye"},
+	depot = {
+		names = {"Депо Московское", "Depo Moskovskoye", "dm", "depot"},
 		positions = {
-			{Vector(1720,-15540,2180-54),Angle(0,180,0)}
+			{Vector(-9183, -7688, 7779-54),Angle(0,-90,0)}
+		}
+	},
+	oborot1 = {
+		names = {"Оборот1 Институт Культуры", "Oborot1 Institut Kultury", "obinstitut","ob1"},
+		positions = {
+			{Vector(8692, 2765, 7494-56),Angle(0,135,0)}
+		}
+	},
+	oborot2 = {
+		names = {"Оборот2 Московская", "Oborot2 Moskovskaya", "obmoskovskaya", "ob2"},
+		positions = {
+			{Vector(10363, -77, 8361-56),Angle(0,180,0)}
 		}
 	}
 }
