@@ -147,7 +147,7 @@ Metrostroi.StationConfigurations = {
 		}
 	},
 	[119] = {
-		names = {"Академия Наук","Akademiya Nauk","ak","akn"},
+		names = {"Академия Наук","Akademiya Nauk","ak","an","akn"},
 		positions = {
 			{Vector(-2744, -11831, 6444-56),Angle(0,180,0)}
 		}
