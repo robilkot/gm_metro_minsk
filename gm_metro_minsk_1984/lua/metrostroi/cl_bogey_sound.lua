@@ -10,6 +10,7 @@
 
 local soundNames = {
     ["okt-pl1"]     = "bogey/okt-pl1.mp3",
+	["gate1"]     = "bogey/gate1.mp3",
 }
 
 
@@ -47,8 +48,10 @@ function ENT:Think()
     local soundName = self:GetNW2String("BogeySound:SoundName", "")
     local tunnel_pitch, tunnel_volume
     
-    if speed > 40  then tunnel_pitch = ((speed-20)/40) elseif speed < 40 then tunnel_pitch = 0 end
-	if speed > 40  then tunnel_volume = ((speed/20)-2)*15 elseif speed < 40 then tunnel_volume = 0 end
+    --tunnel_pitch = (0.01*speed)+0.5
+	--tunnel_volume = (speed+20)/50
+	tunnel_pitch = 1
+	tunnel_volume = 1
 
     if (soundName ~= "") then
         self:SoundReload(soundName)
