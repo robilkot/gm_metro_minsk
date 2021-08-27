@@ -171,7 +171,7 @@ Metrostroi.StationConfigurations = {
 		}
 	},
 	tupik1 = {
-		names = {"Тупик1 Институт Культуры", "Tupik1 Institut Kultury", "obinstitut","tupik1","t1"},
+		names = {"Тупик1 Институт Культуры", "Tupik1 Institut Kultury", "obinstitut","tupik1","t1", "ob1"},
 		positions = {
 			{Vector(8692, 2765, 7494-56),Angle(0,135,0)}
 		}
