@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8849"
-	"mapversion" "455"
+	"mapversion" "456"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -37,7 +37,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "455"
+	"mapversion" "456"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -9695,10 +9695,10 @@ world
 				"v" "-243 3587 -95"
 				"v" "-243 2759 -95"
 			}
-			"material" "STATIONS/STATION_METAL1"
-			"uaxis" "[0 0.866025 0.5 0] 0.03"
-			"vaxis" "[0 0.5 -0.866025 0] 0.03"
-			"rotation" "30"
+			"material" "STATIONS/STATION_METAL2"
+			"uaxis" "[0 1 0 -340.097] 0.01"
+			"vaxis" "[0 0 -1 -4] 0.039"
+			"rotation" "0"
 			"lightmapscale" "512"
 			"smoothing_groups" "0"
 		}
@@ -9933,10 +9933,10 @@ world
 				"v" "271 2759 -95"
 				"v" "271 3587 -95"
 			}
-			"material" "STATIONS/STATION_METAL1"
-			"uaxis" "[0 0.866025 0.5 0] 0.03"
-			"vaxis" "[0 0.5 -0.866025 0] 0.03"
-			"rotation" "30"
+			"material" "STATIONS/STATION_METAL2"
+			"uaxis" "[0 1 0 -340.097] 0.01"
+			"vaxis" "[0 0 -1 -4] 0.039"
+			"rotation" "0"
 			"lightmapscale" "512"
 			"smoothing_groups" "0"
 		}
@@ -11956,10 +11956,10 @@ world
 				"v" "276 -2582 -95"
 				"v" "276 2759 -95"
 			}
-			"material" "TUNNELS/TUNNEL1"
-			"uaxis" "[0 1 0 0] 0.2"
-			"vaxis" "[0 0 -1 0] 0.2"
-			"rotation" "0"
+			"material" "TUNNELS/TUNNEL2"
+			"uaxis" "[0 0 1 0] 0.2"
+			"vaxis" "[0 1 0 0] 0.2"
+			"rotation" "90"
 			"lightmapscale" "512"
 			"smoothing_groups" "0"
 		}
@@ -12092,10 +12092,10 @@ world
 				"v" "-247 2759 -95"
 				"v" "-247 -2582 -95"
 			}
-			"material" "TUNNELS/TUNNEL1"
-			"uaxis" "[0 1 0 0] 0.2"
-			"vaxis" "[0 0 -1 0] 0.2"
-			"rotation" "0"
+			"material" "TUNNELS/TUNNEL2"
+			"uaxis" "[0 0 1 0] 0.2"
+			"vaxis" "[0 1 0 0] 0.2"
+			"rotation" "90"
 			"lightmapscale" "512"
 			"smoothing_groups" "0"
 		}
@@ -15024,10 +15024,10 @@ world
 				"v" "-242 -2582 -95"
 				"v" "-242 -3412 -95"
 			}
-			"material" "STATIONS/STATION_METAL1"
-			"uaxis" "[0 0.866025 0.5 -500.827] 0.03"
-			"vaxis" "[0 0.5 -0.866025 146.665] 0.03"
-			"rotation" "30"
+			"material" "STATIONS/STATION_METAL2"
+			"uaxis" "[0 1 0 113.503] 0.01"
+			"vaxis" "[0 0 -1 -4] 0.039"
+			"rotation" "0"
 			"lightmapscale" "512"
 			"smoothing_groups" "0"
 		}
@@ -15142,10 +15142,10 @@ world
 				"v" "271 -3412 -95"
 				"v" "271 -2582 -95"
 			}
-			"material" "STATIONS/STATION_METAL1"
-			"uaxis" "[0 0.866025 0.5 500.852] 0.03"
-			"vaxis" "[0 0.5 -0.866025 877.342] 0.03"
-			"rotation" "30"
+			"material" "STATIONS/STATION_METAL2"
+			"uaxis" "[0 1 0 113.503] 0.01"
+			"vaxis" "[0 0 -1 -4] 0.039"
+			"rotation" "0"
 			"lightmapscale" "512"
 			"smoothing_groups" "0"
 		}
@@ -26728,6 +26728,132 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "118822"
+	"classname" "prop_door_rotating"
+	"ajarangles" "0 0 0"
+	"angles" "0 270 0"
+	"axis" "-4.65 3369 -44.97, -4.65 3369 -44.97"
+	"disableshadows" "1"
+	"distance" "-85"
+	"dmg" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"forceclosed" "0"
+	"gmod_allowphysgun" "0"
+	"hardware" "1"
+	"health" "0"
+	"model" "models/stations/pristanz_props/pristanz_door.mdl"
+	"opendir" "1"
+	"returndelay" "-1"
+	"skin" "0"
+	"soundcloseoverride" "doors/wood_stop1.wav"
+	"spawnflags" "8192"
+	"spawnpos" "0"
+	"speed" "150"
+	"targetname" "kastr_door_2"
+	"origin" "-4.649 3369.01 -44.9749"
+	editor
+	{
+		"color" "216 241 0"
+		"groupid" "118821"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 6000]"
+	}
+}
+entity
+{
+	"id" "118828"
+	"classname" "prop_static"
+	"angles" "0 90 0"
+	"disableselfshadowing" "1"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/stations/pristanz_props/pristanz_door_casing.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "18.912 3363.68 -38.9662"
+	editor
+	{
+		"color" "216 241 0"
+		"groupid" "118821"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "118900"
+	"classname" "prop_door_rotating"
+	"ajarangles" "0 0 0"
+	"angles" "0 270 0"
+	"axis" "-10.65 -3184 -44.97, -10.65 -3184 -44.97"
+	"disableshadows" "1"
+	"distance" "-85"
+	"dmg" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"forceclosed" "0"
+	"gmod_allowphysgun" "0"
+	"hardware" "1"
+	"health" "0"
+	"model" "models/stations/pristanz_props/pristanz_door.mdl"
+	"opendir" "1"
+	"returndelay" "-1"
+	"skin" "0"
+	"soundcloseoverride" "doors/wood_stop1.wav"
+	"spawnflags" "8192"
+	"spawnpos" "0"
+	"speed" "150"
+	"targetname" "kastr_door_1"
+	"origin" "-10.649 -3183.99 -44.9749"
+	editor
+	{
+		"color" "216 241 0"
+		"groupid" "118899"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 6000]"
+	}
+}
+entity
+{
+	"id" "118906"
+	"classname" "prop_static"
+	"angles" "0 90 0"
+	"disableselfshadowing" "1"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"ignorenormals" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/stations/pristanz_props/pristanz_door_casing.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "12.912 -3189.32 -38.9662"
+	editor
+	{
+		"color" "216 241 0"
+		"groupid" "118899"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
 	}
 }
 entity
@@ -76809,132 +76935,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 500]"
-	}
-}
-entity
-{
-	"id" "118822"
-	"classname" "prop_door_rotating"
-	"ajarangles" "0 0 0"
-	"angles" "0 270 0"
-	"axis" "-4.65 3369 -44.97, -4.65 3369 -44.97"
-	"disableshadows" "1"
-	"distance" "-85"
-	"dmg" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"forceclosed" "0"
-	"gmod_allowphysgun" "0"
-	"hardware" "1"
-	"health" "0"
-	"model" "models/stations/pristanz_props/pristanz_door.mdl"
-	"opendir" "1"
-	"returndelay" "-1"
-	"skin" "0"
-	"soundcloseoverride" "doors/wood_stop1.wav"
-	"spawnflags" "8192"
-	"spawnpos" "0"
-	"speed" "150"
-	"targetname" "kastr_door_2"
-	"origin" "-4.649 3369.01 -44.9749"
-	editor
-	{
-		"color" "216 241 0"
-		"groupid" "118821"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 6000]"
-	}
-}
-entity
-{
-	"id" "118828"
-	"classname" "prop_static"
-	"angles" "0 90 0"
-	"disableselfshadowing" "1"
-	"disableshadows" "0"
-	"disablevertexlighting" "0"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"ignorenormals" "0"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"model" "models/stations/pristanz_props/pristanz_door_casing.mdl"
-	"screenspacefade" "0"
-	"skin" "0"
-	"solid" "6"
-	"origin" "18.912 3363.68 -38.9662"
-	editor
-	{
-		"color" "216 241 0"
-		"groupid" "118821"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "118900"
-	"classname" "prop_door_rotating"
-	"ajarangles" "0 0 0"
-	"angles" "0 270 0"
-	"axis" "-10.65 -3184 -44.97, -10.65 -3184 -44.97"
-	"disableshadows" "1"
-	"distance" "-85"
-	"dmg" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"forceclosed" "0"
-	"gmod_allowphysgun" "0"
-	"hardware" "1"
-	"health" "0"
-	"model" "models/stations/pristanz_props/pristanz_door.mdl"
-	"opendir" "1"
-	"returndelay" "-1"
-	"skin" "0"
-	"soundcloseoverride" "doors/wood_stop1.wav"
-	"spawnflags" "8192"
-	"spawnpos" "0"
-	"speed" "150"
-	"targetname" "kastr_door_1"
-	"origin" "-10.649 -3183.99 -44.9749"
-	editor
-	{
-		"color" "216 241 0"
-		"groupid" "118899"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 6000]"
-	}
-}
-entity
-{
-	"id" "118906"
-	"classname" "prop_static"
-	"angles" "0 90 0"
-	"disableselfshadowing" "1"
-	"disableshadows" "0"
-	"disablevertexlighting" "0"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"ignorenormals" "0"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"model" "models/stations/pristanz_props/pristanz_door_casing.mdl"
-	"screenspacefade" "0"
-	"skin" "0"
-	"solid" "6"
-	"origin" "12.912 -3189.32 -38.9662"
-	editor
-	{
-		"color" "216 241 0"
-		"groupid" "118899"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
 	}
 }
 cameras
