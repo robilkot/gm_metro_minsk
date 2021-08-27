@@ -165,21 +165,27 @@ Metrostroi.StationConfigurations = {
 		}
 	},
 	depot = {
-		names = {"Депо Московское", "Depo Moskovskoye", "dm", "depot", "tch1"},
+		names = {"Депо Московское", "Depo Moskovskoye", "dm", "tch1"},
 		positions = {
 			{Vector(-9183, -7688, 7779-54),Angle(0,-90,0)}
 		}
 	},
 	tupik1 = {
-		names = {"Тупик Институт Культуры", "Tupik Institut Kultury", "obinstitut","tupik1","t1", "ob1"},
+		names = {"Тупик Институт Культуры", "obinstitut","t1", "ob1"},
 		positions = {
 			{Vector(8692, 2765, 7494-56),Angle(0,135,0)}
 		}
 	},
 	tupik2 = {
-		names = {"Тупик Московская", "Tupik Moskovskaya", "obmoskovskaya", "ob2", "tupik2", "t2"},
+		names = {"Тупик Московская", "obmoskovskaya", "ob2", "t2"},
 		positions = {
 			{Vector(10363, -77, 8361-56),Angle(0,180,0)}
+		}
+	},
+	portal = {
+		names = {"Портал"},
+		positions = {
+			{Vector(14038, -8659, 7849-56),Angle(0,-117,0)}
 		}
 	}
 }
