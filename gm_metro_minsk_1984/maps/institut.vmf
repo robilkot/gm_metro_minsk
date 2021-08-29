@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8849"
-	"mapversion" "1601"
+	"mapversion" "1603"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -55,7 +55,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "1601"
+	"mapversion" "1603"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -22944,7 +22944,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"gmod_allowphysgun" "0"
-	"HoldAnimation" "0"
+	"HoldAnimation" "1"
 	"MaxAnimTime" "10"
 	"maxdxlevel" "0"
 	"MinAnimTime" "5"
@@ -22963,6 +22963,7 @@ entity
 	"solid" "6"
 	"spawnflags" "0"
 	"StartDisabled" "0"
+	"targetname" "MK17"
 	"origin" "217.067 -6799 -160.144"
 	editor
 	{
@@ -123253,7 +123254,7 @@ entity
 	"pitchstart" "100"
 	"preset" "0"
 	"radius" "500"
-	"spawnflags" "48"
+	"spawnflags" "16"
 	"spindown" "0"
 	"spinup" "0"
 	"targetname" "zvik1"
@@ -123285,7 +123286,7 @@ entity
 	"pitchstart" "100"
 	"preset" "0"
 	"radius" "500"
-	"spawnflags" "48"
+	"spawnflags" "16"
 	"spindown" "0"
 	"spinup" "0"
 	"targetname" "zvik2"
@@ -123317,7 +123318,7 @@ entity
 	"pitchstart" "100"
 	"preset" "0"
 	"radius" "500"
-	"spawnflags" "48"
+	"spawnflags" "16"
 	"spindown" "0"
 	"spinup" "0"
 	"targetname" "zvik5"
@@ -123349,7 +123350,7 @@ entity
 	"pitchstart" "100"
 	"preset" "0"
 	"radius" "500"
-	"spawnflags" "48"
+	"spawnflags" "16"
 	"spindown" "0"
 	"spinup" "0"
 	"targetname" "zvik6"
@@ -127172,7 +127173,7 @@ entity
 	"pitchstart" "100"
 	"preset" "0"
 	"radius" "500"
-	"spawnflags" "48"
+	"spawnflags" "16"
 	"spindown" "0"
 	"spinup" "0"
 	"targetname" "zvik1a"
@@ -127232,7 +127233,7 @@ entity
 	"pitchstart" "100"
 	"preset" "0"
 	"radius" "500"
-	"spawnflags" "48"
+	"spawnflags" "16"
 	"spindown" "0"
 	"spinup" "0"
 	"targetname" "zvik2a"
@@ -127397,7 +127398,7 @@ entity
 	"id" "637898"
 	"classname" "trigger_multiple"
 	"filtername" "filter_bogey"
-	"origin" "-396.08 -9805.33 -146"
+	"origin" "-396.08 -8567.92 -146"
 	"spawnflags" "8"
 	"StartDisabled" "0"
 	"targetname" "EN00"
@@ -127408,11 +127409,11 @@ entity
 		side
 		{
 			"id" "96959"
-			"plane" "(368 -12913 -114) (368 -12913 -178) (-540.311 -12924 -178)"
+			"plane" "(368 -12908.6 -114) (368 -12908.6 -178) (-540.311 -12924 -178)"
 			vertices_plus
 			{
-				"v" "368 -12913 -114"
-				"v" "368 -12913 -178"
+				"v" "368 -12908.6 -114"
+				"v" "368 -12908.6 -178"
 				"v" "-540.311 -12924 -178"
 				"v" "-540.311 -12924 -114"
 			}
@@ -127426,13 +127427,13 @@ entity
 		side
 		{
 			"id" "96958"
-			"plane" "(-489.684 -6667.27 -113.996) (-489.684 -6667.27 -178) (335.533 -6661 -178)"
+			"plane" "(-489.684 -4184.76 -113.996) (-489.684 -4184.76 -178) (335.533 -4176 -178)"
 			vertices_plus
 			{
-				"v" "-489.684 -6667.27 -113.996"
-				"v" "-489.684 -6667.27 -178"
-				"v" "335.533 -6661 -178"
-				"v" "335.533 -6661 -114"
+				"v" "-489.684 -4184.76 -113.996"
+				"v" "-489.684 -4184.76 -178"
+				"v" "335.533 -4176 -178"
+				"v" "335.533 -4176 -114"
 			}
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[-1 0 0 -24.6162] 0.25"
@@ -127444,16 +127445,16 @@ entity
 		side
 		{
 			"id" "96957"
-			"plane" "(-540.31 -12924 -113.996) (-540.31 -12924 -178) (-489.684 -6667.27 -178)"
+			"plane" "(-540.31 -12924 -113.996) (-540.31 -12924 -178) (-489.684 -4184.76 -178)"
 			vertices_plus
 			{
 				"v" "-540.31 -12924 -113.996"
 				"v" "-540.31 -12924 -178"
-				"v" "-489.684 -6667.27 -178"
-				"v" "-489.684 -6667.27 -114"
+				"v" "-489.684 -4184.76 -178"
+				"v" "-489.684 -4184.76 -114"
 			}
 			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[-0.109254 0.994246 0 -45.4869] 0.351015"
+			"uaxis" "[-0.0784472 0.99715 0 -45.4869] 0.351015"
 			"vaxis" "[0 0 -1 -57.6172] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
@@ -127462,16 +127463,16 @@ entity
 		side
 		{
 			"id" "96956"
-			"plane" "(335.534 -6661 -113.996) (335.534 -6661 -178) (368 -12913 -178)"
+			"plane" "(335.534 -4176 -113.996) (335.534 -4176 -178) (368 -12908.6 -178)"
 			vertices_plus
 			{
-				"v" "335.534 -6661 -113.996"
-				"v" "335.534 -6661 -178"
-				"v" "368 -12913 -178"
-				"v" "368 -12913 -114"
+				"v" "335.534 -4176 -113.996"
+				"v" "335.534 -4176 -178"
+				"v" "368 -12908.6 -178"
+				"v" "368 -12908.6 -114"
 			}
 			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[-0.109254 0.994246 0 -45.4869] 0.351015"
+			"uaxis" "[-0.0784472 0.99715 0 -45.4869] 0.351015"
 			"vaxis" "[0 0 -1 -57.6172] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
@@ -127480,17 +127481,17 @@ entity
 		side
 		{
 			"id" "96955"
-			"plane" "(368 -12913 -114) (-540.313 -12924 -114) (-489.684 -6667.27 -114)"
+			"plane" "(368 -12908.6 -114) (-540.313 -12924 -114) (-489.684 -4184.76 -114)"
 			vertices_plus
 			{
-				"v" "368 -12913 -114"
+				"v" "368 -12908.6 -114"
 				"v" "-540.313 -12924 -114"
-				"v" "-489.684 -6667.27 -114"
-				"v" "335.534 -6661 -114"
+				"v" "-489.684 -4184.76 -114"
+				"v" "335.534 -4176 -114"
 			}
 			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[-0.00979981 1 0 -17.987] 0.351015"
-			"vaxis" "[1 0.00940268 0 52.348] 0.25"
+			"uaxis" "[-0.00926999 1 0 -17.987] 0.351015"
+			"vaxis" "[1 0.00994009 0 52.348] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -127498,17 +127499,17 @@ entity
 		side
 		{
 			"id" "96954"
-			"plane" "(335.531 -6661 -178) (-489.691 -6667.27 -178) (-540.309 -12924 -178)"
+			"plane" "(335.531 -4176 -178) (-489.691 -4184.76 -178) (-540.309 -12924 -178)"
 			vertices_plus
 			{
-				"v" "335.531 -6661 -178"
-				"v" "-489.691 -6667.27 -178"
+				"v" "335.531 -4176 -178"
+				"v" "-489.691 -4184.76 -178"
 				"v" "-540.309 -12924 -178"
-				"v" "368 -12913 -178"
+				"v" "368 -12908.6 -178"
 			}
 			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[-0.00979981 1 0 -17.987] 0.351015"
-			"vaxis" "[1 0.00940268 0 52.348] 0.25"
+			"uaxis" "[-0.00926999 1 0 -17.987] 0.351015"
+			"vaxis" "[1 0.00994009 0 52.348] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
