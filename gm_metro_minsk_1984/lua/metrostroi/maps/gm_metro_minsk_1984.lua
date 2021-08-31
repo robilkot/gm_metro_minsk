@@ -20,16 +20,17 @@ Metrostroi.AddANSPAnnouncer("ASNP Minsk",
 		odz = {"subway_announcers/minsk/odz.mp3", 2.418},
 		
 		spec_attention_doors = {"subway_announcers/minsk/spec_attention_doors.mp3", 7.422},
-		spec_attention_exit = {"subway_announcers/minsk/spec_attention_exit.mp3", 9.273},
+		spec_attention_pl_edge = {"subway_announcers/minsk/spec_attention_pl_edge.mp3", 9.273},
 		spec_attention_handrails = {"subway_announcers/minsk/spec_attention_politeness.mp3", 8.680},
 		spec_attention_last = {"subway_announcers/minsk/spec_attention_last.mp3", 9.227},
 		spec_attention_objects1 = {"subway_announcers/minsk/spec_attention_objects1.mp3", 4.251}, 
 		spec_attention_objects2 = {"subway_announcers/minsk/spec_attention_objects2.mp3", 14.662},
 		spec_attention_politeness = {"subway_announcers/minsk/spec_attention_politeness.mp3", 8.680},
-		spec_attention_things = {"subway_announcers/minsk/spec_attention_things.mp3", 4.263},
+		spec_attention_things = {"subway_announcers/minsk/spec_attention_things.mp3", 4.798},
 		spec_attention_train_depart = {"subway_announcers/minsk/spec_attention_train_depart.mp3", 6.896},
 		spec_attention_train_stop = {"subway_announcers/minsk/spec_attention_train_stop.mp3", 6.896},
 		train_goes_to = {"subway_announcers/minsk/train_goes_to.mp3", 1.905},
+		announcer_ready = {"subway_announcers/minsk/train_goes_to.mp3", 0},
 		
 		next_ik = {"subway_announcers/minsk/moskovskaya/next_ik.mp3", 3.098},
 		arr_ik = {"subway_announcers/minsk/moskovskaya/arr_ik.mp3", 2.684},
@@ -59,15 +60,15 @@ Metrostroi.AddANSPAnnouncer("ASNP Minsk",
 	{
 		{
 			LED = {4, 4, 3, 4, 4, 3, 4, 4},
-			Name = "Линия 1 (Московская Линия)",
+			Name = "Московская Линия",
 			Loop = false,
 			spec_last = {"last", "spec_attention_things"},
 			spec_wait = {{"spec_attention_train_stop"}, {"spec_attention_train_depart"}},
 			{
 				114,
 				"Институт Культуры",
-				arrlast = {nil, {"arr_ik", "last1", "spec_attention_things"}, "ik"},
-				dep = {{"odz", "next_pl", "spec_attention_politeness"}, nil},
+				arrlast = {nil, {"arr_ik", "last1"}, "ik"},
+				dep = {{"odz", "next_pl"}, nil},
 			},
 			{
 				115,
@@ -79,7 +80,7 @@ Metrostroi.AddANSPAnnouncer("ASNP Minsk",
 				116,
 				"Октябрьская",
 				arr = {{"arr_okt"}, {"arr_okt"}},
-				dep = {{"odz", "next_pp"}, {"odz", "next_pl", "spec_attention_objects2"}},
+				dep = {{"odz", "next_pp"}, {"odz", "next_pl"}},
 			},
 			{
 				117,
@@ -90,26 +91,26 @@ Metrostroi.AddANSPAnnouncer("ASNP Minsk",
 			{
 				118,
 				"Пл. Якуба Коласа",
-				arr = {{"arr_pk", "spec_attention_exit"}, {"arr_pk", "spec_attention_exit"}},
-				dep = {{"odz", "next_an"}, {"odz", "next_pp", "spec_attention_politeness"}}
+				arr = {{"arr_pk", "spec_attention_pl_edge"}, {"arr_pk"}},
+				dep = {{"odz", "next_an"}, {"odz", "next_pp"}}
 			},
 			{
 				119,
 				"Академия Наук",
-				arr = {{"arr_an", "spec_attention_exit"}, {"arr_an", "spec_attention_exit"}},
+				arr = {{"arr_an", "spec_attention_pl_edge"}, {"arr_an"}},
 				dep = {{"odz", "next_pch"}, {"odz", "next_pk", "spec_attention_politeness"}}
 			},
 			{
 				120,
 				"Парк Челюскинцев",
-				arr = {{"arr_pch", "spec_attention_exit"}, {"arr_pch", "spec_attention_exit"}},
-				dep = {{"odz", "next_mos"}, {"odz", "next_an", "spec_attention_politeness"}}
+				arr = {{"arr_pch", "spec_attention_pl_edge"}, {"arr_pch"}},
+				dep = {{"odz", "next_mos"}, {"odz", "next_an", "spec_attention_objects1"}}
 			},
 			{
 				121,
 				"Московская",
 				arrlast = {{"arr_mos", "last", "spec_attention_things"}, nil, "mos"},
-				dep = {nil, {"odz", "next_pch", "spec_attention_politeness"}}
+				dep = {nil, {"odz", "next_pch"}}
 			}
 		}
 	}
