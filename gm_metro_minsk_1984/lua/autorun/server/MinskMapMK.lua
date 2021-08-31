@@ -83,5 +83,4 @@ function MinskMapMK.Unlock(MKName)
     IndicatorUnlock(MKName)
 end
 
-
-MinskMapMK.MKInitialize()
+timer.Simple(1, MinskMapMK.MKInitialize)
