@@ -1,0 +1,91 @@
+"depot_bird_ambient"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_50dB"
+		"wave"		"depot/depot_street1.wav"
+	}
+}
+
+"depot_road_ambient"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"1"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_100dB"
+		"wave"		"depot/depot_street2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_30dB"
+		"wave"		"depot/depot_street1.wav"
+	}
+}
+
+
+"tunnel_ambient"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_130dB"
+		"wave"		"ambient/tunnel_ambient1.wav"
+	}
+}
+
+"depot_inside_ambient"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.1"
+		"pitch"		"60"
+		"soundlevel" "SNDLVL_50dB"
+		"wave"		"ambient/tunnel_ambient1.wav"
+	}
+	"playlooping"
+	{
+		"volume"	"0.1"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_30dB"
+		"wave"		"depot/depot_street1.wav"
+	}
+}
+
+"depot_ssv_ambient"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.1"
+		"pitch"		"100"
+		"wave"		"ambient/tunnel_ambient1.wav"
+	}
+	"playlooping"
+	{
+		"volume"	"0.1"
+		"pitch"		"70"
+		"soundlevel" "SNDLVL_70dB"
+		"wave"		"depot/depot_street1.wav"
+	}
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_70dB"
+		"wave"		"depot/depot_street2.wav"
+	}
+}
+
