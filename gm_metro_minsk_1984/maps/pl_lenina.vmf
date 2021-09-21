@@ -58581,7 +58581,7 @@ entity
 	"wait" "1"
 	connections
 	{
-		"OnStartTouch" "!activator,OnFeederOut,3,0,-1"
+		"OnStartTouch" "!activator,OnFeederIn,3,0,-1"
 	}
 	solid
 	{
@@ -58720,7 +58720,7 @@ entity
 	"wait" "1"
 	connections
 	{
-		"OnStartTouch" "!activator,OnFeederOut,4,0,-1"
+		"OnStartTouch" "!activator,OnFeederIn,4,0,-1"
 	}
 	solid
 	{
