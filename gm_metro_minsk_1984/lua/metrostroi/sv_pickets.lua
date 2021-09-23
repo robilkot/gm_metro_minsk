@@ -107,3 +107,19 @@ end
 
 end)                                        --Окончание тела функции с задержкой
 
+
+concommand.Add("picket_tp", function (ply, _, args)
+    local rightNum = args[2] or args[1]
+    local leftNum = args[1]
+
+    if (rightNum == nil) then return end
+
+    local entList = ents.FindByClass("gmod_track_picket")
+
+    for _, ent in pairs(entList) do
+        if (ent.RightNumber == rightNum and ent.LeftNumber == leftNum) then
+            ply:SetPos(ent:GetPos())
+        end
+    end
+end)
+
