@@ -16,21 +16,31 @@ ENT = scripted_ents.GetStored("gmod_train_bogey").t
 local m_AcceptInput = ENT.AcceptInput
 function ENT:AcceptInput(inputName, activator, called, data)
     if (self:GetNW2Bool("IsForwardBogey")) then
-        local train = self:GetNW2Entity("TrainEntity")
-
         if inputName == "BogeyAutostopInertial" then 
-            if (self.Speed > 10) then
-                train.Pneumatic:TriggerInput("Autostop",0)
+            if (data == "setRight") then
+                self.AutostopSide = "right"
+            elseif(data == "setLeft") then
+                self.AutostopSide = "left"
+            else
+                if ((self.AutostopSide == "right" and self.SpeedSign == 1) or (self.AutostopSide == "left" and self.SpeedSign == -1)) then
+                    local train = self:GetNW2Entity("TrainEntity")
+                    
+                    activator:Fire("OnAutostopToggle")
+                    if (self.Speed > 10) then
+                        train.Pneumatic:TriggerInput("Autostop",0)
+                    end
+                end
             end
         end
-        if inputName == "BogeyAutostopStatic" then 
+
+        if inputName == "BogeyAutostopStatic" then
+            local train = self:GetNW2Entity("TrainEntity")
+
             train.Pneumatic:TriggerInput("Autostop",0)
-        end
+        end   
     end
-    
+
     return m_AcceptInput(self, inputName, activator, called, data)
 end
 
-end)    --Окончание тела функции хука    
-    
-
+end)    --Окончание тела функции хука
