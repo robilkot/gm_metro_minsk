@@ -42,19 +42,8 @@ local function ClearEntities()
     end
 end
 
-local function UnlockDepotTrackswitch()
-    for _, ent in pairs(ents.FindByClass("prop_door_rotating")) do
-        if (ent:IsValid()) then
-            if (string.sub(ent:GetName(), 1, #DepotTrackswitchName - 1)  == string.sub(DepotTrackswitchName, 1, #DepotTrackswitchName - 1)) then
-                ent:Fire("Unlock")
-            end    
-        end
-    end
-end
-
 local function SinglePreparation()
     ClearEntities()
-    UnlockDepotTrackswitch()
 end
 
 timer.Simple(1, SinglePreparation)
