@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8538"
-	"mapversion" "1628"
+	"mapversion" "1629"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -56,7 +56,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "1628"
+	"mapversion" "1629"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -95600,7 +95600,7 @@ entity
 	"wait" "1"
 	connections
 	{
-		"OnAutostopToggle" "IK_AUTOSTOP_MODEL_1,SetAnimation,oneclick,0,-1"
+		"OnUser1" "IK_AUTOSTOP_MODEL_1,SetAnimation,oneclick,0,-1"
 		"OnStartTouch" "!activator,BogeyAutostopInertial,,0,-1"
 	}
 	solid
