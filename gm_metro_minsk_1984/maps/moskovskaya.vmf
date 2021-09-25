@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8538"
-	"mapversion" "787"
+	"mapversion" "791"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -68,7 +68,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "787"
+	"mapversion" "2847"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -16173,7 +16173,7 @@ world
 		{
 			"id" "30094"
 			"plane" "(-476 -10193 -161) (-476 -9940 -161) (-70 -9940 -161)"
-			"material" "TUNNELS/TUNNEL1"
+			"material" "TUNNELS/TUNNEL2_2"
 			"uaxis" "[-1 0 0 -790] 0.2"
 			"vaxis" "[0 -1 0 178] 0.25"
 			"rotation" "0"
@@ -25095,7 +25095,7 @@ entity
 	"classname" "prop_static"
 	"angles" "0 270 0"
 	"disableselfshadowing" "1"
-	"disableshadows" "0"
+	"disableshadows" "1"
 	"disablevertexlighting" "0"
 	"fademaxdist" "0"
 	"fademindist" "-1"
@@ -25141,7 +25141,6 @@ entity
 	"spawnflags" "8192"
 	"spawnpos" "0"
 	"speed" "150"
-	"targetname" "mosk_door1"
 	"origin" "-254 9271 -44.9749"
 	editor
 	{
@@ -42193,97 +42192,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 4000]"
-	}
-}
-entity
-{
-	"id" "145396"
-	"classname" "func_areaportal"
-	"PortalVersion" "1"
-	"StartOpen" "0"
-	"target" "mosk_door1"
-	solid
-	{
-		"id" "145394"
-		side
-		{
-			"id" "27446"
-			"plane" "(-305 9276 16) (-305 9278 16) (-253 9278 16)"
-			"material" "TOOLS/TOOLSAREAPORTAL"
-			"uaxis" "[1 0 0 -63.9844] 0.25"
-			"vaxis" "[0 -1 0 24] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "27445"
-			"plane" "(-305 9278 -96) (-305 9276 -96) (-253 9276 -96)"
-			"material" "TOOLS/TOOLSAREAPORTAL"
-			"uaxis" "[1 0 0 -63.9844] 0.25"
-			"vaxis" "[0 -1 0 24] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "27444"
-			"plane" "(-305 9276 -96) (-305 9278 -96) (-305 9278 16)"
-			"material" "TOOLS/TOOLSAREAPORTAL"
-			"uaxis" "[0 1 0 -24] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "27443"
-			"plane" "(-253 9278 -96) (-253 9276 -96) (-253 9276 16)"
-			"material" "TOOLS/TOOLSAREAPORTAL"
-			"uaxis" "[0 1 0 -24] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "27442"
-			"plane" "(-305 9278 -96) (-253 9278 -96) (-253 9278 16)"
-			"material" "TOOLS/TOOLSAREAPORTAL"
-			"uaxis" "[1 0 0 -63.9844] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "27441"
-			"plane" "(-253 9276 -96) (-305 9276 -96) (-305 9276 16)"
-			"material" "TOOLS/TOOLSAREAPORTAL"
-			"uaxis" "[1 0 0 -63.9844] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		editor
-		{
-			"color" "0 255 255"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	editor
-	{
-		"color" "0 255 255"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1500]"
 	}
 }
 entity
@@ -95995,7 +95903,7 @@ entity
 	"pitchstart" "100"
 	"preset" "0"
 	"radius" "2000"
-	"spawnflags" "48"
+	"spawnflags" "16"
 	"spindown" "0"
 	"spinup" "0"
 	"targetname" "zvms4"
