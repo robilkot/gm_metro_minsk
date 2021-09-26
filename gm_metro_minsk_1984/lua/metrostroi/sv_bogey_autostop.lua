@@ -25,7 +25,8 @@ function ENT:AcceptInput(inputName, activator, called, data)
                 if ((self.AutostopSide == "right" and self.SpeedSign == 1) or (self.AutostopSide == "left" and self.SpeedSign == -1)) then
                     local train = self:GetNW2Entity("TrainEntity")
                     
-                    activator:Fire("OnAutostopToggle")
+                    called:Fire("FireUser1")
+                    
                     if (self.Speed > 10) then
                         train.Pneumatic:TriggerInput("Autostop",0)
                     end
