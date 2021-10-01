@@ -107,10 +107,10 @@ end
 
 end)                                        --Окончание тела функции с задержкой
 
+Metrostroi.Picket = {}
 
-concommand.Add("picket_tp", function (ply, _, args)
-    local rightNum = args[2] or args[1]
-    local leftNum = args[1]
+function Metrostroi.Picket.TeleportTo(ply, rightNum, leftNum)
+    leftNum = leftNum or rightNum
 
     if (rightNum == nil) then return end
 
@@ -118,8 +118,15 @@ concommand.Add("picket_tp", function (ply, _, args)
 
     for _, ent in pairs(entList) do
         if (ent.RightNumber == rightNum and ent.LeftNumber == leftNum) then
-            ply:SetPos(ent:GetPos())
+            ply:SetPos(ent:GetPos() + Vector(0, 0, 20))
         end
     end
+end
+
+concommand.Add("picket_tp", function (ply, _, args)
+    local rightNum = args[2] or args[1]
+    local leftNum = args[1]
+
+    Metrostroi.Picket.TeleportTo(ply, rightNum, leftNum)
 end)
 
