@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8538"
-	"mapversion" "1485"
+	"mapversion" "1487"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -32,7 +32,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "1485"
+	"mapversion" "1487"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -12926,41 +12926,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 3500]"
-	}
-}
-entity
-{
-	"id" "453570"
-	"classname" "gmod_track_clock_interval"
-	"angles" "0 180 0"
-	"Light" "1"
-	"NoAutoSearch" "0"
-	"Type" "0"
-	"origin" "201 5509 71"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupid" "4"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "453572"
-	"classname" "gmod_track_clock_time"
-	"angles" "0 180 0"
-	"Light" "1"
-	"Type" "0"
-	"origin" "126 5509 71"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupid" "4"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
 	}
 }
 entity
@@ -27103,30 +27068,10 @@ entity
 }
 entity
 {
-	"id" "548970"
-	"classname" "gmod_track_clock_interval"
-	"angles" "0 0 0"
-	"Light" "1"
-	"NoAutoSearch" "0"
-	"Type" "0"
-	"origin" "-435 520 70"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupid" "18"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
 	"id" "548972"
-	"classname" "gmod_track_clock_time"
+	"classname" "gmod_track_clock_time_minsk"
 	"angles" "0 0 0"
-	"Light" "1"
-	"Type" "0"
-	"origin" "-360 520 70"
+	"origin" "-395 506 70"
 	editor
 	{
 		"color" "220 30 220"
@@ -40987,6 +40932,50 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "579932"
+	"classname" "gmod_track_clock_interval_minsk"
+	"angles" "0 0 0"
+	"NoAutoSearch" "0"
+	"origin" "-395 506 70"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "579943"
+	"classname" "gmod_track_clock_time_minsk"
+	"angles" "0 180 0"
+	"origin" "167 5517 71"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "579945"
+	"classname" "gmod_track_clock_interval_minsk"
+	"angles" "0 180 0"
+	"NoAutoSearch" "0"
+	"origin" "167 5517 71"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
 	}
 }
 cameras
