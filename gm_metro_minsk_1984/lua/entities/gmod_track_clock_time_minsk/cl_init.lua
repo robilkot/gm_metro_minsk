@@ -59,7 +59,8 @@ function ENT:TimeUpdate()
     self.Digits[3]:SetSkin(math.floor(d.min  / 10))
     self.Digits[4]:SetSkin(math.floor(d.min  % 10))
     self.Digits[5]:SetSkin(math.floor(d.sec  / 10))
-    self.Digits[6]:SetSkin(math.floor(d.sec  % 10))
+    local second = math.floor(d.sec  % 10)
+    if (second % 5 == 0) then self.Digits[6]:SetSkin(second) end
 end
 
 function ENT:ModelsOnRemove()
