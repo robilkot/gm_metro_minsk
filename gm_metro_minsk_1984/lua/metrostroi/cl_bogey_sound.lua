@@ -16,7 +16,7 @@ local soundNames = {
 }
 
 
-hook.Add("InitPostEntity", "BogeySoundInitialize", function()       --Хук, вызываемый после инциализации игры, начало тела функции с кодом
+timer.Simple(1, function()--hook.Add("InitPostEntity", "BogeySoundInitialize", function()       --Хук, вызываемый после инциализации игры, начало тела функции с кодом
 
 
 ENT = scripted_ents.GetStored("gmod_train_bogey").t

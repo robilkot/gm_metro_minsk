@@ -28,9 +28,10 @@ end
 local m_AcceptInput = ENT.AcceptInput
 function ENT:AcceptInput(inputName, activator, called, data)
     if inputName == "BogeySound" then 
+		
         self:SetNW2String("BogeySound:SoundName", data)
     end
-
+	
     return m_AcceptInput(self, inputName, activator, called, data)
 end
 
