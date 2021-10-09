@@ -13,25 +13,26 @@ hook.Add("InitPostEntity", "BogeyAutostopInitialize", function()   --Хук, в�
 
 ENT = scripted_ents.GetStored("gmod_train_bogey").t
 
-local m_AcceptInput = ENT.AcceptInput
+ENT.BogeyAutostop = ENT.BogeyAutostop or {}
+
+ENT.BogeyAutostop.AcceptInput = ENT.BogeyAutostop.AcceptInput or ENT.AcceptInput
 function ENT:AcceptInput(inputName, activator, called, data)
     if (self:GetNW2Bool("IsForwardBogey")) then
-        if inputName == "BogeyAutostopInertial" then 
-            if (data == "setRight") then
-                self.AutostopSide = "right"
-            elseif(data == "setLeft") then
-                self.AutostopSide = "left"
-            else
-                if ((self.AutostopSide == "right" and self.SpeedSign == 1) or (self.AutostopSide == "left" and self.SpeedSign == -1)) then
+        if inputName == "BogeyAutostopInertial" then
+            if (self.AutostopEnable) then
+                if ((data == "right" and self.SpeedSign == 1) or (data == "left" and self.SpeedSign == -1)) then
                     local train = self:GetNW2Entity("TrainEntity")
-                    
-                    called:Fire("FireUser1")
                     
                     if (self.Speed > 10) then
                         train.Pneumatic:TriggerInput("Autostop",0)
+                        called:Fire("FireUser2")
+                    else
+                        called:Fire("FireUser1")
                     end
                 end
             end
+            
+            self.AutostopEnable = not self.AutostopEnable
         end
 
         if inputName == "BogeyAutostopStatic" then
@@ -41,7 +42,7 @@ function ENT:AcceptInput(inputName, activator, called, data)
         end   
     end
 
-    return m_AcceptInput(self, inputName, activator, called, data)
+    return self.BogeyAutostop.AcceptInput(self, inputName, activator, called, data)
 end
 
 end)    --Окончание тела функции хука
