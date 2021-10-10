@@ -23,6 +23,7 @@ function ENT:ModelsInitialize()
             if (v[2] == true) then
                 self.Digits[k]:SetSkin(11)
             end
+            
             self.Digits[k]:SetParent(self)
         end
     end
@@ -56,10 +57,7 @@ function ENT:TimeUpdate()
     if (interval <= (9 * 60 + 59)) and (interval >= 0) then
         self.Digits[1]:SetSkin(math.floor(interval / 60))
         self.Digits[2]:SetSkin(math.floor((interval % 60) / 10))
-        local seconds = math.floor((interval % 60) % 10)
-        if (seconds % 5 == 0) then
-            self.Digits[3]:SetSkin(seconds)
-        end
+        self.Digits[3]:SetSkin(math.floor(math.floor((interval % 60) / 5) * 5 % 10))
     else
         for i=1,3 do
             self.Digits[i]:SetSkin(10)
