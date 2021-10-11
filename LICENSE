@@ -11,11 +11,12 @@ License for:
   \maps\*.*					Map files
   \models\*.*      		   	Art assets for the map
   \materials\*.*			Art assets for the map
+  \scripts\*.*			    Scripts for the map
   \sounds\*.*				Sounds for the map
 	
 --------------------------------------------------------------------------------
        Copyright (C) 2019-2021 MetroPack
-        Last updated: 30th August, 2021
+        Last updated: 5th October, 2021
 					
 These files contain proprietary code and assets that belong to MetroPack team
 and are provided solely for limited personal use with the Garry's Mod.
