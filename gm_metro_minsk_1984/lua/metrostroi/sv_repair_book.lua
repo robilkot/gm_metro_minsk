@@ -17,7 +17,7 @@ local Trains = {
 }
 
 for _, trainName in pairs(Trains) do
-	ENT = scripted_ents.GetStored(trainName).t
+	local ENT = scripted_ents.GetStored(trainName).t
 	
 	ENT.RepairBook = ENT.RepairBook or {}
 
