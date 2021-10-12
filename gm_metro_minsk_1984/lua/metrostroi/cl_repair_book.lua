@@ -157,6 +157,9 @@ for trainName, location in pairs(Trains) do
 		self.ClientEnts["repair_book"]:SetPos(self:LocalToWorld(pos))
 		self.ClientEnts["repair_book"]:SetAngles(self:LocalToWorldAngles(ang))
 
+		self.ClientProps["repair_book"].pos = pos
+		self.ClientProps["repair_book"].ang = ang
+
 		pos, ang = LocalToWorld(Vector(100*0.0625/2, 165*0.0625/2, 0.2), Angle(0, -90, 0), pos, ang)
 
 		self.ButtonMap["RepairBookScreen"].pos = pos
