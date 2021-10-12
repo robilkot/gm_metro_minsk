@@ -129,18 +129,20 @@ for trainName, location in pairs(Trains) do
 
 		if (wagonNumbers) then
 			draw.SimpleText(Format("%04d", wagonNumbers[1]) or "", "Metrostroi_RapairBook_Text", 230, 300, Color(0,0,0), TEXT_ALIGN_CENTER)
-			draw.SimpleText(Format("%04d", wagonNumbers[#wagonNumbers]) or "", "Metrostroi_RapairBook_Text", 1440, 300, Color(0,0,0), TEXT_ALIGN_CENTER)
-
-			if (#wagonNumbers - 2 == 3) then
-				draw.SimpleText(Format("%04d", wagonNumbers[2]), "Metrostroi_RapairBook_Text_Small", 825 - 330, 520, Color(0,0,0), TEXT_ALIGN_CENTER)
-				draw.SimpleText(Format("%04d", wagonNumbers[3]), "Metrostroi_RapairBook_Text_Small", 825, 520, Color(0,0,0), TEXT_ALIGN_CENTER)
-				draw.SimpleText(Format("%04d", wagonNumbers[4]), "Metrostroi_RapairBook_Text_Small", 825 + 330, 520, Color(0,0,0), TEXT_ALIGN_CENTER)
-			elseif (#wagonNumbers - 2 == 2) then
-				draw.SimpleText(Format("%04d", wagonNumbers[2]), "Metrostroi_RapairBook_Text_Small", 825 - 330 / 2, 520, Color(0,0,0), TEXT_ALIGN_CENTER)
-				draw.SimpleText(Format("%04d", wagonNumbers[3]), "Metrostroi_RapairBook_Text_Small", 825 + 330 / 2, 520, Color(0,0,0), TEXT_ALIGN_CENTER)
-			elseif (#wagonNumbers - 2 == 1) then
-				draw.SimpleText(Format("%04d", wagonNumbers[2]), "Metrostroi_RapairBook_Text_Small", 825, 520, Color(0,0,0), TEXT_ALIGN_CENTER)
+			if (#wagonNumbers != 1) then
+				draw.SimpleText(Format("%04d", wagonNumbers[#wagonNumbers]) or "", "Metrostroi_RapairBook_Text", 1440, 300, Color(0,0,0), TEXT_ALIGN_CENTER)
+				if (#wagonNumbers - 2 == 3) then
+					draw.SimpleText(Format("%04d", wagonNumbers[2]), "Metrostroi_RapairBook_Text_Small", 825 - 330, 520, Color(0,0,0), TEXT_ALIGN_CENTER)
+					draw.SimpleText(Format("%04d", wagonNumbers[3]), "Metrostroi_RapairBook_Text_Small", 825, 520, Color(0,0,0), TEXT_ALIGN_CENTER)
+					draw.SimpleText(Format("%04d", wagonNumbers[4]), "Metrostroi_RapairBook_Text_Small", 825 + 330, 520, Color(0,0,0), TEXT_ALIGN_CENTER)
+				elseif (#wagonNumbers - 2 == 2) then
+					draw.SimpleText(Format("%04d", wagonNumbers[2]), "Metrostroi_RapairBook_Text_Small", 825 - 330 / 2, 520, Color(0,0,0), TEXT_ALIGN_CENTER)
+					draw.SimpleText(Format("%04d", wagonNumbers[3]), "Metrostroi_RapairBook_Text_Small", 825 + 330 / 2, 520, Color(0,0,0), TEXT_ALIGN_CENTER)
+				elseif (#wagonNumbers - 2 == 1) then
+					draw.SimpleText(Format("%04d", wagonNumbers[2]), "Metrostroi_RapairBook_Text_Small", 825, 520, Color(0,0,0), TEXT_ALIGN_CENTER)
+				end
 			end
+			
 		end
 	end
 
