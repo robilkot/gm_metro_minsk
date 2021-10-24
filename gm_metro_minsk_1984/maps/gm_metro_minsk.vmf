@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8538"
-	"mapversion" "3017"
+	"mapversion" "3020"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -128,7 +128,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "3017"
+	"mapversion" "3020"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -111295,10 +111295,10 @@ entity
 	"wait" "1"
 	connections
 	{
-		"OnOut" "lt_pl-okt21_check,Skin,1,0,-1"
-		"OnOut" "PL-OKT21,TurnOff,,0,-1"
-		"OnIn" "PL-OKT21,TurnOn,,0,-1"
-		"OnIn" "lt_pl-okt21_check,Skin,0,0,-1"
+		"OnOut" "lt_okt-pp21_check,Skin,1,0,-1"
+		"OnOut" "okT-pp21,TurnOff,,0,-1"
+		"OnIn" "okT-pp21,TurnOn,,0,-1"
+		"OnIn" "lt_okt-pp21_check,Skin,0,0,-1"
 	}
 	solid
 	{
@@ -112973,10 +112973,10 @@ entity
 	"wait" "1"
 	connections
 	{
-		"OnOut" "okt-pp22,TurnOff,,0,-1"
-		"OnOut" "lt_okt-pp22_check,Skin,1,0,-1"
-		"OnIn" "lt_okt-pp22_check,Skin,0,0,-1"
-		"OnIn" "okt-pp22,TurnOn,,0,-1"
+		"OnOut" "Pp-jk22,TurnOff,,0,-1"
+		"OnOut" "lt_Pp-jk22_check,Skin,1,0,-1"
+		"OnIn" "lt_Pp-jk22_check,Skin,0,0,-1"
+		"OnIn" "Pp-jk22,TurnOn,,0,-1"
 	}
 	solid
 	{
@@ -177382,7 +177382,7 @@ entity
 	"screenspacefade" "0"
 	"skin" "0"
 	"solid" "6"
-	"origin" "-7606 -11985 6497"
+	"origin" "-7630 -11953 6518"
 	editor
 	{
 		"color" "255 255 0"
@@ -184428,6 +184428,190 @@ entity
 	{
 		"color" "220 30 220"
 		"visgroupid" "21"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[3500 14500]"
+	}
+}
+entity
+{
+	"id" "1738700"
+	"classname" "light"
+	"_constant_attn" "0"
+	"_distance" "0"
+	"_fifty_percent_distance" "0"
+	"_hardfalloff" "0"
+	"_light" "255 247 230 250"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"_linear_attn" "0"
+	"_quadratic_attn" "1"
+	"_zero_percent_distance" "0"
+	"spawnflags" "1"
+	"style" "0"
+	"targetname" "JK-AN11"
+	"origin" "-5578 -1233 6140"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[3500 14500]"
+	}
+}
+entity
+{
+	"id" "1738718"
+	"classname" "light"
+	"_constant_attn" "0"
+	"_distance" "0"
+	"_fifty_percent_distance" "0"
+	"_hardfalloff" "0"
+	"_light" "255 247 230 250"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"_linear_attn" "0"
+	"_quadratic_attn" "1"
+	"_zero_percent_distance" "0"
+	"spawnflags" "1"
+	"style" "0"
+	"targetname" "AN-PCH22"
+	"origin" "9880 11498 7456"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupid" "21"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[3500 14500]"
+	}
+}
+entity
+{
+	"id" "1738733"
+	"classname" "light"
+	"_constant_attn" "0"
+	"_distance" "0"
+	"_fifty_percent_distance" "0"
+	"_hardfalloff" "0"
+	"_light" "255 247 230 250"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"_linear_attn" "0"
+	"_quadratic_attn" "1"
+	"_zero_percent_distance" "0"
+	"spawnflags" "1"
+	"style" "0"
+	"targetname" "PCH-MS21"
+	"origin" "13439 8587 8048"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupid" "21"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[3500 14500]"
+	}
+}
+entity
+{
+	"id" "1738738"
+	"classname" "light"
+	"_constant_attn" "0"
+	"_distance" "0"
+	"_fifty_percent_distance" "0"
+	"_hardfalloff" "0"
+	"_light" "255 247 230 250"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"_linear_attn" "0"
+	"_quadratic_attn" "1"
+	"_zero_percent_distance" "0"
+	"spawnflags" "1"
+	"style" "0"
+	"targetname" "JK-AN22"
+	"origin" "8026 -11912 6493"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[3500 14500]"
+	}
+}
+entity
+{
+	"id" "1738743"
+	"classname" "light"
+	"_constant_attn" "0"
+	"_distance" "0"
+	"_fifty_percent_distance" "0"
+	"_hardfalloff" "0"
+	"_light" "255 247 230 250"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"_linear_attn" "0"
+	"_quadratic_attn" "1"
+	"_zero_percent_distance" "0"
+	"spawnflags" "1"
+	"style" "0"
+	"targetname" "JK-AN22"
+	"origin" "14517 -3064 6490"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[3500 14500]"
+	}
+}
+entity
+{
+	"id" "1738748"
+	"classname" "light"
+	"_constant_attn" "0"
+	"_distance" "0"
+	"_fifty_percent_distance" "0"
+	"_hardfalloff" "0"
+	"_light" "255 247 230 250"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"_linear_attn" "0"
+	"_quadratic_attn" "1"
+	"_zero_percent_distance" "0"
+	"spawnflags" "1"
+	"style" "0"
+	"targetname" "JK-AN21"
+	"origin" "5064 12803 6488"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[3500 14500]"
+	}
+}
+entity
+{
+	"id" "1738753"
+	"classname" "light"
+	"_constant_attn" "0"
+	"_distance" "0"
+	"_fifty_percent_distance" "0"
+	"_hardfalloff" "0"
+	"_light" "255 247 230 250"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"_linear_attn" "0"
+	"_quadratic_attn" "1"
+	"_zero_percent_distance" "0"
+	"spawnflags" "1"
+	"style" "0"
+	"targetname" "JK-AN21"
+	"origin" "-6330 -2083 6161"
+	editor
+	{
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[3500 14500]"
