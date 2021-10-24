@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8538"
-	"mapversion" "1670"
+	"mapversion" "1674"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -56,7 +56,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "1670"
+	"mapversion" "1674"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -4754,6 +4754,26 @@ world
 		editor
 		{
 			"color" "157 186 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "698222"
+		editor
+		{
+			"color" "182 255 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	group
+	{
+		"id" "698852"
+		editor
+		{
+			"color" "182 255 0"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -21043,34 +21063,6 @@ entity
 }
 entity
 {
-	"id" "448659"
-	"classname" "info_overlay"
-	"BasisNormal" "-0 0 1"
-	"BasisOrigin" "-114 497 -94.46"
-	"BasisU" "1 0 0"
-	"BasisV" "0 1 -0"
-	"EndU" "13"
-	"EndV" "0"
-	"fademindist" "-1"
-	"material" "stations/station_floor4"
-	"sides" "67443"
-	"StartU" "0"
-	"StartV" "1"
-	"uv0" "-188.042 -14.4648 0"
-	"uv1" "-188.042 14.4648 0"
-	"uv2" "188.042 14.4648 0"
-	"uv3" "188.042 -14.4648 0"
-	"origin" "-114 497 -94.46"
-	editor
-	{
-		"color" "80 150 225"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 3500]"
-	}
-}
-entity
-{
 	"id" "448970"
 	"classname" "prop_static"
 	"angles" "0 270 0"
@@ -30196,34 +30188,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[4500 -6268]"
-	}
-}
-entity
-{
-	"id" "466459"
-	"classname" "info_overlay"
-	"BasisNormal" "-0 0 1"
-	"BasisOrigin" "-115 5500 -94.46"
-	"BasisU" "1 0 0"
-	"BasisV" "0 1 -0"
-	"EndU" "13"
-	"EndV" "0"
-	"fademindist" "-1"
-	"material" "stations/station_floor4"
-	"sides" "67443"
-	"StartU" "0"
-	"StartV" "1"
-	"uv0" "-188.042 -14.4648 0"
-	"uv1" "-188.042 14.4648 0"
-	"uv2" "188.042 14.4648 0"
-	"uv3" "188.042 -14.4648 0"
-	"origin" "-115 5500 -94.46"
-	editor
-	{
-		"color" "80 150 225"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 3500]"
 	}
 }
 entity
@@ -58104,195 +58068,14 @@ entity
 }
 entity
 {
-	"id" "468308"
-	"classname" "info_overlay"
-	"BasisNormal" "-0 0 1"
-	"BasisOrigin" "-113 701.117 -95"
-	"BasisU" "1 0 0"
-	"BasisV" "0 1 -0"
-	"EndU" "1"
-	"EndV" "0"
-	"fademindist" "-1"
-	"material" "stations/station_floor3"
-	"sides" "67443"
-	"StartU" "0"
-	"StartV" "1"
-	"uv0" "-10 -10 0"
-	"uv1" "-10 10 0"
-	"uv2" "10 10 0"
-	"uv3" "10 -10 0"
-	"origin" "-113 701.117 -95"
-	editor
-	{
-		"color" "80 150 225"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[5000 10500]"
-	}
-}
-entity
-{
-	"id" "468374"
-	"classname" "info_overlay"
-	"BasisNormal" "-0 0 1"
-	"BasisOrigin" "-119 1161 -95"
-	"BasisU" "1 0 0"
-	"BasisV" "0 1 -0"
-	"EndU" "1"
-	"EndV" "0"
-	"fademindist" "-1"
-	"material" "stations/station_floor3"
-	"sides" "67443"
-	"StartU" "0"
-	"StartV" "1"
-	"uv0" "-10 -10 0"
-	"uv1" "-10 10 0"
-	"uv2" "10 10 0"
-	"uv3" "10 -10 0"
-	"origin" "-119 1161 -95"
-	editor
-	{
-		"color" "80 150 225"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[5000 10500]"
-	}
-}
-entity
-{
-	"id" "468380"
-	"classname" "info_overlay"
-	"BasisNormal" "0 0 1"
-	"BasisOrigin" "-121 1918 -95"
-	"BasisU" "-4.37114e-08 1 0"
-	"BasisV" "-1 -4.37114e-08 0"
-	"EndU" "1"
-	"EndV" "0"
-	"fademindist" "-1"
-	"material" "stations/station_floor2"
-	"sides" "67443"
-	"StartU" "0"
-	"StartV" "1"
-	"uv0" "-10 -10 0"
-	"uv1" "-10 10 0"
-	"uv2" "10 10 0"
-	"uv3" "10 -10 0"
-	"origin" "-121 1918 -95"
-	editor
-	{
-		"color" "80 150 225"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[5000 10500]"
-	}
-}
-entity
-{
 	"id" "468386"
-	"classname" "info_overlay"
-	"BasisNormal" "-0 0 1"
-	"BasisOrigin" "-118 5330 -95"
-	"BasisU" "1 0 0"
-	"BasisV" "0 1 -0"
-	"EndU" "1"
-	"EndV" "0"
-	"fademindist" "-1"
-	"material" "stations/station_floor3"
-	"sides" "67443"
-	"StartU" "0"
-	"StartV" "1"
-	"uv0" "-10 -10 0"
-	"uv1" "-10 10 0"
-	"uv2" "10 10 0"
-	"uv3" "10 -10 0"
-	"origin" "-118 5330 -95"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor3"
+	"origin" "-116 5314 -93"
 	editor
 	{
-		"color" "80 150 225"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[5000 10500]"
-	}
-}
-entity
-{
-	"id" "468392"
-	"classname" "info_overlay"
-	"BasisNormal" "0 0 1"
-	"BasisOrigin" "-114 5123 -95"
-	"BasisU" "-4.37114e-08 1 0"
-	"BasisV" "-1 -4.37114e-08 0"
-	"EndU" "1"
-	"EndV" "0"
-	"fademindist" "-1"
-	"material" "stations/station_floor2"
-	"sides" "67443"
-	"StartU" "0"
-	"StartV" "1"
-	"uv0" "-10 -10 0"
-	"uv1" "-10 10 0"
-	"uv2" "10 10 0"
-	"uv3" "10 -10 0"
-	"origin" "-114 5123 -95"
-	editor
-	{
-		"color" "80 150 225"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[5000 10500]"
-	}
-}
-entity
-{
-	"id" "468428"
-	"classname" "info_overlay"
-	"BasisNormal" "0 0 1"
-	"BasisOrigin" "-104 4033 -95"
-	"BasisU" "-4.37114e-08 1 0"
-	"BasisV" "-1 -4.37114e-08 0"
-	"EndU" "1"
-	"EndV" "0"
-	"fademindist" "-1"
-	"material" "stations/station_floor2"
-	"sides" "67443"
-	"StartU" "0"
-	"StartV" "1"
-	"uv0" "-10 -10 0"
-	"uv1" "-10 10 0"
-	"uv2" "10 10 0"
-	"uv3" "10 -10 0"
-	"origin" "-104 4033 -95"
-	editor
-	{
-		"color" "80 150 225"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[5000 10500]"
-	}
-}
-entity
-{
-	"id" "468434"
-	"classname" "info_overlay"
-	"BasisNormal" "-0 0 1"
-	"BasisOrigin" "-107 2800 -95"
-	"BasisU" "1 0 0"
-	"BasisV" "0 1 -0"
-	"EndU" "1"
-	"EndV" "0"
-	"fademindist" "-1"
-	"material" "stations/station_floor3"
-	"sides" "67443"
-	"StartU" "0"
-	"StartV" "1"
-	"uv0" "-10 -10 0"
-	"uv1" "-10 10 0"
-	"uv2" "10 10 0"
-	"uv3" "10 -10 0"
-	"origin" "-107 2800 -95"
-	editor
-	{
-		"color" "80 150 225"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[5000 10500]"
@@ -95509,6 +95292,544 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[500 6000]"
+	}
+}
+entity
+{
+	"id" "697550"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-130.946 5495.97 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698222"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "697754"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-105.369 5495.97 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698222"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "697808"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-79.9465 5495.97 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698222"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "697811"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-54.3691 5495.97 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698222"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "697820"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-28.7721 5495.97 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698222"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "697823"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-3.19477 5495.97 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698222"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "697882"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "22.4226 5496 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698222"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "697885"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "48 5496 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698222"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "697922"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-284.554 5495.98 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698222"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "697925"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-258.977 5495.98 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698222"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "697928"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-233.38 5495.98 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698222"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "697931"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-207.802 5495.98 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698222"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "697934"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-182.185 5496 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698222"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "697937"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-156.608 5496 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698222"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "698853"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-126.946 502.424 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698852"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "698856"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-101.369 502.424 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698852"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "698859"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-75.9465 502.424 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698852"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "698862"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-50.3691 502.424 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698852"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "698865"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-24.7721 502.424 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698852"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "698868"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "0.80523 502.424 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698852"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "698871"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "26.4226 502.462 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698852"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "698874"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "52 502.462 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698852"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "698877"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-280.554 502.427 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698852"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "698880"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-254.977 502.427 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698852"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "698883"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-229.38 502.427 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698852"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "698886"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-203.802 502.427 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698852"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "698889"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-178.185 502.466 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698852"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "698892"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor4"
+	"origin" "-152.608 502.466 -94.46"
+	editor
+	{
+		"color" "182 255 0"
+		"groupid" "698852"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "699477"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor3"
+	"origin" "-113 704 -93"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[5000 10500]"
+	}
+}
+entity
+{
+	"id" "699492"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor3"
+	"origin" "-117 1177 -93"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[5000 10500]"
+	}
+}
+entity
+{
+	"id" "699595"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor2"
+	"origin" "-113 1929 -93"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[5000 10500]"
+	}
+}
+entity
+{
+	"id" "699676"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor2"
+	"origin" "-115 2780.88 -93"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[5000 10500]"
+	}
+}
+entity
+{
+	"id" "699699"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor2"
+	"origin" "-111 4030.92 -93"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[5000 10500]"
+	}
+}
+entity
+{
+	"id" "699728"
+	"classname" "infodecal"
+	"LowPriority" "0"
+	"texture" "stations/station_floor2"
+	"origin" "-114.654 5091.13 -93"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[5000 10500]"
 	}
 }
 cameras
