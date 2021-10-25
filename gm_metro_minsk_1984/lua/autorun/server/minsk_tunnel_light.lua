@@ -1,7 +1,7 @@
 -----------------------------------------------------------------------------------------
 --                          Творческое объединение "MetroPack"
 --	Скрипт написан в 2021 году для карты gm_metro_minsk_1984.
---	Аддон реализует команды для управления освещением.
+--	Аддон реализует команды для управления туннельным освещением.
 --	Автор: 	klusandr
 --	Steam: 	https://steamcommunity.com/id/andr47/
 --	VK:		https://vk.com/andreyklysevich
@@ -17,9 +17,10 @@ local HaulList = {
   "okt-pp",
   "pp-jk",
   "jk-an",
-  "an-phc",
+  "an-pch",
   "pch-ms"  
 } -- Пергоны 
+
 
 ----   API definition   ----
 
@@ -29,6 +30,7 @@ Metrostroi.TunnelLight = Metrostroi.TunnelLight or {}
 -- Initialize tunnel light
 function Metrostroi.TunnelLight.Initialize()
     Metrostroi.TunnelLight.Buttons = {}
+    Metrostroi.TunnelLight.ButtonsLocked = false 
 
     local buttonList = ents.FindByClass("func_button")
     
@@ -58,12 +60,17 @@ function Metrostroi.TunnelLight.On(haulName, wayNumber)
 
     local haulButton1 = Metrostroi.TunnelLight.Buttons[haulName..wayNumber.."1"]
     local haulButton2 = Metrostroi.TunnelLight.Buttons[haulName..wayNumber.."2"]
-    
+    local buttonsLocked = Metrostroi.TunnelLight.ButtonsLocked
+
     if (haulButton1 != nil and haulButton1:IsValid()) then
+        if (buttonsLocked) then haulButton1:Fire("Unlock") end
         haulButton1:Fire("PressIn")
+        if (buttonsLocked) then haulButton1:Fire("Lock") end
     end
     if (haulButton2 != nil and haulButton2:IsValid()) then
+        if (buttonsLocked) then haulButton2:Fire("Unlock") end
         haulButton2:Fire("PressIn")
+        if (buttonsLocked) then haulButton2:Fire("Lock") end  
     end
 end
 
@@ -75,31 +82,44 @@ function Metrostroi.TunnelLight.Off(haulName, wayNumber)
 
     local haulButton1 = Metrostroi.TunnelLight.Buttons[haulName..wayNumber.."1"]
     local haulButton2 = Metrostroi.TunnelLight.Buttons[haulName..wayNumber.."2"]
+    local buttonsLocked = Metrostroi.TunnelLight.ButtonsLocked
     
     if (haulButton1 != nil and haulButton1:IsValid()) then
+        if (buttonsLocked) then haulButton1:Fire("Unlock") end
         haulButton1:Fire("PressOut")
+        print(Metrostroi.TunnelLight.ButtonsLocked)
+        if (buttonsLocked) then haulButton1:Fire("Lock") end
     end
     if (haulButton2 != nil and haulButton2:IsValid()) then
+        if (buttonsLocked) then haulButton2:Fire("Unlock") end
         haulButton2:Fire("PressOut")
+        if (buttonsLocked) then haulButton2:Fire("Lock") end
     end
 end
 
 -- On all tunnel light on map
 function Metrostroi.TunnelLight.AllOn()
+    local buttonsLocked = Metrostroi.TunnelLight.ButtonsLocked
+    if (buttonsLocked) then Metrostroi.TunnelLight.ButtonsUnlock() end
     for _, button in pairs(Metrostroi.TunnelLight.Buttons) do
         if (button != nil and button:IsValid()) then
             button:Fire("PressIn")
         end
     end
+    print(buttonsLocked)
+    if (buttonsLocked) then Metrostroi.TunnelLight.ButtonsLock() end
 end
 
 -- Off all tunnel light on map
 function Metrostroi.TunnelLight.OffAll()
+    local buttonsLocked = Metrostroi.TunnelLight.ButtonsLocked
+    if (buttonsLocked) then Metrostroi.TunnelLight.ButtonsUnlock() end
     for _, button in pairs(Metrostroi.TunnelLight.Buttons) do
         if (button != nil and button:IsValid()) then
             button:Fire("PressOut")
         end
     end
+    if (buttonsLocked) then Metrostroi.TunnelLight.ButtonsLock() end
 end
 
 -- Lock all tunnel light buttons on map
@@ -109,6 +129,7 @@ function Metrostroi.TunnelLight.ButtonsLock()
             button:Fire("Lock")
         end
     end
+    Metrostroi.TunnelLight.ButtonsLocked = true
 end
 
 -- Unlock all tunnel light buttons on map
@@ -118,6 +139,7 @@ function Metrostroi.TunnelLight.ButtonsUnlock()
             button:Fire("Unlock")
         end
     end
+    Metrostroi.TunnelLight.ButtonsLocked = false
 end
 
 
@@ -152,3 +174,4 @@ end)
 
 -- Initialization
 hook.Add("InitPostEntity", "TunnelLightInitialize", Metrostroi.TunnelLight.Initialize)
+--Metrostroi.TunnelLight.Initialize()
