@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8538"
-	"mapversion" "816"
+	"mapversion" "819"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -68,7 +68,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "816"
+	"mapversion" "1684"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -11733,13 +11733,13 @@ hidden
 		"classname" "gmod_track_platform"
 		"HorliftHaveSignal" "0"
 		"HorliftStation" "0"
-		"origin" "-288.29 5910.26 -87"
 		"PlatformEnd" "121_2end"
 		"PlatformIndex" "2"
 		"PlatformLast" "yes"
 		"PlatformStart" "121_2start"
 		"PopularityIndex" "0.9"
 		"StationIndex" "121"
+		"origin" "-288.29 5910.26 -87"
 		editor
 		{
 			"color" "217 170 0"
@@ -11758,13 +11758,13 @@ hidden
 		"classname" "gmod_track_platform"
 		"HorliftHaveSignal" "0"
 		"HorliftStation" "0"
-		"origin" "-242.29 5910.26 -87"
 		"PlatformEnd" "121_1end"
 		"PlatformIndex" "1"
 		"PlatformLast" "no"
 		"PlatformStart" "121_1start"
 		"PopularityIndex" "0.9"
 		"StationIndex" "121"
+		"origin" "-242.29 5910.26 -87"
 		editor
 		{
 			"color" "217 170 0"
@@ -70765,35 +70765,6 @@ entity
 }
 entity
 {
-	"id" "232995"
-	"classname" "info_overlay"
-	"BasisNormal" "-0 1 0"
-	"BasisOrigin" "-273 -10193 13"
-	"BasisU" "1 0 0"
-	"BasisV" "0 0 -1"
-	"EndU" "0"
-	"EndV" "1"
-	"fademindist" "-1"
-	"material" "stations/station_floor7"
-	"sides" "30084"
-	"StartU" "1"
-	"StartV" "0"
-	"uv0" "-45.1584 -35.28 0"
-	"uv1" "-45.1584 35.28 0"
-	"uv2" "45.1584 35.28 0"
-	"uv3" "45.1584 -35.28 0"
-	"origin" "-273 -10193 13"
-	editor
-	{
-		"color" "80 150 225"
-		"visgroupid" "42"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
 	"id" "235848"
 	"classname" "prop_static"
 	"angles" "0 90 0"
@@ -96316,6 +96287,22 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "342424"
+	"classname" "infodecal"
+	"angles" "0 0 0"
+	"LowPriority" "0"
+	"texture" "stations/station_floor7"
+	"origin" "-270 -10193 2"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
 	}
 }
 cameras
