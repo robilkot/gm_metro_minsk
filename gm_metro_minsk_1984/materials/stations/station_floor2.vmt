@@ -1,7 +1,8 @@
-LightmappedGeneric
+VertexlitGeneric
 {
 	$basetexture models/stations/station_floor2
-	$translucent 1
-	$decal 1
-	$decalscale .042
+	$bumpmap models/stations/station_floor2_n
+	$phong 1
+    $phongboost .1
+	$phongfresnelranges "[1 1 1]"
 }
