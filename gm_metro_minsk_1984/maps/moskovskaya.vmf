@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8538"
-	"mapversion" "819"
+	"mapversion" "820"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -68,7 +68,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "1684"
+	"mapversion" "820"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -11733,13 +11733,13 @@ hidden
 		"classname" "gmod_track_platform"
 		"HorliftHaveSignal" "0"
 		"HorliftStation" "0"
+		"origin" "-288.29 5910.26 -87"
 		"PlatformEnd" "121_2end"
 		"PlatformIndex" "2"
 		"PlatformLast" "yes"
 		"PlatformStart" "121_2start"
 		"PopularityIndex" "0.9"
 		"StationIndex" "121"
-		"origin" "-288.29 5910.26 -87"
 		editor
 		{
 			"color" "217 170 0"
@@ -11758,13 +11758,13 @@ hidden
 		"classname" "gmod_track_platform"
 		"HorliftHaveSignal" "0"
 		"HorliftStation" "0"
+		"origin" "-242.29 5910.26 -87"
 		"PlatformEnd" "121_1end"
 		"PlatformIndex" "1"
 		"PlatformLast" "no"
 		"PlatformStart" "121_1start"
 		"PopularityIndex" "0.9"
 		"StationIndex" "121"
-		"origin" "-242.29 5910.26 -87"
 		editor
 		{
 			"color" "217 170 0"
@@ -96300,6 +96300,31 @@ entity
 	editor
 	{
 		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "345433"
+	"classname" "light"
+	"_constant_attn" "0"
+	"_distance" "0"
+	"_fifty_percent_distance" "0"
+	"_hardfalloff" "0"
+	"_light" "255 255 255 300"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"_linear_attn" "0"
+	"_quadratic_attn" "1"
+	"_zero_percent_distance" "0"
+	"style" "0"
+	"origin" "-276 7707 31"
+	editor
+	{
+		"color" "220 220 220"
+		"visgroupid" "22"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
