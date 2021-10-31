@@ -12,13 +12,14 @@
 if (game.GetMap() ~= "gm_metro_minsk_1984") then return end
 
 local HaulList = {
-  "ik-pl",
-  "pl-okt",
-  "okt-pp",
-  "pp-jk",
-  "jk-an",
-  "an-pch",
-  "pch-ms"  
+    "ssv",
+    "ik-pl",
+    "pl-okt",
+    "okt-pp",
+    "pp-jk",
+    "jk-an",
+    "an-pch",
+    "pch-ms"
 } -- Пергоны 
 
 
@@ -174,4 +175,3 @@ end)
 
 -- Initialization
 hook.Add("InitPostEntity", "TunnelLightInitialize", Metrostroi.TunnelLight.Initialize)
---Metrostroi.TunnelLight.Initialize()
