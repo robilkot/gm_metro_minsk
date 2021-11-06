@@ -1,6 +1,6 @@
 -----------------------------------------------------------------------------------------
 --                          Творческое объединение "MetroPack"
---	Скрипт написан в 2021 году для карты gm_metro_minsk_1984.
+--	Скрипт написан в 2021 году для аддона Metrostroi.
 --	Аддон реализует токоразделы, разделяя контактный рельс на учатки(фидеры), 
 --  с независимым напряжением.
 --	Автор: 	klusandr
@@ -8,6 +8,7 @@
 --	VK:		https://vk.com/andreyklysevich
 --  Дополнительная информация в файле lua/licence.lua
 -----------------------------------------------------------------------------------------
+
 
 local function getFile(path,name)
     local data,found
@@ -91,34 +92,34 @@ function Metrostroi.Feeder.SetVoltage(feeder, voltage)
 end
 
 -- Turn on feeder, supply current start
--- (feeder) - feeder number 
--- No arguments: all feeders is on
+-- (feeder) - feeder number
 function Metrostroi.Feeder.On(feeder)
-    if (feeder == nil) then
-        for k, _ in pairs(Metrostroi.FeedersOn) do
-            Metrostroi.FeedersOn[k] = true
-        end
-    else
-        feeder = tonumber(feeder)
-        if (feeder ~= nil and Metrostroi.FeedersOn[feeder] ~= nil) then
-            Metrostroi.FeedersOn[feeder] = true 
-        end
+    feeder = tonumber(feeder)
+    if (feeder ~= nil and Metrostroi.FeedersOn[feeder] ~= nil) then
+        Metrostroi.FeedersOn[feeder] = true 
     end
 end
 
 -- Turns off feeder, supply current stops.
 -- (feeder) - feeder number 
--- No arguments: all feeders is off 
 function Metrostroi.Feeder.Off(feeder)
-    if (feeder == nil) then
-        for k, _ in pairs(Metrostroi.FeedersOn) do
-            Metrostroi.FeedersOn[k] = false
-        end
-    else
-        feeder = tonumber(feeder)
-        if (feeder ~= nil and Metrostroi.FeedersOn[feeder] ~= nil) then
-            Metrostroi.FeedersOn[feeder] = false 
-        end
+    feeder = tonumber(feeder)
+    if (feeder ~= nil and Metrostroi.FeedersOn[feeder] ~= nil) then
+        Metrostroi.FeedersOn[feeder] = false 
+    end
+end
+
+-- Turn on all feeder, supply current start
+function Metrostroi.Feeder.AllOn()
+    for k, _ in pairs(Metrostroi.FeedersOn) do
+        Metrostroi.FeedersOn[k] = true
+    end
+end
+
+-- Turns off all feeder, supply current stops.
+function Metrostroi.Feeder.AllOff()
+    for k, _ in pairs(Metrostroi.FeedersOn) do
+        Metrostroi.FeedersOn[k] = false
     end
 end
 
@@ -195,12 +196,20 @@ end)
 
 concommand.Add("metrostroi_feeder_on", function(ply, _, args)
     if (ply and ply != NULL and not ply:IsAdmin()) then return end
-    Metrostroi.Feeder.On(args[1])
+    if (args[1] == "all") then
+        Metrostroi.Feeder.AllOn()
+    else
+        Metrostroi.Feeder.On(args[1])
+    end
 end)
 
 concommand.Add("metrostroi_feeder_off", function(ply, _, args)
     if (ply and ply != NULL and not ply:IsAdmin()) then return end
-    Metrostroi.Feeder.Off(args[1])
+    if (args[1] == "all") then
+        Metrostroi.Feeder.AllOff()
+    else
+        Metrostroi.Feeder.Off(args[1])
+    end
 end)
 
 concommand.Add("metrostroi_feeder_info", function (ply, _, _)

@@ -1,7 +1,7 @@
 -----------------------------------------------------------------------------------------
 --                          Творческое объединение "MetroPack"
 --	Скрипт написан в 2021 году для карты gm_metro_minsk_1984.
---	Аддон добавляет книгу ремонта в составы.
+--	Аддон добавляет книгу ремонта в составы (клиентская часть).
 --	Автор: 	klusandr
 --	Steam: 	https://steamcommunity.com/id/andr47/
 --	VK:		https://vk.com/andreyklysevich
@@ -9,7 +9,7 @@
 -----------------------------------------------------------------------------------------
 
 
-if (game.GetMap() != "gm_metro_minsk_1984") then return end
+if (game.GetMap() ~= "gm_metro_minsk_1984") then return end
 
 local function createFont(name, font, size)
 	surface.CreateFont(name, {
@@ -36,7 +36,6 @@ createFont("Metrostroi_RapairBook_Text_Small", "Times New Roman", 100)
 
 
 hook.Add("InitPostEntity", "RepairBookInitialize", function()       --Хук, вызываемый после инциализации игры, начало тела функции с кодом
-
 
 local Trains = {						
 	["gmod_subway_81-717_mvm"] = {	
@@ -170,7 +169,6 @@ for trainName, location in pairs(Trains) do
 	end
 end
 	
-
 end) --Окончание тела функции хука
 
 

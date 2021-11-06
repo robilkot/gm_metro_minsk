@@ -1,7 +1,7 @@
 -----------------------------------------------------------------------------------------
 --                          Творческое объединение "MetroPack"
---	Скрипт написан в 2021 году для карты gm_metro_minsk_1984.
---	Аддон заставляет тележку воспроизводить звуки, проезжая через определённые триггеры.
+--	Скрипт написан в 2021 году для аддона Metrostroi.
+--	Аддон заставляет тележку воспроизводить звуки, проезжая через определённые триггеры (клиентская часть).
 --	Автор: 	klusandr
 --	Steam: 	https://steamcommunity.com/id/andr47/
 --	VK:		https://vk.com/andreyklysevich
@@ -16,7 +16,7 @@ local soundNames = {
 }
 
 
-timer.Simple(1, function()--hook.Add("InitPostEntity", "BogeySoundInitialize", function()       --Хук, вызываемый после инциализации игры, начало тела функции с кодом
+hook.Add("InitPostEntity", "BogeySoundInitialize", function()       --Хук, вызываемый после инциализации игры, начало тела функции с кодом
 
 
 ENT = scripted_ents.GetStored("gmod_train_bogey").t
@@ -58,7 +58,6 @@ function ENT:Think()
         self:SetSoundState(soundName, tunnel_volume, tunnel_pitch)
     end
 end
-
 
 end) --Окончание тела функции хука
 

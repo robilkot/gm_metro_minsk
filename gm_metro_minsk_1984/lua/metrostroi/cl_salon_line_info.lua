@@ -8,7 +8,8 @@
 --  Дополнительная информация в файле lua/licence.lua
 -----------------------------------------------------------------------------------------
 
-if (game.GetMap() != "gm_metro_minsk_1984") then return end
+
+if (game.GetMap() ~= "gm_metro_minsk_1984") then return end
 
 local Trains = {
     ["gmod_subway_81-717_mvm"]  = "models/lin_minsk84.mdl",
@@ -18,7 +19,7 @@ local Trains = {
 }
 
 
-hook.Add("InitPostEntity", "BogeySoundInitialize", function()       --Хук, вызываемый после инциализации игры, начало тела функции с кодом
+hook.Add("InitPostEntity", "SalonLineInfoInitialize", function()       --Хук, вызываемый после инциализации игры, начало тела функции с кодом
 
 for train, model in pairs(Trains) do
     ENT = scripted_ents.GetStored(train).t

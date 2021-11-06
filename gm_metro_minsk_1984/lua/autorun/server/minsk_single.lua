@@ -1,6 +1,6 @@
 -----------------------------------------------------------------------------------------
 --                          Творческое объединение "MetroPack"
---	Скрипт написан в 2021 году для Garry's Mod Metrostroi.
+--	Скрипт написан в 2021 году для карты gm_metro_minsk_1984.
 --	Аддон адаптирует карту gm_metro_minsk_1984 для одиночной игры
 --	Автор: 	klusandr
 --	Steam: 	https://steamcommunity.com/id/andr47/
@@ -8,7 +8,8 @@
 --  Дополнительная информация в файле lua/licence.lua
 -----------------------------------------------------------------------------------------
 
-if (game.GetMap() ~= "gm_metro_minsk_1984") or not game.SinglePlayer () then return end
+
+if (game.GetMap() != "gm_metro_minsk_1984" or not game.SinglePlayer()) then return end
 
 local ENTClearList = {
     ["lua_run"] = {},
@@ -46,5 +47,5 @@ local function SinglePreparation()
     ClearEntities()
 end
 
-timer.Simple(1, SinglePreparation)
+hook.Add("InitPostEntity", "MinskSinglePreparation", SinglePreparation)
 

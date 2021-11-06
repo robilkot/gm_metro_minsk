@@ -9,7 +9,7 @@
 -----------------------------------------------------------------------------------------
 
 
-if (game.GetMap() ~= "gm_metro_minsk_1984") then return end
+if (game.GetMap() != "gm_metro_minsk_1984") then return end
 
 local HaulList = {
     "ssv",
@@ -20,18 +20,19 @@ local HaulList = {
     "jk-an",
     "an-pch",
     "pch-ms"
-} -- Пергоны 
+} -- hauls 
 
 
 ----   API definition   ----
 
-Metrostroi.TunnelLight = Metrostroi.TunnelLight or {}
+Minsk = Minsk or {}
+Minsk.TunnelLight = Minsk.TunnelLight or {}
 
 
 -- Initialize tunnel light
-function Metrostroi.TunnelLight.Initialize()
-    Metrostroi.TunnelLight.Buttons = {}
-    Metrostroi.TunnelLight.ButtonsLocked = false 
+function Minsk.TunnelLight.Initialize()
+    Minsk.TunnelLight.Buttons = {}
+    Minsk.TunnelLight.ButtonsLocked = false 
 
     local buttonList = ents.FindByClass("func_button")
     
@@ -40,7 +41,7 @@ function Metrostroi.TunnelLight.Initialize()
             for i = 1, 2 do
                 for j = 1, 2 do
                     if (ent:GetName() == "lt_"..haulName..i..j) then
-                        Metrostroi.TunnelLight.Buttons[haulName..i..j] = ent
+                        Minsk.TunnelLight.Buttons[haulName..i..j] = ent
                     end
                 end
                 
@@ -49,19 +50,19 @@ function Metrostroi.TunnelLight.Initialize()
     end
 
     if (not game.SinglePlayer()) then
-        RunConsoleCommand("metrostroi_tunnel_light_lock", "all")
+        RunConsoleCommand("minsk_tunnel_light_lock")
     end
 end
 
 -- On light on haul 
 -- (haulName) - haul name
 -- (wayNumber) - way number
-function Metrostroi.TunnelLight.On(haulName, wayNumber)
+function Minsk.TunnelLight.On(haulName, wayNumber)
     if (haulName == nil or wayNumber == nil) then return end
 
-    local haulButton1 = Metrostroi.TunnelLight.Buttons[haulName..wayNumber.."1"]
-    local haulButton2 = Metrostroi.TunnelLight.Buttons[haulName..wayNumber.."2"]
-    local buttonsLocked = Metrostroi.TunnelLight.ButtonsLocked
+    local haulButton1 = Minsk.TunnelLight.Buttons[haulName..wayNumber.."1"]
+    local haulButton2 = Minsk.TunnelLight.Buttons[haulName..wayNumber.."2"]
+    local buttonsLocked = Minsk.TunnelLight.ButtonsLocked
 
     if (haulButton1 != nil and haulButton1:IsValid()) then
         if (buttonsLocked) then haulButton1:Fire("Unlock") end
@@ -78,17 +79,16 @@ end
 -- Off light on haul 
 -- (haulName) - haul name
 -- (wayNumber) - way number
-function Metrostroi.TunnelLight.Off(haulName, wayNumber)
+function Minsk.TunnelLight.Off(haulName, wayNumber)
     if (haulName == nil or wayNumber == nil) then return end
 
-    local haulButton1 = Metrostroi.TunnelLight.Buttons[haulName..wayNumber.."1"]
-    local haulButton2 = Metrostroi.TunnelLight.Buttons[haulName..wayNumber.."2"]
-    local buttonsLocked = Metrostroi.TunnelLight.ButtonsLocked
+    local haulButton1 = Minsk.TunnelLight.Buttons[haulName..wayNumber.."1"]
+    local haulButton2 = Minsk.TunnelLight.Buttons[haulName..wayNumber.."2"]
+    local buttonsLocked = Minsk.TunnelLight.ButtonsLocked
     
     if (haulButton1 != nil and haulButton1:IsValid()) then
         if (buttonsLocked) then haulButton1:Fire("Unlock") end
         haulButton1:Fire("PressOut")
-        print(Metrostroi.TunnelLight.ButtonsLocked)
         if (buttonsLocked) then haulButton1:Fire("Lock") end
     end
     if (haulButton2 != nil and haulButton2:IsValid()) then
@@ -99,79 +99,80 @@ function Metrostroi.TunnelLight.Off(haulName, wayNumber)
 end
 
 -- On all tunnel light on map
-function Metrostroi.TunnelLight.AllOn()
-    local buttonsLocked = Metrostroi.TunnelLight.ButtonsLocked
-    if (buttonsLocked) then Metrostroi.TunnelLight.ButtonsUnlock() end
-    for _, button in pairs(Metrostroi.TunnelLight.Buttons) do
+function Minsk.TunnelLight.AllOn()
+    local buttonsLocked = Minsk.TunnelLight.ButtonsLocked
+    if (buttonsLocked) then Minsk.TunnelLight.ButtonsUnlock() end
+    for _, button in pairs(Minsk.TunnelLight.Buttons) do
         if (button != nil and button:IsValid()) then
             button:Fire("PressIn")
         end
     end
-    print(buttonsLocked)
-    if (buttonsLocked) then Metrostroi.TunnelLight.ButtonsLock() end
+    if (buttonsLocked) then Minsk.TunnelLight.ButtonsLock() end
 end
 
 -- Off all tunnel light on map
-function Metrostroi.TunnelLight.OffAll()
-    local buttonsLocked = Metrostroi.TunnelLight.ButtonsLocked
-    if (buttonsLocked) then Metrostroi.TunnelLight.ButtonsUnlock() end
-    for _, button in pairs(Metrostroi.TunnelLight.Buttons) do
+function Minsk.TunnelLight.OffAll()
+    local buttonsLocked = Minsk.TunnelLight.ButtonsLocked
+    if (buttonsLocked) then Minsk.TunnelLight.ButtonsUnlock() end
+    for _, button in pairs(Minsk.TunnelLight.Buttons) do
         if (button != nil and button:IsValid()) then
             button:Fire("PressOut")
         end
     end
-    if (buttonsLocked) then Metrostroi.TunnelLight.ButtonsLock() end
+    if (buttonsLocked) then Minsk.TunnelLight.ButtonsLock() end
 end
 
 -- Lock all tunnel light buttons on map
-function Metrostroi.TunnelLight.ButtonsLock()
-    for _, button in pairs(Metrostroi.TunnelLight.Buttons) do
+function Minsk.TunnelLight.ButtonsLock()
+    for _, button in pairs(Minsk.TunnelLight.Buttons) do
         if (button != nil and button:IsValid()) then
             button:Fire("Lock")
         end
     end
-    Metrostroi.TunnelLight.ButtonsLocked = true
+    Minsk.TunnelLight.ButtonsLocked = true
 end
 
 -- Unlock all tunnel light buttons on map
-function Metrostroi.TunnelLight.ButtonsUnlock()
-    for _, button in pairs(Metrostroi.TunnelLight.Buttons) do
+function Minsk.TunnelLight.ButtonsUnlock()
+    for _, button in pairs(Minsk.TunnelLight.Buttons) do
         if (button != nil and button:IsValid()) then
             button:Fire("Unlock")
         end
     end
-    Metrostroi.TunnelLight.ButtonsLocked = false
+    Minsk.TunnelLight.ButtonsLocked = false
 end
 
 
 ----   Console command definition   ----
 
-concommand.Add("metrostroi_tunnel_light_on", function(ply, _, args)
+concommand.Add("minsk_tunnel_light_on", function(ply, _, args)
     if (ply and ply != NULL and not ply:IsAdmin()) then return end
     if (args[1] == "all") then
-        Metrostroi.TunnelLight.AllOn()
+        Minsk.TunnelLight.AllOn()
     else
-        Metrostroi.TunnelLight.On(args[1], args[2])
+        Minsk.TunnelLight.On(args[1], args[2])
     end
 end)
 
-concommand.Add("metrostroi_tunnel_light_off", function(ply, _, args)
+concommand.Add("minsk_tunnel_light_off", function(ply, _, args)
     if (ply and ply != NULL and not ply:IsAdmin()) then return end
     if (args[1] == "all") then
-        Metrostroi.TunnelLight.OffAll()
+        Minsk.TunnelLight.OffAll()
     else
-        Metrostroi.TunnelLight.Off(args[1], args[2])
+        Minsk.TunnelLight.Off(args[1], args[2])
     end
 end)
 
-concommand.Add("metrostroi_tunnel_light_lock", function(ply, _, args)
-    Metrostroi.TunnelLight.ButtonsLock()
+concommand.Add("minsk_tunnel_light_lock", function(ply, _, args)
+    if (ply and ply != NULL and not ply:IsAdmin()) then return end
+    Minsk.TunnelLight.ButtonsLock()
 end)
 
-concommand.Add("metrostroi_tunnel_light_unlock", function(ply, _, args)
-    Metrostroi.TunnelLight.ButtonsUnlock()
+concommand.Add("minsk_tunnel_light_unlock", function(ply, _, args)
+    if (ply and ply != NULL and not ply:IsAdmin()) then return end
+    Minsk.TunnelLight.ButtonsUnlock()
 end)
 
 
 -- Initialization
-hook.Add("InitPostEntity", "TunnelLightInitialize", Metrostroi.TunnelLight.Initialize)
+hook.Add("InitPostEntity", "MinskTunnelLightInitialize", Minsk.TunnelLight.Initialize)

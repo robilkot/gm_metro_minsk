@@ -1,7 +1,7 @@
 -----------------------------------------------------------------------------------------
 --                          Творческое объединение "MetroPack"
 --	Скрипт написан в 2021 году для карты gm_metro_minsk_1984.
---	Аддон добавляет книгу ремонта в составы.
+--	Аддон добавляет книгу ремонта в составы (общая часть).
 --	Автор: 	klusandr
 --	Steam: 	https://steamcommunity.com/id/andr47/
 --	VK:		https://vk.com/andreyklysevich
@@ -15,7 +15,8 @@ local Trains = {
 	"gmod_subway_81-717_mvm_custom",
 }
 
-hook.Add("InitPostEntity", "RepairBookSignboardInitializeSh", function()       --Хук, вызываемый после инциализации игры, начало тела функции с кодом
+
+hook.Add("InitPostEntity", "RepairBookInitializeShared", function()       --Хук, вызываемый после инциализации игры, начало тела функции с кодом
 
 for _, trainName in pairs(Trains) do
 	local Train = scripted_ents.GetStored(trainName).t

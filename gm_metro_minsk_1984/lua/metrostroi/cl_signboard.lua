@@ -1,7 +1,7 @@
 -----------------------------------------------------------------------------------------
 --                          Творческое объединение "MetroPack"
 --	Скрипт написан в 2021 году для карты gm_metro_minsk_1984.
---	Аддон добавляет плакат первое поезди на составы 81-717 серии.
+--	Аддон добавляет плакат первой поездки на составы 81-717 серии (клиентская часть).
 --	Автор: 	klusandr
 --	Steam: 	https://steamcommunity.com/id/andr47/
 --	VK:		https://vk.com/andreyklysevich
@@ -9,13 +9,14 @@
 -----------------------------------------------------------------------------------------
 
 
-if (game.GetMap() != "gm_metro_minsk_1984") then return end
-
-hook.Add("InitPostEntity", "SignboardInitialize1", function()       --Хук, вызываемый после инциализации игры, начало тела функции с кодом
+if (game.GetMap() ~= "gm_metro_minsk_1984") then return end
 
 local Trains = {						
 	["gmod_subway_81-717_mvm"]	= Vector(-6, -0.1, -10),
 }
+
+
+hook.Add("InitPostEntity", "SignboardInitialize", function()       --Хук, вызываемый после инциализации игры, начало тела функции с кодом
 
 for trainName, boardPos in pairs(Trains) do
 	local Train = scripted_ents.GetStored(trainName).t
