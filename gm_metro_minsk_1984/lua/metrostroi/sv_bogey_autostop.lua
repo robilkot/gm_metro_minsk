@@ -9,7 +9,7 @@
 -----------------------------------------------------------------------------------------
 
 
-hook.Add("InitPostEntity", "BogeyAutostopInitialize", function()   --Хук, вызываемый после инциализации игры, начало тела функции с кодом
+--hook.Add("InitPostEntity", "BogeyAutostopInitialize", function()   --Хук, вызываемый после инциализации игры, начало тела функции с кодом
 
 ENT = scripted_ents.GetStored("gmod_train_bogey").t
 
@@ -17,11 +17,11 @@ ENT.BogeyAutostop = ENT.BogeyAutostop or {}
 
 ENT.BogeyAutostop.AcceptInput = ENT.BogeyAutostop.AcceptInput or ENT.AcceptInput
 function ENT:AcceptInput(inputName, activator, called, data)
-    if (self:GetNW2Bool("IsForwardBogey")) then
+    local train = self:GetNW2Entity("TrainEntity")
+    if (self:GetNW2Bool("IsForwardBogey") and train.SubwayTrain and train.SubwayTrain.WagType == 1) then
         if inputName == "BogeyAutostopInertial" then
             if (self.AutostopEnable) then
                 if ((data == "right" and self.SpeedSign == 1) or (data == "left" and self.SpeedSign == -1)) then
-                    local train = self:GetNW2Entity("TrainEntity")
                     
                     if (self.Speed > 10) then
                         train.Pneumatic:TriggerInput("Autostop",0)
@@ -45,4 +45,4 @@ function ENT:AcceptInput(inputName, activator, called, data)
     return self.BogeyAutostop.AcceptInput(self, inputName, activator, called, data)
 end
 
-end)    --Окончание тела функции хука
+--end)    --Окончание тела функции хука
