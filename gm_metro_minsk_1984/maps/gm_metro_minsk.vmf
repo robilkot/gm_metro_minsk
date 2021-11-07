@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8538"
-	"mapversion" "3029"
+	"mapversion" "3030"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -128,7 +128,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "3029"
+	"mapversion" "3030"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -101286,7 +101286,7 @@ entity
 	"lfomodvol" "0"
 	"lforate" "0"
 	"lfotype" "0"
-	"message" "depot/depot_street1.mp3"
+	"message" "depot/depot_street1.wav"
 	"pitch" "100"
 	"pitchstart" "100"
 	"preset" "0"
@@ -148962,7 +148962,7 @@ entity
 	"id" "1360665"
 	"classname" "env_cubemap"
 	"cubemapsize" "0"
-	"origin" "944 10128.9 7499"
+	"origin" "769 10287 7499"
 	editor
 	{
 		"color" "0 0 255"
@@ -148978,21 +148978,6 @@ entity
 	"cubemapsize" "0"
 	"sides" ""
 	"origin" "-722 11694.9 7502"
-	editor
-	{
-		"color" "0 0 255"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "1360686"
-	"classname" "env_cubemap"
-	"cubemapsize" "0"
-	"sides" ""
-	"origin" "2871 8297.85 7474"
 	editor
 	{
 		"color" "0 0 255"
@@ -185523,6 +185508,21 @@ entity
 	editor
 	{
 		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1360686"
+	"classname" "env_cubemap"
+	"cubemapsize" "0"
+	"sides" ""
+	"origin" "2871 8297.85 7474"
+	editor
+	{
+		"color" "0 0 255"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
