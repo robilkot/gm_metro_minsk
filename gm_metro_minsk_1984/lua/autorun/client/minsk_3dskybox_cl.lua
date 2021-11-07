@@ -1,0 +1,6 @@
+net.Receive( setr3dsky0, function( len, ply )
+    RunConsoleCommand(r_3dsky,0 )
+end )
+net.Receive( setr3dsky1, function( len, ply )
+    RunConsoleCommand(r_3dsky,1 )
+end )
