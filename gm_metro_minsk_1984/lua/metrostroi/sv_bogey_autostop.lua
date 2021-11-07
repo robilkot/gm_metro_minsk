@@ -9,7 +9,7 @@
 -----------------------------------------------------------------------------------------
 
 
---hook.Add("InitPostEntity", "BogeyAutostopInitialize", function()   --Хук, вызываемый после инциализации игры, начало тела функции с кодом
+hook.Add("InitPostEntity", "BogeyAutostopInitialize", function()   --Хук, вызываемый после инциализации игры, начало тела функции с кодом
 
 ENT = scripted_ents.GetStored("gmod_train_bogey").t
 
@@ -45,4 +45,4 @@ function ENT:AcceptInput(inputName, activator, called, data)
     return self.BogeyAutostop.AcceptInput(self, inputName, activator, called, data)
 end
 
---end)    --Окончание тела функции хука
+end)    --Окончание тела функции хука
