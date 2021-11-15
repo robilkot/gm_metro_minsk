@@ -1,6 +1,6 @@
 -----------------------------------------------------------------------------------------
 --                          Творческое объединение "MetroPack"
---	Скрипт написан в 2021 году для Garry's Mod Metrostroi.
+--	Скрипт написан в 2021 году для карты gm_metro_minsk_1984.
 --	Аддон позволяет блокировать кнопки закрытия металоконструкций
 --  и активировать индикаторы занятости перегона.
 --	Автор: 	klusandr
@@ -84,7 +84,8 @@ function Minsk.MK.Initialize()
         end
     end
 
-    if (not Minsk.Server) then
+    if (not Minsk.Server and Metrostroi) then
+
         timer.Simple(3.0, Minsk.MK.LoadSignals)
 
         local m_load = Metrostroi.Load
@@ -94,7 +95,7 @@ function Minsk.MK.Initialize()
         end
 
         hook.Add("Think", "Minsk.MK.Think", Minsk.MK.Think)
-
+        
     end
 
     if (not game.SinglePlayer()) then
@@ -102,7 +103,7 @@ function Minsk.MK.Initialize()
     end
 end
 
-if (not Minsk.Server) then
+if (not Minsk.Server and Metrostroi) then
     
     function Minsk.MK.LoadSignals(name)
         local data = getFile("metrostroi_data/mk_signs_%s", name or game.GetMap())
@@ -114,13 +115,12 @@ if (not Minsk.Server) then
                 Minsk.MK.List[MKName].SignalList = {}
                 for _, signalName in pairs(signalsName) do
                     local signal = Metrostroi.GetSignalByName(signalName)
-                    print(signal)
                     if (signal) then
-                        table.insert(Minsk.MK.List[MKName].SignalList, signal)
+                        Minsk.MK.List[MKName].SignalList[signalName] = signal
                     end
                 end
             end
-        end
+        end 
     end
 
     function Minsk.MK.Think()
@@ -128,7 +128,7 @@ if (not Minsk.Server) then
             if (MK.Entity:IsValid() and MK.SignalList) then
                 local mkRotation = MK.Entity:GetInternalVariable("m_angAbsRotation")[2]
 
-                if (mkRotation < 0) then
+                if (mkRotation != 0) then
                     if (not MK.IsClose) then
                         Minsk.MK.CloseSignals(MKName)
                     end
@@ -259,3 +259,4 @@ end)
 
 -- Initialization
 hook.Add("InitPostEntity", "Minsk.MK.Initialize", Minsk.MK.Initialize)
+Minsk.MK.Initialize()
