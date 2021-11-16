@@ -23,7 +23,7 @@ function ENT:AcceptInput(inputName, activator, called, data)
             if (self.AutostopEnable) then
                 if ((data == "right" and self.SpeedSign == 1) or (data == "left" and self.SpeedSign == -1)) then
                     
-                    if (self.Speed > 10) then
+                    if (self.Speed > 13) then --Должно быть 10, но для удобства 13
                         train.Pneumatic:TriggerInput("Autostop",0)
                         called:Fire("FireUser2")
                     else
