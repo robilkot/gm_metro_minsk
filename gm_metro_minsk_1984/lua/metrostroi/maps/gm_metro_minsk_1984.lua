@@ -30,7 +30,7 @@ Metrostroi.AddANSPAnnouncer("ASNP Minsk",
 		spec_attention_train_depart = {"subway_announcers/minsk/spec_attention_train_depart.mp3", 10.642},
 		spec_attention_train_stop = {"subway_announcers/minsk/spec_attention_train_stop.mp3", 10.642},
 		train_goes_to = {"subway_announcers/minsk/train_goes_to.mp3", 2.905},
-		announcer_ready = {"subway_announcers/minsk/train_goes_to.mp3", 2.496},
+		announcer_ready = {"subway_announcers/minsk/train_goes_to.mp3", 0}, --2.496
 		
 		next_ik = {"subway_announcers/minsk/moskovskaya/next_ik.mp3", 3.156},
 		arr_ik = {"subway_announcers/minsk/moskovskaya/arr_ik.mp3", 2.739},
