@@ -150,8 +150,12 @@ if (not Minsk.Server and Metrostroi) then
             for _, signal in pairs(Minsk.MK.List[MKName].SignalList) do
                 if (signal:IsValid()) then
                     local sig = ""
-                    local lenses = signal.Lenses[1]
+                    local lenses = ""
 
+                    for _, lens in pairs(signal.Lenses) do
+                        lenses = lenses..lens
+                    end
+                    
                     for i = 1, #lenses do
                         if (lenses[i] == 'R') then
                             sig = sig.."1"
@@ -159,7 +163,7 @@ if (not Minsk.Server and Metrostroi) then
                             sig = sig.."0"
                         end
                     end
-
+                    
                     signal.ControllerLogic = true
                     signal.Sig = sig
                     signal.ARSSpeedLimit = 0
