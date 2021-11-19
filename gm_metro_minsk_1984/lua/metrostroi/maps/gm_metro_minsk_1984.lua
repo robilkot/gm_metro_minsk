@@ -142,7 +142,7 @@ Metrostroi.StationConfigurations = {
 		}
 	},
 	[118] = {
-		names = {"Площадь Якуба Коласа","yak","pyak","kolasa"},
+		names = {"Площадь Якуба Коласа","jk", "yk", "yak","pyak","kolasa"},
 		positions = {
 			{Vector(-500, -1600, 6109-56),Angle(0,-180,0)}
 		}
