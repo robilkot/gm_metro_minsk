@@ -103,6 +103,25 @@ function Minsk.MK.Initialize()
     end
 end
 
+function Minsk.MK.GetTableMKInfo()
+    local mkInfo = {}
+
+    for mkName, mk in pairs(Minsk.MK.List) do
+        local isClose = false 
+        if (IsValid(mk.Entity)) then
+            if (mk.Entity:GetInternalVariable("m_angAbsRotation")[2] != 0) then
+                isClose = true
+            end
+        end
+
+        mkInfo[mkName] = {
+            IsClose = isClose
+        }
+    end
+
+    return mkInfo
+end
+
 if (not Minsk.Server and Metrostroi) then
     
     function Minsk.MK.LoadSignals(name)
