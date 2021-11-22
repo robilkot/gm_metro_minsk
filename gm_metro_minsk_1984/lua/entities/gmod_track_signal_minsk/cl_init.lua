@@ -489,7 +489,7 @@ function ENT:Think()
             --if v[3] then
             if v[2] then State2 = self:Animate("rou2"..k,self.Num:find(v[2])and 1 or 0,     0,1, 256) end
             if not IsValid(self.Models[3]["rou1"..k]) and State1 > 0 then
-                self.Models[3]["rou1"..k] = ClientsideModel("models/metrostroi/signals/mus/light_lampindicator_"..(v[3] and "numb" or "lamp")..".mdl",RENDERGROUP_OPAQUE)
+                self.Models[3]["rou1"..k] = ClientsideModel("models/metrostroi/signals/mus/light_lampindicator_"..(v[3] and "numb_p" or "lamp")..".mdl",RENDERGROUP_OPAQUE)
                 self.Models[3]["rou1"..k]:SetPos(self:LocalToWorld(v.pos + self.OldRouteNumberSetup[4]))
                 self.Models[3]["rou1"..k]:SetAngles(self:GetAngles())
                 self.Models[3]["rou1"..k]:SetParent(self)
@@ -505,7 +505,7 @@ function ENT:Think()
                 end
             end
             if not IsValid(self.Models[3]["rou2"..k]) and v[3] and v[2] and State2 > 0 then
-                self.Models[3]["rou2"..k] = ClientsideModel("models/metrostroi/signals/mus/light_lampindicator_numb.mdl",RENDERGROUP_OPAQUE)
+                self.Models[3]["rou2"..k] = ClientsideModel("models/metrostroi/signals/mus/light_lampindicator_numb_p.mdl",RENDERGROUP_OPAQUE)
                 self.Models[3]["rou2"..k]:SetPos(self:LocalToWorld(v.pos + self.OldRouteNumberSetup[4] + Vector(0,0,7.2)))
                 self.Models[3]["rou2"..k]:SetAngles(self:GetAngles())
                 self.Models[3]["rou2"..k]:SetParent(self)
