@@ -10,15 +10,21 @@
 -----------------------------------------------------------------------------------------
 
 
-local function getFile(path,name)
+local function getFile(path, name)
     local data,found
     if file.Exists(Format(path..".txt",name),"DATA") then
-        data = util.JSONToTable(file.Read(Format(path..".txt",name),"DATA"))
+        data= util.JSONToTable(file.Read(Format(path..".txt",name),"DATA"))
+        found = true
+    end
+    if not data and file.Exists(Format(path..".lua",name),"LUA") then
+        data = util.JSONToTable(file.Read(Format(path..".lua",name),"LUA"))
         found = true
     end
     if not found then
+        --print(Format("%s definition file not found: %s",id,Format(path,name)))
         return
     elseif not data then
+        --print(Format("Parse error in %s %s definition JSON",id,Format(path,name)))
         return
     end
     return data
