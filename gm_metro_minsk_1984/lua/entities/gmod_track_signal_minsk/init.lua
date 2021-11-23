@@ -1,3 +1,4 @@
+if (game.GetMap() != "gm_metro_minsk_1984") then return end
 AddCSLuaFile("cl_init.lua")
 AddCSLuaFile("shared.lua")
 include("shared.lua")

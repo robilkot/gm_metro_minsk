@@ -1,3 +1,4 @@
+if (game.GetMap() != "gm_metro_minsk_1984") then return end
 ENT.Type			= "anim"
 ENT.PrintName		= "Signalling Element"
 ENT.Category		= "Metrostroi (utility)"

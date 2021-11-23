@@ -1,3 +1,4 @@
+if (game.GetMap() != "gm_metro_minsk_1984") then return end
 include("shared.lua")
 
 --------------------------------------------------------------------------------
