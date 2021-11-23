@@ -9,7 +9,7 @@
 -----------------------------------------------------------------------------------------
 
 
-if (game.GetMap() != "gm_metro_minsk_1984" or not game.SinglePlayer()) then return end
+if (game.GetMap() != "gm_metro_minsk_1984" or Minsk.Server) then return end
 
 local ENTClearList = {
     ["lua_run"] = {},
