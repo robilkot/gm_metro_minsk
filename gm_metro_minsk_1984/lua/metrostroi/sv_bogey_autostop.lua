@@ -21,15 +21,21 @@ function ENT:AcceptInput(inputName, activator, called, data)
     if (self:GetNW2Bool("IsForwardBogey") and train.SubwayTrain and train.SubwayTrain.WagType == 1) then
         if inputName == "BogeyAutostopInertial" then
             if (self.AutostopEnable) then
-                if ((data == "right" and self.SpeedSign == 1) or (data == "left" and self.SpeedSign == -1)) then
-                    
+                if (data == "right" and self.SpeedSign == 1) then
                     if (self.Speed > 13) then --Должно быть 10, но для удобства 13
                         train.Pneumatic:TriggerInput("Autostop",0)
                         called:Fire("FireUser2")
                     else
                         called:Fire("FireUser1")
                     end
-                end
+                elseif (data == "left" and self.SpeedSign == -1) then
+                    if (self.Speed > 30) then
+                        train.Pneumatic:TriggerInput("Autostop",0)
+                        called:Fire("FireUser2")
+                    else
+                        called:Fire("FireUser1")
+                    end
+                end 
             end
             
             self.AutostopEnable = not self.AutostopEnable
