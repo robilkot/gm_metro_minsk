@@ -13,7 +13,7 @@ Metrostroi.AddLastStationTex("702", 121, "metrostroi_skins/81-702/route_mos")
 
 Metrostroi.AddANSPAnnouncer("ASNP Minsk",
 	{
-		asnp = true,
+		asnp = false,
 		click1 = {"subway_announcers/minsk/click1.mp3", 0.522},
 		click2 = {"subway_announcers/minsk/click2.mp3", 0.480},
 		last = {"subway_announcers/minsk/last.mp3", 4.356},
