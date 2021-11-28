@@ -16,7 +16,7 @@ License for:
 	
 --------------------------------------------------------------------------------
        Copyright (C) 2019-2021 MetroPack
-        Last updated: 5th October, 2021
+        Last updated: 28th november, 2021
 					
 These files contain proprietary code and assets that belong to MetroPack team
 and are provided solely for limited personal use with the Garry's Mod.
@@ -39,15 +39,11 @@ and are provided solely for limited personal use with the Garry's Mod.
 5. It is forbidden to create and distribute derived or modified versions of the software code and
    assets without an explicit written permission from the original copyright holders.
 
-6. The use of these assets and software code is forbidden for non-commercial public
-   purposes, including but not limited to use in museums and exhibitions.
+6. Additional art assets belong to their corresponding authors and are distributed
+   under this license with their permission.
    
    MetroPack team explicitly grants permission to record, stream, share
    and monetize screenshots, audio, video footage derived from Garry's Mod.
-   
-7. Additional art assets belong to their corresponding authors and are distributed
-   under this license with their permission.
-
           A custom license on these files may be obtained by
           contacting authors at metropack.team@gmail.com
 
