@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "8538"
-	"mapversion" "984"
+	"editorbuild" "9174"
+	"mapversion" "985"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -38,7 +38,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "984"
+	"mapversion" "985"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -3921,10 +3921,10 @@ world
 		{
 			"id" "37517"
 			"plane" "(-11 3145 -110) (-11 -2085 -110) (-11 -2085 -95)"
-			"material" "TUNNELS/TUNNEL2"
-			"uaxis" "[0 0 1 1] 0.2"
-			"vaxis" "[0 1 0 0] 0.2"
-			"rotation" "90"
+			"material" "STATIONS/STATION_PLATFORM_SIDE"
+			"uaxis" "[0 1 0 816] 0.117188"
+			"vaxis" "[0 0 -1 -43] 0.117188"
+			"rotation" "0"
 			"lightmapscale" "512"
 			"smoothing_groups" "0"
 		}
@@ -3932,10 +3932,10 @@ world
 		{
 			"id" "37516"
 			"plane" "(-534 -2085 -110) (-534 3145 -110) (-534 3145 -95)"
-			"material" "TUNNELS/TUNNEL2"
-			"uaxis" "[0 0 1 1] 0.2"
-			"vaxis" "[0 1 0 0] 0.2"
-			"rotation" "90"
+			"material" "STATIONS/STATION_PLATFORM_SIDE"
+			"uaxis" "[0 1 0 816] 0.117188"
+			"vaxis" "[0 0 -1 -43] 0.117188"
+			"rotation" "0"
 			"lightmapscale" "512"
 			"smoothing_groups" "0"
 		}
@@ -43270,7 +43270,7 @@ entity
 	"classname" "trigger_multiple"
 	"filtername" "filter_bogey"
 	"origin" "-606 519.41 -131"
-	"spawnflags" "1"
+	"spawnflags" "8"
 	"StartDisabled" "0"
 	"targetname" "CURRENT8"
 	"wait" "1"

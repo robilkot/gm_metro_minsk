@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "9174"
-	"mapversion" "1834"
+	"mapversion" "1837"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -56,7 +56,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "1834"
+	"mapversion" "1837"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -10579,10 +10579,10 @@ world
 		{
 			"id" "97575"
 			"plane" "(146 5547 -110) (146 446 -110) (146 446 -95)"
-			"material" "TUNNELS/TUNNEL2"
-			"uaxis" "[0 0 1 426] 0.192"
-			"vaxis" "[0 1 0 0] 0.2"
-			"rotation" "90"
+			"material" "STATIONS/STATION_PLATFORM_SIDE"
+			"uaxis" "[0 1 0 -179] 0.117188"
+			"vaxis" "[0 0 -1 -43] 0.117188"
+			"rotation" "0"
 			"lightmapscale" "512"
 			"smoothing_groups" "0"
 		}
@@ -10590,10 +10590,10 @@ world
 		{
 			"id" "97574"
 			"plane" "(-377 446 -110) (-377 5547 -110) (-377 5547 -95)"
-			"material" "TUNNELS/TUNNEL2"
-			"uaxis" "[0 0 1 426] 0.192"
-			"vaxis" "[0 1 0 0] 0.2"
-			"rotation" "90"
+			"material" "STATIONS/STATION_PLATFORM_SIDE"
+			"uaxis" "[0 1 0 -179] 0.117188"
+			"vaxis" "[0 0 -1 -43] 0.117188"
+			"rotation" "0"
 			"lightmapscale" "512"
 			"smoothing_groups" "0"
 		}
@@ -101180,7 +101180,7 @@ entity
 	"origin" "-358.001 -13188 8"
 	editor
 	{
-		"color" "185 178 0"
+		"color" "20 140 20"
 		"visgroupid" "14"
 		"visgroupid" "10"
 		"visgroupshown" "1"
@@ -101206,7 +101206,7 @@ entity
 	"origin" "-347 -13189 5"
 	editor
 	{
-		"color" "185 178 0"
+		"color" "220 30 220"
 		"visgroupid" "14"
 		"visgroupid" "10"
 		"visgroupshown" "1"
@@ -101235,7 +101235,7 @@ entity
 	"origin" "135.001 -13225 8"
 	editor
 	{
-		"color" "185 178 0"
+		"color" "20 140 20"
 		"visgroupid" "14"
 		"visgroupid" "10"
 		"visgroupshown" "1"
@@ -101261,7 +101261,7 @@ entity
 	"origin" "124 -13224 5"
 	editor
 	{
-		"color" "185 178 0"
+		"color" "220 30 220"
 		"visgroupid" "14"
 		"visgroupid" "10"
 		"visgroupshown" "1"
@@ -101331,7 +101331,7 @@ cameras
 }
 cordon
 {
-	"mins" "(-1024 -1024 -1024)"
-	"maxs" "(1024 1024 1024)"
+	"mins" "(-1302 -11003 -1024)"
+	"maxs" "(746 -8955 1024)"
 	"active" "0"
 }
