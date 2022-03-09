@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "9174"
-	"mapversion" "943"
+	"editorbuild" "9169"
+	"mapversion" "946"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -62,7 +62,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "943"
+	"mapversion" "946"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -15414,83 +15414,6 @@ world
 	}
 	solid
 	{
-		"id" "380316"
-		side
-		{
-			"id" "39227"
-			"plane" "(-835 10032 -192) (-835 10048 -192) (290 10048 -192)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[1 0 0 -8] 0.25"
-			"vaxis" "[0 -1 0 -37.8906] 0.25"
-			"rotation" "0"
-			"lightmapscale" "64"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "39226"
-			"plane" "(-835 10048 -437) (-835 10032 -437) (290 10032 -437)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "64"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "39225"
-			"plane" "(-835 10032 -437) (-835 10048 -437) (-835 10048 -192)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "64"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "39224"
-			"plane" "(290 10048 -437) (290 10032 -437) (290 10032 -192)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0 1 0 37.8906] 0.25"
-			"vaxis" "[0 0 -1 54] 0.25"
-			"rotation" "0"
-			"lightmapscale" "64"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "39223"
-			"plane" "(290 10032 -437) (-835 10032 -437) (-835 10032 -192)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[1 0 0 -8] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "64"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "39222"
-			"plane" "(-835 10048 -437) (290 10048 -437) (290 10048 -192)"
-			"material" "HALFLIFE/BLACK"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "8192"
-			"smoothing_groups" "0"
-		}
-		editor
-		{
-			"color" "0 253 106"
-			"visgroupid" "8"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	solid
-	{
 		"id" "386027"
 		side
 		{
@@ -15867,6 +15790,83 @@ world
 		editor
 		{
 			"color" "0 159 124"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	solid
+	{
+		"id" "404195"
+		side
+		{
+			"id" "39399"
+			"plane" "(-835 10032 -192) (-835 10048 -192) (290 10048 -192)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[1 0 0 -8] 0.25"
+			"vaxis" "[0 -1 0 -37.8906] 0.25"
+			"rotation" "0"
+			"lightmapscale" "64"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39398"
+			"plane" "(-835 10048 -202) (-835 10032 -202) (290 10032 -202)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "64"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39397"
+			"plane" "(-835 10032 -202) (-835 10048 -202) (-835 10048 -192)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "64"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39396"
+			"plane" "(290 10048 -202) (290 10032 -202) (290 10032 -192)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0 1 0 37.8906] 0.25"
+			"vaxis" "[0 0 -1 54] 0.25"
+			"rotation" "0"
+			"lightmapscale" "64"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39395"
+			"plane" "(290 10032 -202) (-835 10032 -202) (-835 10032 -192)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[1 0 0 -8] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "64"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "39394"
+			"plane" "(-835 10048 -202) (290 10048 -202) (290 10048 -192)"
+			"material" "HALFLIFE/BLACK"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "8192"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 253 106"
+			"visgroupid" "8"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
