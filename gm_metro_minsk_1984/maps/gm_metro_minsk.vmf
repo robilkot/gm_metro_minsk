@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "9174"
-	"mapversion" "3131"
+	"mapversion" "3132"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -122,6 +122,12 @@ visgroups
 		"visgroupid" "22"
 		"color" "151 84 165"
 	}
+	visgroup
+	{
+		"name" "bells"
+		"visgroupid" "23"
+		"color" "126 231 116"
+	}
 }
 viewsettings
 {
@@ -134,7 +140,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "3131"
+	"mapversion" "3132"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -144212,120 +144218,136 @@ entity
 		"logicalpos" "[0 1500]"
 	}
 }
-entity
+hidden
 {
-	"id" "1348044"
-	"classname" "ambient_generic"
-	"cspinup" "0"
-	"fadeinsecs" "0"
-	"fadeoutsecs" "0"
-	"health" "10"
-	"lfomodpitch" "0"
-	"lfomodvol" "0"
-	"lforate" "0"
-	"lfotype" "0"
-	"message" "ambient/bell1.wav"
-	"pitch" "100"
-	"pitchstart" "100"
-	"preset" "0"
-	"radius" "1200"
-	"spawnflags" "16"
-	"spindown" "0"
-	"spinup" "0"
-	"targetname" "zvik5"
-	"volstart" "0"
-	"origin" "14798.6 -6263.89 7468.76"
-	editor
+	entity
 	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
+		"id" "1348044"
+		"classname" "ambient_generic"
+		"cspinup" "0"
+		"fadeinsecs" "0"
+		"fadeoutsecs" "0"
+		"health" "10"
+		"lfomodpitch" "0"
+		"lfomodvol" "0"
+		"lforate" "0"
+		"lfotype" "0"
+		"message" "ambient/bell1.wav"
+		"pitch" "100"
+		"pitchstart" "100"
+		"preset" "0"
+		"radius" "1200"
+		"spawnflags" "16"
+		"spindown" "0"
+		"spinup" "0"
+		"targetname" "zvik5"
+		"volstart" "0"
+		"origin" "14798.6 -6263.89 7468.76"
+		editor
+		{
+			"color" "220 30 220"
+			"visgroupid" "23"
+			"visgroupshown" "0"
+			"visgroupautoshown" "1"
+			"logicalpos" "[0 0]"
+		}
 	}
 }
-entity
+hidden
 {
-	"id" "1348047"
-	"classname" "prop_static"
-	"angles" "90 0 0"
-	"disableselfshadowing" "0"
-	"disableshadows" "0"
-	"disablevertexlighting" "0"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"ignorenormals" "0"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"model" "models/stations/station_kolokol1.mdl"
-	"screenspacefade" "0"
-	"skin" "0"
-	"solid" "6"
-	"origin" "14770.6 -6267.89 7468.76"
-	editor
+	entity
 	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
+		"id" "1348047"
+		"classname" "prop_static"
+		"angles" "90 0 0"
+		"disableselfshadowing" "0"
+		"disableshadows" "0"
+		"disablevertexlighting" "0"
+		"fademaxdist" "0"
+		"fademindist" "-1"
+		"fadescale" "1"
+		"ignorenormals" "0"
+		"maxdxlevel" "0"
+		"mindxlevel" "0"
+		"model" "models/stations/station_kolokol1.mdl"
+		"screenspacefade" "0"
+		"skin" "0"
+		"solid" "6"
+		"origin" "14770.6 -6267.89 7468.76"
+		editor
+		{
+			"color" "255 255 0"
+			"visgroupid" "23"
+			"visgroupshown" "0"
+			"visgroupautoshown" "1"
+			"logicalpos" "[0 0]"
+		}
 	}
 }
-entity
+hidden
 {
-	"id" "1348120"
-	"classname" "prop_static"
-	"angles" "90 0 0"
-	"disableselfshadowing" "0"
-	"disableshadows" "0"
-	"disablevertexlighting" "0"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"ignorenormals" "0"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"model" "models/stations/station_kolokol1.mdl"
-	"screenspacefade" "0"
-	"skin" "0"
-	"solid" "6"
-	"origin" "14482 -5118 7442"
-	editor
+	entity
 	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
+		"id" "1348120"
+		"classname" "prop_static"
+		"angles" "90 0 0"
+		"disableselfshadowing" "0"
+		"disableshadows" "0"
+		"disablevertexlighting" "0"
+		"fademaxdist" "0"
+		"fademindist" "-1"
+		"fadescale" "1"
+		"ignorenormals" "0"
+		"maxdxlevel" "0"
+		"mindxlevel" "0"
+		"model" "models/stations/station_kolokol1.mdl"
+		"screenspacefade" "0"
+		"skin" "0"
+		"solid" "6"
+		"origin" "14482 -5118 7442"
+		editor
+		{
+			"color" "255 255 0"
+			"visgroupid" "23"
+			"visgroupshown" "0"
+			"visgroupautoshown" "1"
+			"logicalpos" "[0 0]"
+		}
 	}
 }
-entity
+hidden
 {
-	"id" "1348124"
-	"classname" "ambient_generic"
-	"cspinup" "0"
-	"fadeinsecs" "0"
-	"fadeoutsecs" "0"
-	"health" "10"
-	"lfomodpitch" "0"
-	"lfomodvol" "0"
-	"lforate" "0"
-	"lfotype" "0"
-	"message" "ambient/bell1.wav"
-	"pitch" "100"
-	"pitchstart" "100"
-	"preset" "0"
-	"radius" "1200"
-	"spawnflags" "16"
-	"spindown" "0"
-	"spinup" "0"
-	"targetname" "zvik6"
-	"volstart" "0"
-	"origin" "14510 -5114 7442"
-	editor
+	entity
 	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
+		"id" "1348124"
+		"classname" "ambient_generic"
+		"cspinup" "0"
+		"fadeinsecs" "0"
+		"fadeoutsecs" "0"
+		"health" "10"
+		"lfomodpitch" "0"
+		"lfomodvol" "0"
+		"lforate" "0"
+		"lfotype" "0"
+		"message" "ambient/bell1.wav"
+		"pitch" "100"
+		"pitchstart" "100"
+		"preset" "0"
+		"radius" "1200"
+		"spawnflags" "16"
+		"spindown" "0"
+		"spinup" "0"
+		"targetname" "zvik6"
+		"volstart" "0"
+		"origin" "14510 -5114 7442"
+		editor
+		{
+			"color" "220 30 220"
+			"visgroupid" "23"
+			"visgroupshown" "0"
+			"visgroupautoshown" "1"
+			"logicalpos" "[0 0]"
+		}
 	}
 }
 entity
@@ -195090,7 +195112,7 @@ entity
 {
 	"id" "1951772"
 	"classname" "prop_static"
-	"angles" "0 87 0"
+	"angles" "0 82 0"
 	"disableselfshadowing" "0"
 	"disableshadows" "0"
 	"disablevertexlighting" "0"
@@ -195104,7 +195126,7 @@ entity
 	"screenspacefade" "0"
 	"skin" "0"
 	"solid" "6"
-	"origin" "14959 -6536 7530"
+	"origin" "14960.4 -6536.72 7530"
 	editor
 	{
 		"color" "255 255 0"
