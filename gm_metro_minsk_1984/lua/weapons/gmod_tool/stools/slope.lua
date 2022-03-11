@@ -122,7 +122,7 @@ function TOOL:Reload(trace)
     if not trace then return false end
     if trace.Entity and trace.Entity:IsPlayer() then return false end
     
-    local ent = self:GetPicket(ply, trace)
+    local ent = self:GetSlope(ply, trace)
 
     if (not ent ) then return true end
 
@@ -226,14 +226,14 @@ function TOOL:BuildCPanelCustom()
         tool:SendSettings()
     end
 
-    local VPAngle = CPanel:NumSlider("Pitch angle:",nil,-10,10,0)
+    local VPAngle = CPanel:NumSlider("Pitch:",nil,-10,10,0)
     VPAngle:SetValue(tool.Slope.PAngle or 0)
     VPAngle.OnValueChanged = function(num)
         tool.Slope.PAngle = VPAngle:GetValue()
         tool:SendSettings()
     end
 
-    local VYAngle = CPanel:NumSlider("Yaw angle:",nil,-15,15,0)
+    local VYAngle = CPanel:NumSlider("Yaw:",nil,-15,15,0)
     VYAngle:SetValue(tool.Slope.YAngle or 0)
     VYAngle.OnValueChanged = function(num)
         tool.Slope.YAngle = VYAngle:GetValue()
