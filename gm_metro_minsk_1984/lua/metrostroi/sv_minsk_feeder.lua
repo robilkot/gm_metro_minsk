@@ -76,7 +76,7 @@ function Metrostroi.Feeder.SetCurrent(feeder, current)
     feeder = tonumber(feeder)
     current = tonumber(current)
 
-    if (feeder == nil or current == nil) then return end
+    if (feeder == nil or current == nil or current < 0) then return end
     
     if (Metrostroi.CurrentLimits[feeder] ~= nil) then
         Metrostroi.CurrentLimits[feeder] = current
@@ -88,11 +88,36 @@ end
 -- (voltage) - voltage limit > 0 
 function Metrostroi.Feeder.SetVoltage(feeder, voltage)
     feeder = tonumber(feeder)
-    current = tonumber(voltage)
+    voltage = tonumber(voltage)
 
-    if (feeder == nil or voltage == nil) then return end
+    if (feeder == nil or voltage == nil or voltage < 0) then return end
     
     if (Metrostroi.VoltagesLimits[feeder] ~= nil) then
+        Metrostroi.VoltagesLimits[feeder] = voltage
+    end
+end
+
+-- Set current limit on all feeder
+-- (voltage) - current limit > 0 
+function Metrostroi.Feeder.SetAllCurrent(current)
+    current = tonumber(current)
+
+    if (current == nil or current < 0) then return end
+    
+    for feeder, _ in pairs(Metrostroi.CurrentLimits) do
+        Metrostroi.CurrentLimits[feeder] = current
+    end
+end
+
+-- Set voltage limit on all feeder
+-- (feeder) - feeder number 
+-- (voltage) - voltage limit > 0 
+function Metrostroi.Feeder.SetAllVoltage(voltage)
+    voltage = tonumber(voltage)
+
+    if (voltage == nil or voltage < 0) then return end
+    
+    for feeder, _ in pairs(Metrostroi.VoltagesLimits) do
         Metrostroi.VoltagesLimits[feeder] = voltage
     end
 end
@@ -192,12 +217,22 @@ end)
 
 concommand.Add("metrostroi_current_limit_feeder", function(ply, _, args)
     if (ply and ply != NULL and not ply:IsAdmin()) then return end
-    Metrostroi.Feeder.SetCurrent(args[1], args[2])
+    
+    if (args[1] == "all") then
+        Metrostroi.Feeder.SetAllCurrent(args[2])
+    else
+        Metrostroi.Feeder.SetCurrent(args[1], args[2])
+    end
 end)
 
 concommand.Add("metrostroi_voltage_feeder", function(ply, _, args)
     if (ply and ply != NULL and not ply:IsAdmin()) then return end
-    Metrostroi.Feeder.SetVoltage(args[1], args[2])
+    if (args[1] == "all") then
+        Metrostroi.Feeder.SetAllVoltage(args[2])
+    else
+        Metrostroi.Feeder.SetVoltage(args[1], args[2])
+    end
+    
 end)
 
 concommand.Add("metrostroi_feeder_on", function(ply, _, args)
