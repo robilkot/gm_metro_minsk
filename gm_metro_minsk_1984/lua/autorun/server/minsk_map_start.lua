@@ -1,0 +1,5 @@
+hook.Add("InitPostEntity", "MinskTunnelLightSSVInitialize", function() 
+	RunConsoleCommand("minsk_tunnel_light_on", "ssv", "1")
+	RunConsoleCommand("minsk_tunnel_light_on", "ssv", "2")
+	RunConsoleCommand("mat_specular", "1")
+end)
