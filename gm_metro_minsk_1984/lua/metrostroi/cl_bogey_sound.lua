@@ -51,7 +51,7 @@ function ENT:Think()
     local tunnel_pitch, tunnel_volume
     
     tunnel_pitch = (0.017*speed)+0.5
-	if speed<30 then tunnel_volume = speed/30 elseif speed>=30 then tunnel_volume=(speed+20)/50 end
+	if speed<30 then tunnel_volume = speed/30*0.6 elseif speed>=30 then tunnel_volume=(speed+20)/50*0.6 end
 
     if (soundName ~= "") then
         self:SoundReload(soundName)
