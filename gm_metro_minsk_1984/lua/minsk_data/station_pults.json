@@ -1,0 +1,307 @@
+[
+	{
+		"pos": "[-1377.495605 12390 7482.5]",
+        "ang": "{0 46 0}",
+		"model": "models/station_pult_01a.mdl",
+		"name": "Pult_1",
+        "buttons": [
+			{
+				"pos": "[14.05 8.22 17.9]",
+				"prototype": "BlackButton",
+                "sound" : "depot/trennschalter_ein.mp3",
+                "description" : "Привет"
+			},
+			{
+				"pos": "[12.4 8.22 17.9]",
+				"prototype": "RedButton"
+			},
+			{
+				"pos": "[10.75 8.22 17.9]",
+				"prototype": "StaticBlackButton"
+			},
+			{
+				"pos": "[9.1 8.22 17.9]",
+				"prototype": "RedButton"
+			},
+			{
+				"pos": "[7.45 8.22 17.9]",
+				"prototype": "StaticBlackButton"
+			},
+			{
+				"pos": "[5.8 8.22 17.9]",
+				"prototype": "BlackButton"
+			},
+			{
+				"pos": "[2.5 8.22 17.9]",
+				"prototype": "BlackButton"
+			},
+			{
+				"pos": "[0.85 8.22 17.9]",
+				"prototype": "RedButton"
+			},
+			{
+				"pos": "[-0.8 8.22 17.9]",
+				"prototype": "BlackButton"
+			},
+			{
+				"pos": "[-2.45 8.22 17.9]",
+				"prototype": "RedButton"
+			},
+			{
+				"pos": "[-4.1 8.22 17.9]",
+				"prototype": "BlackButton"
+			},
+			{
+				"pos": "[-5.75 8.22 17.9]",
+				"prototype": "BlackButton"
+			},
+			{
+				"pos": "[-9 8.22 17.9]",
+				"prototype": "BlackButton"
+			},
+			{
+				"pos": "[-10.65 8.22 17.9]",
+				"prototype": "RedButton"
+			},
+			{
+				"pos": "[-12.3 8.22 17.9]",
+				"prototype": "BlackButton"
+			},
+			{
+				"pos": "[-13.95 8.22 17.9]",
+				"prototype": "RedButton"
+			},
+			{
+				"pos": "[-15.6 8.22 17.9]",
+				"prototype": "BlackButton"
+			},
+			{
+				"pos": "[-17.25 8.22 17.9]",
+				"prototype": "BlackButton"
+			},
+			{
+				"pos": "[12.4 8.22 13.5]",
+				"prototype": "RotationSwitch2"
+			},
+			{
+				"pos": "[7.4 8.22 13.5]",
+				"prototype": "RotationSwitch2"
+			},
+			{
+				"pos": "[0.85 8.22 13.5]",
+				"prototype": "RotationSwitch2"
+			},
+			{
+				"pos": "[-4.15 8.22 13.5]",
+				"prototype": "RotationSwitch2"
+			},
+			{
+				"pos": "[-10.7 8.22 13.5]",
+				"prototype": "RotationSwitch2"
+			},
+			{
+				"pos": "[-15.7 8.22 13.5]",
+				"prototype": "RotationSwitch2"
+			},
+			{
+				"pos": "[16.52 8.22 4.7]",
+				"prototype": "RotationSwitch2"
+			},
+			{
+				"pos": "[0.1 8.22 2.7]",
+				"prototype": "Toggle"
+			},
+			{
+				"pos": "[7.4 8.22 -3.85]",
+				"prototype": "Toggle",
+                "actions" : [
+                    {   
+                        "sound" : "depot/trennschalter_ein.mp3",
+                        "output" : { "targetEntName" : "IK-PL11", "input" : "TurnOn" },
+                        "func" : "pult:SetIndicatorStage('ind_2', 2)"
+                    },
+                    {
+                        "output" : { "targetEntName" : "IK-PL11", "input" : "TurnOff" },
+                        "func" : "pult:SetIndicatorStage('ind_2', 1)"
+                    }
+                ],
+                "description" : "Освещения 1 раб. гр. I пути в сторону станции Площадь ленина"
+			},
+			{
+				"pos": "[7.4 8.22 -8.35]",
+				"prototype": "Toggle"
+			},
+			{
+				"pos": "[7.4 8.22 -12.8]",
+				"prototype": "Toggle"
+			},
+			{
+				"pos": "[4.15 8.22 -6.05]",
+				"prototype": "Toggle"
+			},
+			{
+				"pos": "[4.15 8.22 -10.55]",
+				"prototype": "Toggle"
+			},
+			{
+				"pos": "[4.15 8.22 -15]",
+				"prototype": "Toggle"
+			},
+			{
+				"pos": "[-7.4 8.22 -3.85]",
+				"prototype": "Toggle"
+			},
+			{
+				"pos": "[-7.4 8.22 -8.35]",
+				"prototype": "Toggle"
+			},
+			{
+				"pos": "[-7.4 8.22 -12.8]",
+				"prototype": "Toggle"
+			},
+			{
+				"pos": "[-4.15 8.22 -6.05]",
+				"prototype": "Toggle"
+			},
+			{
+				"pos": "[-4.15 8.22 -10.55]",
+				"prototype": "Toggle"
+			},
+			{
+				"pos": "[-4.15 8.22 -15]",
+				"prototype": "Toggle"
+			},
+			{
+				"prototype": "BlackButton",
+				"pos": "[17.3 8.22 9.2]"
+			},
+			{
+				"prototype": "RedButton",
+				"pos": "[15.6 8.22 9.2]"
+			},
+			{
+				"prototype": "BlackButton",
+				"pos": "[14 8.22 9.2]"
+			},
+			{
+				"prototype": "RedButton",
+				"pos": "[12.3 8.22 9.2]"
+			},
+			{
+				"prototype": "BlackButton",
+				"pos": "[10.7 8.22 9.2]"
+			},
+			{
+				"prototype": "RedButton",
+				"pos": "[9 8.22 9.2]"
+			},
+			{
+				"prototype": "BlackButton",
+				"pos": "[7.4 8.22 9.2]"
+			},
+			{
+				"prototype": "RedButton",
+				"pos": "[5.7 8.22 9.2]"
+			},
+			{
+				"prototype": "BlackButton",
+				"pos": "[4.1 8.22 9.2]"
+			},
+			{
+				"prototype": "RedButton",
+				"pos": "[2.4 8.22 9.2]"
+			},
+			{
+				"prototype": "BlackButton",
+				"pos": "[-2.45 8.22 9.2]"
+			},
+			{
+				"prototype": "RedButton",
+				"pos": "[-4.15 8.22 9.2]"
+			},
+			{
+				"prototype": "BlackButton",
+				"pos": "[-5.75 8.22 9.2]"
+			},
+			{
+				"prototype": "RedButton",
+				"pos": "[-7.45 8.22 9.2]"
+			},
+			{
+				"prototype": "BlackButton",
+				"pos": "[-9.05 8.22 9.2]"
+			},
+			{
+				"prototype": "RedButton",
+				"pos": "[-10.75 8.22 9.2]"
+			},
+			{
+				"prototype": "BlackButton",
+				"pos": "[-12.35 8.22 9.2]"
+			},
+			{
+				"prototype": "RedButton",
+				"pos": "[-14.05 8.22 9.2]"
+			},
+			{
+				"prototype": "BlackButton",
+				"pos": "[-15.65 8.2 9.2]"
+			},
+			{
+				"prototype": "RedButton",
+				"pos": "[-17.35 8.22 9.2]"
+			},
+			{
+				"prototype": "RotationSwitch2",
+				"pos": "[13.24 8.22 4.7]"
+			},
+			{
+				"prototype": "RotationSwitch2",
+				"pos": "[9.96 8.22 4.7]"
+			},
+			{
+				"prototype": "RotationSwitch2",
+				"pos": "[6.68 8.22 4.7]"
+			},
+			{
+				"prototype": "RotationSwitch2",
+				"pos": "[3.4 8.22 4.7]"
+			},
+			{
+				"prototype": "RotationSwitch2",
+				"pos": "[-3.43 8.22 4.7]"
+			},
+			{
+				"prototype": "RotationSwitch2",
+				"pos": "[-6.71 8.22 4.7]"
+			},
+			{
+				"prototype": "RotationSwitch2",
+				"pos": "[-9.99 8.22 4.7]"
+			},
+			{
+				"prototype": "RotationSwitch2",
+				"pos": "[-13.27 8.22 4.7]"
+			},
+			{
+				"prototype": "RotationSwitch2",
+				"pos": "[-16.55 8.22 4.7]"
+			}
+		],
+		"indicators": [
+			{
+				"ang": "{180 0 0}",
+				"pos": "[13.42 10 20.4]",
+				"name": "ind_1",
+				"prototype": "GreenRed"
+			},
+            {   
+                "model" : "models/stations/station_pult_onelamp.mdl",
+				"ang": "{180 0 0}",
+				"pos": "[12.3 8.5 -3.85]",
+				"name": "ind_2",
+                "stagesSkins" : [1, 0]
+			}
+		]
+	}
+]
