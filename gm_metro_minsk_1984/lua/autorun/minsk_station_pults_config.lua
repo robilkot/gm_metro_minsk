@@ -1,4 +1,6 @@
 if (SERVER) then
+    Minsk.StationPults.GetPult("Pult_1"):BlockButton("button_1")
+
     Minsk.StationPults.PultsConfig = {
         {   
             name = "Pult_1",
@@ -22,7 +24,6 @@ if (SERVER) then
                 { 
                     prototype = "BlackButton",
                     pos = Vector(14.05 - 1.65 * 2, 8.22, 17.9),
-                    
                 },
                 { 
                     prototype = "RedButton",
@@ -405,6 +406,9 @@ if (SERVER) then
         },
     }
 end
+
+
+
 ---{ 
 --     prototype = "RotationSwitch",
 --     name = "button_3",

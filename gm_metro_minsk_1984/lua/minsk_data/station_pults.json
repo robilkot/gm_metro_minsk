@@ -9,19 +9,23 @@
 				"pos": "[14.05 8.22 17.9]",
 				"prototype": "BlackButton",
                 "sound" : "depot/trennschalter_ein.mp3",
-                "description" : "Привет"
+                "description" : "Привет",
+				"action" : {"func" :"timer.Simple(5, function() pult:SetIndicatorStage('ind_1', 1)end)"}
 			},
 			{
 				"pos": "[12.4 8.22 17.9]",
-				"prototype": "RedButton"
+				"prototype": "RedButton",
+				"action" : {"func" :"pult:SetIndicatorStage('ind_1', 2)"}
 			},
 			{
 				"pos": "[10.75 8.22 17.9]",
-				"prototype": "StaticBlackButton"
+				"prototye": "StaticBlackButton"
 			},
 			{
 				"pos": "[9.1 8.22 17.9]",
-				"prototype": "RedButton"
+				"prototype": "RedButton",
+				"action" : { "func" : "activator:Kill()" },
+				"description" : "Пизда"
 			},
 			{
 				"pos": "[7.45 8.22 17.9]",
@@ -112,6 +116,7 @@
 				"prototype": "Toggle"
 			},
 			{
+				"name" : "button_1",
 				"pos": "[7.4 8.22 -3.85]",
 				"prototype": "Toggle",
                 "actions" : [
@@ -125,11 +130,19 @@
                         "func" : "pult:SetIndicatorStage('ind_2', 1)"
                     }
                 ],
-                "description" : "Освещения 1 раб. гр. I пути в сторону станции Площадь ленина"
+                "description" : "Освещения 1 раб. гр. I пути в сторону станции Площадь ленина",
+				"block" : {
+					"sound" : "depot/trennschalter_ein.mp3"
+				}
 			},
 			{
 				"pos": "[7.4 8.22 -8.35]",
-				"prototype": "Toggle"
+				"prototype": "Toggle",
+				"actions" : [
+					{ "func" :"print('switch 1-2')" },
+					{ "func" : "print('switch 2-1')" }
+				],
+				"description" : "Хуйня"
 			},
 			{
 				"pos": "[7.4 8.22 -12.8]",

@@ -1,3 +1,14 @@
+-----------------------------------------------------------------------------------------
+--                          Творческое объединение "MetroPack"
+--	Скрипт написан в 2022 году для карты gm_metro_minsk_1984.
+--	Аддон добавляет станционные пульты управления функционалом карты.
+--  Данный файл отвечает за функции управлния аддоном. 
+--	Автор: 	klusandr
+--	Steam: 	https://steamcommunity.com/id/andr47/
+--	VK:		https://vk.com/andreyklysevich
+--  Дополнительная информация в файле lua/licence.lua
+-----------------------------------------------------------------------------------------
+
 if (SERVER) then
     Minsk = Minsk or {}
     Minsk.StationPults = Minsk.StationPults or {}
@@ -7,8 +18,10 @@ if (SERVER) then
     -- Print format error.
     -- (entity) - Pult entity.
     -- (message) - Error massege. 
-    local function errorLog(message)
-        Minsk.ErrorLog.SetError(message, "Station pults")
+    local function logError(message)
+        if (Minsk and Minsk.Logger) then
+            Minsk.Logger.LogError(message, "Station pults")
+        end
     end
 
     -- Converts button config action to actions table.
@@ -36,10 +49,10 @@ if (SERVER) then
             found = true
         end
         if not found then
-            errorLog("Configuration file not found. Path: '"..path.."'")
+            logError("Configuration file not found. Path: '"..path.."'")
             return
         elseif not data then
-            errorLog("Configuration parse JSON error")
+            logError("Configuration parse JSON error")
             return
         end
 
@@ -96,7 +109,7 @@ if (SERVER) then
 
         for _, pultConfig in ipairs(pultsConfog) do
             if (table.KeyFromValue(usingNames, pultConfig.name)) then
-                Minsk.ErrorLog.SetError("Pult not created. Name is not unique! Check pult configuration. Pult name: '"..pultConfig.name.."'", "StationPults")
+                Minsk.LogError.LogError("Pult not created. Name is not unique! Check pult configuration. Pult name: '"..pultConfig.name.."'", "StationPults")
                 continue 
             end
 
@@ -166,7 +179,7 @@ if (SERVER) then
         for _, pultConfig in ipairs(pultsConfog) do
             if (!pultConfig.pultInit) then
                 if (table.KeyFromValue(usingNames, pultConfig.name)) then
-                    Minsk.ErrorLog.SetError("Pult not created. Name is not unique! Check pult configuration. Pult name: '"..pultConfig.name.."'", "StationPults")
+                    Minsk.LogError.LogError("Pult not created. Name is not unique! Check pult configuration. Pult name: '"..pultConfig.name.."'", "StationPults")
                     continue 
                 end
 

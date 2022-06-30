@@ -9,6 +9,8 @@
 --  Дополнительная информация в файле lua/licence.lua
 -----------------------------------------------------------------------------------------
 
+DEFINE_BASECLASS("base_gmodentity")
+ENT.Base = "base_gmodentity"
 ENT.Type            = "anim"
 
 ENT.PrintName       = "Station pult" 
