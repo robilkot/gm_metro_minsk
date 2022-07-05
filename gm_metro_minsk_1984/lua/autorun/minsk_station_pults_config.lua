@@ -1,5 +1,5 @@
 if (SERVER) then
-    Minsk.StationPults.GetPult("Pult_1"):BlockButton("button_1")
+    
 
     Minsk.StationPults.PultsConfig = {
         {   
