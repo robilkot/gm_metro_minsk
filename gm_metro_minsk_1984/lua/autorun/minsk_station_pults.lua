@@ -210,13 +210,13 @@ if (SERVER) then
     -- RETURN - New button config table whith prototype values.
     function Minsk.StationPults.ApplyButtonPrototype(buttonConfig)
         local buttonPrototype = (buttonConfig.prototype) and Minsk.StationPults.ButtonPrototypes[buttonConfig.prototype] or nil
+
         if (!buttonPrototype) then return buttonConfig end
         
         local newButtonConfig = table.Copy(buttonConfig)
         
         convertButtonActionToActions(newButtonConfig)
-        convertButtonActionToActions(buttonPrototype)
-    
+
         for key, value in pairs(buttonPrototype) do
             if (key == "actions") then
                 newButtonConfig.actions = newButtonConfig.actions or {}
@@ -227,18 +227,6 @@ if (SERVER) then
                             newButtonConfig.actions[actNum][actKey] = actValue
                         end
                     end
-                end
-            elseif (key == "action") then
-                local action = newButtonConfig.action or {}
-    
-                for actKey, actValue in ipairs(newButtonConfig.action) do
-                    if (!action[actKey]) then
-                        action[actKey] = actValue
-                    end
-                end
-
-                if (newButtonConfig.actions and newButtonConfig.actions[1]) then
-                    
                 end
             else
                 if (!newButtonConfig[key]) then
@@ -287,20 +275,19 @@ if (SERVER) then
     function Minsk.StationPults.PrintJSONConfig(pultsConfog, pultNumber)
         local maxPrintLen = 4096
         local configString = (!pultNumber) and util.TableToJSON(pultsConfog, true) or util.TableToJSON(pultsConfog[pultNumber], true)
-        if (!configString) then
-            return 
-        end
+        
+        if (!configString) then return end
+
         local len = string.len(configString)
         local amount = 1
-
-        if (len < maxPrintLen) then
-            return
-        else
+        
+        if (len > maxPrintLen) then
             amount = math.ceil(len / maxPrintLen)
         end
- 
+        
         for i = 1, amount do
             local printString = string.sub(configString, (i - 1) * maxPrintLen + 1, (i * maxPrintLen))
+            print(printString)
         end
     end
 

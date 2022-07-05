@@ -72,7 +72,7 @@ ENT.IsBlocked = false
 ENT.BlockConfig = nil
 
 -- Base initialize entity.
--- REMARK - Called :Spawn() post :InitializeConfig().
+-- REMARK - Called :Spawn() after :InitializeConfig().
 function ENT:Initialize()
     self:PhysicsInit(SOLID_BBOX)
     self:SetUseType(SIMPLE_USE)
@@ -95,7 +95,13 @@ function ENT:InitializeConfig(buttonConfig, pult)
     local actionsCount = (buttonConfig.actions) and table.Count(buttonConfig.actions) or 0
     local block = buttonConfig.block
 
-    self:SetModel(model)
+    if (model and !IsUselessModel(buttonConfig.model)) then
+        self:SetModel(model)
+    else
+        logError(self, "Button is not created. Model is not valid. Check pult button config. Model name: '"..(buttonConfig.model or "none").."'; ".."Button name: '"..(buttonConfig.name or "none").."'")
+        return
+    end
+
     self:SetPos(pult:LocalToWorld(pos))
     self:SetAngles(pult:LocalToWorldAngles(ang))
     self:ResetSequence(self:GetSequenceName(1))
@@ -196,7 +202,6 @@ function ENT:ToggleStage(activator, caller, useType, value)
     end
 
     if (stage.func) then
-        print(activator)
         stage.func(self.PultOwner, self, activator, value)
     end
 

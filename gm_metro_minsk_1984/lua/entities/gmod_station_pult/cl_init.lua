@@ -17,6 +17,15 @@ net.Receive( "station-pults-initizlize", function()
     end
 end)
 
+-- Print format error.
+-- (entity) - Button entity.
+-- (message) - Error massege. 
+local function logError(entity, message)
+    if (Minsk and Minsk.Logger) then
+        Minsk.Logger.LogError(message, "Station pults client")
+    end
+end
+
 -- List of buttons.
 ENT.ButtonsList = {}
 
@@ -33,7 +42,11 @@ function ENT:ButtonsInitialize()
 
     if (buttonsConfig) then
         for _, buttonConfig in pairs(buttonsConfig) do
-            table.insert(self.ButtonsList, self:CreateButtonClientProp(buttonConfig.model, buttonConfig.pos, buttonConfig.ang))
+            if (buttonConfig.model and !IsUselessModel(buttonConfig.model)) then
+                table.insert(self.ButtonsList, self:CreateButtonClientProp(buttonConfig.model, buttonConfig.pos, buttonConfig.ang))
+            else
+                logError(self, "Static button model is not valid. Check pult config. Model name: '"..(buttonConfig.model or "none").."'")
+            end
         end
     end
 end

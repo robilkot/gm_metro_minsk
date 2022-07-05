@@ -78,7 +78,7 @@ function ENT:InitializeButtons(buttonsConfig)
 
     for _, buttonConfig in pairs(buttonsConfig) do
         buttonConfig = Minsk.StationPults.ApplyButtonPrototype(buttonConfig)
-
+        
         if (checkButtonConfingActions(buttonConfig)) then
             if (buttonConfig.name) then
                 if (table.KeyFromValue(usingNames, buttonConfig.name) != nil) then
@@ -89,8 +89,10 @@ function ENT:InitializeButtons(buttonsConfig)
 
             local button = self:CreateButtonEntity(buttonConfig)
 
-            table.insert(usingNames, buttonConfig.name)
-            table.insert(self.ButtonsList, button)
+            if (button) then
+                table.insert(usingNames, buttonConfig.name)
+                table.insert(self.ButtonsList, button)
+            end
         else
             table.insert(staticButtonsConfig, buttonConfig)
         end
@@ -112,12 +114,17 @@ end
 
 -- Create button entity
 -- (buttonsConfig) - Table corresponding to button configuration format. 
--- RETURN - New button entity(gmod_station_pult_button).
+-- RETURN - New button entity(gmod_station_pult_button) or nil if unsuccessfully.
 function  ENT:CreateButtonEntity(buttonConfig)
     local entity = ents.Create("gmod_station_pult_button")
 
     entity:InitializeConfig(buttonConfig, self)
-    entity:Spawn()    
+
+    if (IsValid(entity)) then
+        entity:Spawn()
+    else
+        return nil  
+    end
 
     return entity
 end
@@ -190,7 +197,6 @@ end
 -- RETRUN - Button or nil.
 function ENT:GetButton(name)
     for _, button in ipairs(self.ButtonsList) do
-        print(button.Name)
         if (button.Name == name) then
             return button
         end
@@ -233,7 +239,6 @@ end
 -- (name) - Button name.
 function ENT:BlockButton(name)
     local button = self:GetButton(name)
-    print(button.IsBlocked)
     if (button) then
         button.IsBlocked = true
     end

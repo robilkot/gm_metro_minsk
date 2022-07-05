@@ -1,11 +1,9 @@
 if (SERVER) then
-    
-
     Minsk.StationPults.PultsConfig = {
         {   
             name = "Pult_1",
             model = "models/station_pult_01a.mdl",
-            pos = Vector(810, 450, -80),
+            pos = Vector(-1377.495605, 12390, 7482.5),
             
             buttons = {
                 { 
@@ -22,16 +20,16 @@ if (SERVER) then
                     pos = Vector(12.4, 8.22, 17.9),
                 },
                 { 
-                    prototype = "BlackButton",
+                    prototype = "StaticBlackButton",
                     pos = Vector(14.05 - 1.65 * 2, 8.22, 17.9),
                 },
                 { 
-                    prototype = "RedButton",
+                    prototype = "StaticRedButton",
                     pos = Vector(12.4 - 1.65 * 2, 8.22, 17.9),
                     
                 },
                 { 
-                    prototype = "BlackButton",
+                    prototype = "StaticBlackButton",
                     pos = Vector(14.05 - 1.65 * 4, 8.22, 17.9),
                     
                 },
@@ -254,66 +252,6 @@ if (SERVER) then
         },
     }
     
-    
-    -- всякое тестовое дерьмо
-    
-    
-    local bb = { 
-        prototype = "BlackButton",
-        pos = Vector(17.3, 8.22, 9.2),
-        
-    }
-    local rb = { 
-        prototype = "RedButton",
-        pos = Vector(15.6, 8.22, 9.2),
-        
-    }
-    
-    for i = 0, 4 do
-        local b1 = table.Copy(bb)
-        local b2 = table.Copy(rb)
-    
-        b1.pos = b1.pos + Vector(-1.65 * 2 * i, 0, 0)
-        b2.pos = b2.pos + Vector(-1.65 * 2 * i, 0, 0)
-        
-        table.insert(Minsk.StationPults.PultsConfig[1].buttons, b1)
-        table.insert(Minsk.StationPults.PultsConfig[1].buttons, b2)
-    end
-    
-    bb.pos = bb.pos + Vector(-19.75, 0, 0)
-    rb.pos = rb.pos + Vector(-19.75, 0, 0)
-    
-    for i = 0, 4 do
-        local b1 = table.Copy(bb)
-        local b2 = table.Copy(rb)
-    
-        b1.pos = b1.pos + Vector(-1.65 * 2 * i, 0, 0)
-        b2.pos = b2.pos + Vector(-1.65 * 2 * i, 0, 0)
-        
-        table.insert(Minsk.StationPults.PultsConfig[1].buttons, b1)
-        table.insert(Minsk.StationPults.PultsConfig[1].buttons, b2)
-    end
-    
-    local sw = { 
-        prototype = "RotationSwitch2",
-        pos = Vector(16.52, 8.22, 4.7),
-        
-    }
-    
-    for i = 0, 4 do
-        local sw = table.Copy(sw)
-        sw.pos = sw.pos + Vector(-1.64 * 2 * i, 0, 0)
-        table.insert(Minsk.StationPults.PultsConfig[1].buttons, sw)
-    end
-    
-    sw.pos = sw.pos + Vector(-19.95, 0, 0)
-    
-    for i = 0, 4 do
-        local sw = table.Copy(sw)
-        sw.pos = sw.pos + Vector(-1.64 * 2 * i, 0, 0)
-        table.insert(Minsk.StationPults.PultsConfig[1].buttons, sw)
-    end
-    
     Minsk.StationPults.ButtonPrototypes = {
         ["BlackButton"] = {
             model = "models/minsk/station_pult_button_01a.mdl",
@@ -399,6 +337,65 @@ if (SERVER) then
         },
     }
     
+    -- всякое тестовое дерьмо
+    
+    
+    local bb = { 
+        prototype = "BlackButton",
+        pos = Vector(17.3, 8.22, 9.2),
+        
+    }
+    local rb = { 
+        prototype = "RedButton",
+        pos = Vector(15.6, 8.22, 9.2),
+        
+    }
+    
+    for i = 0, 4 do
+        local b1 = table.Copy(bb)
+        local b2 = table.Copy(rb)
+    
+        b1.pos = b1.pos + Vector(-1.65 * 2 * i, 0, 0)
+        b2.pos = b2.pos + Vector(-1.65 * 2 * i, 0, 0)
+        
+        table.insert(Minsk.StationPults.PultsConfig[1].buttons, b1)
+        table.insert(Minsk.StationPults.PultsConfig[1].buttons, b2)
+    end
+    
+    bb.pos = bb.pos + Vector(-19.75, 0, 0)
+    rb.pos = rb.pos + Vector(-19.75, 0, 0)
+    
+    for i = 0, 4 do
+        local b1 = table.Copy(bb)
+        local b2 = table.Copy(rb)
+    
+        b1.pos = b1.pos + Vector(-1.65 * 2 * i, 0, 0)
+        b2.pos = b2.pos + Vector(-1.65 * 2 * i, 0, 0)
+        
+        table.insert(Minsk.StationPults.PultsConfig[1].buttons, b1)
+        table.insert(Minsk.StationPults.PultsConfig[1].buttons, b2)
+    end
+    
+    local sw = { 
+        prototype = "RotationSwitch2",
+        pos = Vector(16.52, 8.22, 4.7),
+        
+    }
+    
+    for i = 0, 4 do
+        local sw = table.Copy(sw)
+        sw.pos = sw.pos + Vector(-1.64 * 2 * i, 0, 0)
+        table.insert(Minsk.StationPults.PultsConfig[1].buttons, sw)
+    end
+    
+    sw.pos = sw.pos + Vector(-19.95, 0, 0)
+    
+    for i = 0, 4 do
+        local sw = table.Copy(sw)
+        sw.pos = sw.pos + Vector(-1.64 * 2 * i, 0, 0)
+        table.insert(Minsk.StationPults.PultsConfig[1].buttons, sw)
+    end
+        
     Minsk.StationPults.IndicatorPrototypes = {
         ["GreenRed"] = {
             model = "models/stations/station_pult_twolamps.mdl",
