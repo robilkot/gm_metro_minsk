@@ -136,7 +136,7 @@ function ENT:InitializeIndicators(indicatorsConfig)
         indicatorConfig = Minsk.StationPults.ApplyIndicatorPrototype(indicatorConfig)
         local name = indicatorConfig.name
         if (!name or name == "") then
-            logError(self, "Indicator not created. Name is faled! Check pult indicators configuration. Indicator name: '"..indicatorConfig.name.."'")
+            logError(self, "Indicator not created. Name is failed! Check pult indicators configuration. Indicator name: '"..indicatorConfig.name.."'")
             continue
         end
         if (self.IndicatorsList[name]) then

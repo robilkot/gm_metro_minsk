@@ -45,8 +45,8 @@ local function parsingStringFuncion(funcString)
         Minsk.StationPults.extractFunc = nil
 
         return res
-    else 
-        logError(self, "Button function is faled! "..errorMsg..". Check pult button configuration. ".."Button name: '"..(buttonConfig.name or "none").."'")
+    else
+        return errorMsg
     end
 end
 
@@ -70,12 +70,15 @@ ENT.StageList = { }
 ENT.PultOwner = nil
 ENT.IsBlocked = false
 ENT.BlockConfig = nil
+ENT.UseType = SIMPLE_USE
+ENT.UseSet = nil 
+ENT.IsUsed = nil
 
 -- Base initialize entity.
 -- REMARK - Called :Spawn() after :InitializeConfig().
 function ENT:Initialize()
     self:PhysicsInit(SOLID_BBOX)
-    self:SetUseType(SIMPLE_USE)
+    self:SetUseType(self.UseType)
     self:SetOwner(self.PultOwner)
     self:SetParent(self.PultOwner)
     self:PhysWake()
@@ -94,6 +97,7 @@ function ENT:InitializeConfig(buttonConfig, pult)
     local ang = buttonConfig.ang or Angle()
     local actionsCount = (buttonConfig.actions) and table.Count(buttonConfig.actions) or 0
     local block = buttonConfig.block
+    local useType = (buttonConfig.continuous) and CONTINUOUS_USE or SIMPLE_USE
 
     if (model and !IsUselessModel(buttonConfig.model)) then
         self:SetModel(model)
@@ -102,6 +106,7 @@ function ENT:InitializeConfig(buttonConfig, pult)
         return
     end
 
+    self.UseType = useType
     self:SetPos(pult:LocalToWorld(pos))
     self:SetAngles(pult:LocalToWorldAngles(ang))
     self:ResetSequence(self:GetSequenceName(1))
@@ -112,7 +117,7 @@ function ENT:InitializeConfig(buttonConfig, pult)
         table.insert(buttonConfig.actions, buttonConfig.action)
     end
 
-    for _, action in ipairs(buttonConfig.actions) do
+    for actNum, action in ipairs(buttonConfig.actions) do
         local animation = action.animation
         local soundFile = action.sound or buttonConfig.sound
         local func = action.func
@@ -120,7 +125,9 @@ function ENT:InitializeConfig(buttonConfig, pult)
         local outputs = action.outputs
         
         if (soundFile) then
-            if (!сheckSoundFile(soundFile)) then
+            if (soundFile == "none") then
+                soundFile = nil
+            elseif (!сheckSoundFile(soundFile)) then
                 logError(self, "Button sound loading error. Sound file name: '"..soundFile.."'; ".."Button name: '"..(buttonConfig.name or "none").."'")
                 soundFile = nil
             end
@@ -129,6 +136,11 @@ function ENT:InitializeConfig(buttonConfig, pult)
         if (func) then
             if (type(func) == "string") then
                 func = parsingStringFuncion(func)
+
+                if (type(func) == "string") then
+                    logError(self, "Button function is failed! "..func..". Check pult buttons configuration. ".."Button name: '"..(buttonConfig.name or "none").."'")
+                    func = nils
+                end
             end
         end
 
@@ -137,7 +149,25 @@ function ENT:InitializeConfig(buttonConfig, pult)
             table.insert(outputs, output)
         end
 
-        self:AddStage(animation, soundFile, func, outputs)
+        if (useType == 0) then
+            local name = "set"
+
+            if (actionsCount == 2) then
+                if (actNum == 1) then name = "start"
+                elseif (actNum == 2) then name = "end"
+                end
+            elseif (actionsCount == 3) then
+                if (actNum == 1) then name = "start"
+                elseif (actNum == 2) then name = "set"
+                elseif (actNum == 3) then name = "end"
+                end
+            end
+
+            self:AddStage(animation, soundFile, func, outputs, name)
+        else
+            self:AddStage(animation, soundFile, func, outputs)
+        end
+        
     end
 
     if (buttonConfig.block) then
@@ -164,7 +194,8 @@ end
 -- (soundFile) - Sound file name, playing during the current state.
 -- (func) - Function, called during the current state.
 -- (outputs) - Outputs config, fire during the current state.
-function ENT:AddStage(animation, soundFile, func, outputs)
+-- (name) - Name of stage.
+function ENT:AddStage(animation, soundFile, func, outputs, name)
     local stage = {}
 
     if (animation) then
@@ -181,17 +212,36 @@ function ENT:AddStage(animation, soundFile, func, outputs)
     end
 
     self.StageCount = self.StageCount + 1
-
-    table.insert(self.StageList, stage)
+    if (name) then
+        self.StageList[name] = stage
+    else
+        table.insert(self.StageList, stage)
+    end
 end
 
 -- Toggle button stage, execution stage action and incriment StageNum.
 -- (activator) - Entity activator.
--- (caller) - Entity caller. This will typically be the same as activator unless some other entity is acting as a proxy.
--- (type) - Use type. See Enums/USE.
 -- (value) - Use value.
-function ENT:ToggleStage(activator, caller, useType, value)
-    local stage = self.StageList[self.StageNum]
+function ENT:ToggleStage(activator, value)
+    self:SetStage(self.StageNum, activator, value)
+
+    if (self.StageCount > 1) then
+        self.StageNum = self.StageNum + 1
+        if (self.StageNum > self.StageCount) then
+            self.StageNum = 1
+        end
+    end
+end
+
+-- Set button stage by name or number.
+-- REMARK - If name or number is unvalid then nothing.
+-- (name) - Stage name or number.
+    -- REMARK - If use type is CONTINUOUS_USE then string name, else stage number.
+-- (activator) - Entity activator.
+-- (value) - Use value.
+function ENT:SetStage(stageName, activator, value)
+    local stage = self.StageList[stageName]
+    if (!stage) then return end
 
     if (stage.animation) then
         self:ResetSequence(stage.animation)
@@ -215,13 +265,6 @@ function ENT:ToggleStage(activator, caller, useType, value)
             output.TargetEnt:Fire(output.input, output.param, output.delay)
         end
     end
-
-    if (self.StageCount > 1) then
-        self.StageNum = self.StageNum + 1
-        if (self.StageNum > self.StageCount) then
-            self.StageNum = 1
-        end
-    end
 end
 
 -- Toggle button block, playing block animation and sound.
@@ -243,6 +286,44 @@ function ENT:ToggleBlock()
     end
 end
 
+-- Continuous use handler.
+-- (activator) - Entity activator.
+-- (caller) - Entity caller. This will typically be the same as activator unless some other entity is acting as a proxy.
+-- (type) - Use type. See Enums/USE.
+-- (value) - Use value.
+function ENT:ContinuousUse(activator, caller, useType, value)
+    -- Start --
+    if (useType == 1) then
+        self.IsUsed = true
+        self.UseActivator = activator
+        self.UseValue = value
+        self:SetStage("start", activator, value)
+    -- Set --
+    elseif (useType == 2) then
+        if (!self.IsUsed) then self:ContinuousUse(activator, caller, 1, value) end
+        self:SetStage("set", activator, value)
+        self.UseSet = true
+
+    -- End --
+    elseif (useType == 0) then
+        self:SetStage("end", activator, value)
+        self.UseActivator = nil
+        self.UseValue = nil
+        self.IsUsed = false
+    end
+end
+
+-- Entity's think function. Called every server tick.
+function ENT:Think()
+    if (self.IsUsed) then
+        if (self.UseSet) then
+            self.UseSet = false
+        else
+            self:ContinuousUse(self.UseActivator, nil, 0, self.UseValue)
+        end
+    end
+end
+
 -- Use handler.
 -- (activator) - Entity activator.
 -- (caller) - Entity caller. This will typically be the same as activator unless some other entity is acting as a proxy.
@@ -250,8 +331,12 @@ end
 -- (value) - Use value.
 function ENT:Use(activator, caller, useType, value)
     if (!self.IsBlocked) then
-        self:ToggleStage(activator, caller, useType, value)
+        if (self.UseType == SIMPLE_USE) then
+            self:ToggleStage(activator, value)
+        elseif (self.UseType == CONTINUOUS_USE) then
+            self:ContinuousUse(activator, caller, 2, value)
+        end
     else
-        self:ToggleBlock(activator, caller, useType, value)
+        self:ToggleBlock()
     end
 end

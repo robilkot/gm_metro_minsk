@@ -15,7 +15,22 @@
 			{
 				"pos": "[12.4 8.22 17.9]",
 				"prototype": "RedButton",
-				"action": {"func" :"pult:SetIndicatorStage('ind_1', 2)"}
+				"continuous" : true,
+				"sound": null,
+				"actions": [
+					{
+						"func": "print(1, 'con', activator)"
+					},
+					{	
+						"animation": "press",
+						"func": "print(2, 'con', activator)",
+						"sound": "none"
+					},
+					{
+						"func": "print(3, 'con', activator)"
+					}
+				],
+				"description": "Зажатие"
 			},
 			{
 				"pos": "[10.75 8.22 17.9]",
