@@ -28,31 +28,31 @@
 				"Emer": false,
 				"NextSignal": "N1A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-13",
-				"RouteName": "n3-n1",
 				"Switches": "d10+,d8+,d7+",
-				"Manual": true
+				"RouteName": "n3-n1",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "N1A",
 				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "2-2-13",
 				"Repeater": false,
-				"RouteName": "n3-e2",
-				"Switches": "d10+,d8+,d7+"
+				"Lights": "2-2-13",
+				"Manual": true,
+				"Switches": "d10+,d8+,d7+",
+				"RouteName": "n3-e2"
 			},
 			{
 				"Emer": false,
 				"NextSignal": "N1A",
 				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "2-2-13",
 				"Repeater": false,
-				"RouteName": "n3-e1",
-				"Switches": "d10+,d8+,d7+"
+				"Lights": "2-2-13",
+				"Manual": true,
+				"Switches": "d10+,d8+,d7+",
+				"RouteName": "n3-e1"
 			}
 		],
 		"NonAutoStop": true,
@@ -87,51 +87,51 @@
 				"Emer": false,
 				"NextSignal": "N1A",
 				"ARSCodes": "1",
-				"Manual": true,
+				"Repeater": false,
 				"Lights": "2-2-13",
+				"Switches": "d12-,d10-,d8+",
 				"RouteName": "g2-n1",
-				"Switches": "d12-,d10-,d8+",
-				"Repeater": false
-			},
-			{
-				"Emer": false,
-				"NextSignal": "M14B",
-				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "2-2-1",
-				"Repeater": false,
-				"RouteName": "g2-m14",
-				"Switches": "d12+,d10+,d2+,d56+"
-			},
-			{
-				"Emer": false,
-				"NextSignal": "M14B",
-				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "2-2-2-1",
-				"Repeater": false,
-				"RouteName": "g2-m12",
-				"Switches": "d12+,d10+,d2+,d56-"
-			},
-			{
-				"Emer": false,
-				"NextSignal": "N1A",
-				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-2-13",
-				"Switches": "d12-,d10-,d8+",
-				"RouteName": "g2-e2",
 				"Manual": true
 			},
 			{
 				"Emer": false,
+				"NextSignal": "M14B",
+				"ARSCodes": "1",
+				"Repeater": false,
+				"Lights": "2-2-1",
+				"Manual": true,
+				"Switches": "d12+,d10+,d2+,d56+",
+				"RouteName": "g2-m14"
+			},
+			{
+				"Emer": false,
+				"NextSignal": "M14B",
+				"ARSCodes": "1",
+				"Repeater": false,
+				"Lights": "2-2-2-1",
+				"Manual": true,
+				"Switches": "d12+,d10+,d2+,d56-",
+				"RouteName": "g2-m12"
+			},
+			{
+				"Emer": false,
 				"NextSignal": "N1A",
 				"ARSCodes": "1",
 				"Manual": true,
 				"Lights": "2-2-13",
+				"RouteName": "g2-e2",
 				"Switches": "d12-,d10-,d8+",
-				"RouteName": "g2-e1",
 				"Repeater": false
+			},
+			{
+				"Emer": false,
+				"NextSignal": "N1A",
+				"ARSCodes": "1",
+				"Repeater": false,
+				"Lights": "2-2-13",
+				"RouteName": "g2-e1",
+				"Switches": "d12-,d10-,d8+",
+				"Manual": true
 			}
 		],
 		"NonAutoStop": true,
@@ -166,141 +166,141 @@
 				"Emer": false,
 				"NextSignal": "D11A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-2-2-1",
-				"Switches": "d14+,d16+,d18-,d20+",
 				"RouteName": "p2-d14",
-				"Manual": true
+				"Switches": "d14+,d16+,d18-,d20+",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "D11A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-2-1",
-				"Switches": "d14+,d16+,d18-,d20-",
 				"RouteName": "p2-d13",
-				"Manual": true
+				"Switches": "d14+,d16+,d18-,d20-",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "D11A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-2-1",
-				"Switches": "d14+,d16+,d18+,d22+",
 				"RouteName": "p2-d12",
-				"Manual": true
+				"Switches": "d14+,d16+,d18+,d22+",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "D11A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-1",
-				"Switches": "d14+,d16+,d18+,d22-",
 				"RouteName": "p2-d11",
-				"Manual": true
+				"Switches": "d14+,d16+,d18+,d22-",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "D10A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-1",
-				"Switches": "d14+,d16-,d24+,d26-,d28-",
 				"RouteName": "p2-d10",
-				"Manual": true
+				"Switches": "d14+,d16-,d24+,d26-,d28-",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "D10A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-2-1",
-				"Switches": "d14+,d16-,d24+,d26-,d28+",
 				"RouteName": "p2-d9",
-				"Manual": true
+				"Switches": "d14+,d16-,d24+,d26-,d28+",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "D8A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-2-1",
-				"Switches": "d14+,d16-,d24+,d26+",
 				"RouteName": "p2-d8",
-				"Manual": true
+				"Switches": "d14+,d16-,d24+,d26+",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "P2",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-1",
-				"Switches": "d14+,d16-,d24-",
 				"RouteName": "p2-d7",
-				"Manual": true
+				"Switches": "d14+,d16-,d24-",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "D1A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-2-1",
-				"Switches": "d14-,d30+,d32-",
 				"RouteName": "p2-d6",
-				"Manual": true
+				"Switches": "d14-,d30+,d32-",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "D1A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-2-1",
-				"Switches": "d14-,d30+,d32+,d34-",
 				"RouteName": "p2-d5",
-				"Manual": true
+				"Switches": "d14-,d30+,d32+,d34-",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "D1A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-2-1",
-				"Switches": "d14-,d30+,d32+,d34+",
 				"RouteName": "p2-d4",
-				"Manual": true
+				"Switches": "d14-,d30+,d32+,d34+",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "D1A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-2-1",
-				"Switches": "d14-,d30-,d36+,d40-",
 				"RouteName": "p2-d3",
-				"Manual": true
+				"Switches": "d14-,d30-,d36+,d40-",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "D1A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-2-2-1",
-				"Switches": "d14-,d30-,d36+,d40+",
 				"RouteName": "p2-d2",
-				"Manual": true
+				"Switches": "d14-,d30-,d36+,d40+",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "D1A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-2-1",
-				"Switches": "d14-,d30-,d36-,d38-",
 				"RouteName": "p2-d1",
-				"Manual": true
+				"Switches": "d14-,d30-,d36-,d38-",
+				"Repeater": false
 			}
 		],
 		"NonAutoStop": true,
@@ -334,31 +334,31 @@
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "1",
-				"Manual": true,
+				"Repeater": false,
 				"Lights": "2-1",
-				"Switches": "d1+",
 				"RouteName": "m10-m22",
-				"Repeater": false
+				"Switches": "d1+",
+				"Manual": true
 			},
 			{
 				"Emer": false,
 				"NextSignal": "P1B",
 				"ARSCodes": "1",
-				"Manual": true,
+				"Repeater": false,
 				"Lights": "2-2-1",
-				"Switches": "d1-,d3-,d5+,d7+,d11+",
 				"RouteName": "m10-p1",
-				"Repeater": false
+				"Switches": "d1-,d3-,d5+,d7+,d11+",
+				"Manual": true
 			},
 			{
 				"Emer": false,
 				"NextSignal": "P1B",
 				"ARSCodes": "1",
-				"Manual": true,
+				"Repeater": false,
 				"Lights": "2-2-1",
-				"Switches": "d1-,d3-,d5-,d6-",
 				"RouteName": "m10-m16",
-				"Repeater": false
+				"Switches": "d1-,d3-,d5-,d6-",
+				"Manual": true
 			}
 		],
 		"NonAutoStop": true,
@@ -392,11 +392,11 @@
 				"Emer": false,
 				"NextSignal": "G1",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-1",
-				"RouteName": "m11-g1",
 				"Switches": "d13+",
-				"Manual": true
+				"RouteName": "m11-g1",
+				"Repeater": false
 			}
 		],
 		"NonAutoStop": true,
@@ -429,110 +429,110 @@
 				"Emer": false,
 				"NextSignal": "33A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-1",
-				"RouteName": "p1-m11",
 				"Switches": "d13+",
-				"Manual": true
+				"RouteName": "p1-m11",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2",
-				"RouteName": "m11-p1",
 				"Switches": "d13+",
-				"Manual": true
+				"RouteName": "m11-p1",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "D22A",
 				"ARSCodes": "1",
-				"Manual": true,
+				"Repeater": false,
 				"Lights": "2-2-1",
-				"RouteName": "p1-d22",
 				"Switches": "d13-,d15+,d17+,d27+",
+				"RouteName": "p1-d22",
+				"Manual": true
+			},
+			{
+				"Repeater": false,
+				"RouteName": "d22-g1",
+				"Emer": false,
+				"Lights": "2",
+				"ARSCodes": "1",
+				"Switches": "d13-,d15+,d17+,d27+",
+				"Manual": true
+			},
+			{
+				"Emer": false,
+				"NextSignal": "D21A",
+				"ARSCodes": "1",
+				"Manual": true,
+				"Lights": "2-2-2-1",
+				"Switches": "d13-,d15+,d17+,d27-,d29-",
+				"RouteName": "p1-d21",
 				"Repeater": false
 			},
 			{
-				"Repeater": false,
-				"ARSCodes": "1",
-				"Emer": false,
-				"Lights": "2",
-				"Switches": "d13-,d15+,d17+,d27+",
-				"RouteName": "d22-g1",
-				"Manual": true
-			},
-			{
 				"Emer": false,
 				"NextSignal": "D21A",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-2-2-1",
-				"RouteName": "p1-d21",
-				"Switches": "d13-,d15+,d17+,d27-,d29-",
-				"Manual": true
-			},
-			{
-				"Emer": false,
-				"NextSignal": "D21A",
-				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-2-2-1",
-				"RouteName": "p1-d20",
 				"Switches": "d13-,d15+,d17+,d27-,d29+",
-				"Manual": true
+				"RouteName": "p1-d20",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "D19A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-1",
-				"RouteName": "p1-d19",
 				"Switches": "d13-,d15+,d17-,d19-,d23+",
-				"Manual": true
+				"RouteName": "p1-d19",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "D19A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-2-1",
-				"RouteName": "p1-d18",
 				"Switches": "d13-,d15+,d17-,d19-,d23-",
-				"Manual": true
+				"RouteName": "p1-d18",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "D19A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-2-2-1",
-				"RouteName": "p1-d17",
 				"Switches": "d13-,d15+,d17-,d19+,d21+,d25-",
-				"Manual": true
+				"RouteName": "p1-d17",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "D19A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-2-2-2-1",
-				"RouteName": "p1-d16",
 				"Switches": "d13-,d15+,d17-,d19+,d21+,d25+",
-				"Manual": true
+				"RouteName": "p1-d16",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "D19A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-2-1",
-				"RouteName": "p1-d15",
 				"Switches": "d13-,d15+,d17-,d19+,d21-",
-				"Manual": true
+				"RouteName": "p1-d15",
+				"Repeater": false
 			}
 		],
 		"NonAutoStop": true,
@@ -566,31 +566,21 @@
 				"Emer": false,
 				"NextSignal": "P1A",
 				"ARSCodes": "1",
-				"Manual": true,
+				"Repeater": false,
 				"Lights": "2-2-1",
-				"RouteName": "m16-p1",
 				"Switches": "d8-,d7-,d11+",
-				"Repeater": false
+				"RouteName": "m16-p1",
+				"Manual": true
 			},
 			{
 				"Emer": false,
 				"NextSignal": "N3A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-1",
-				"RouteName": "m16-n3",
 				"Switches": "d8+,d10+,d12+",
-				"Manual": true
-			},
-			{
-				"Emer": false,
-				"NextSignal": "P2",
-				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
-				"RouteName": "m16-p2",
-				"Switches": "d8+,d10-,d12-",
-				"Manual": true
+				"RouteName": "m16-n3",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
@@ -598,29 +588,39 @@
 				"ARSCodes": "1",
 				"Manual": true,
 				"Lights": "2-1",
-				"Repeater": false,
 				"Switches": "d8+,d10-,d12-",
-				"RouteName": "x1-p2"
+				"RouteName": "m16-p2",
+				"Repeater": false
+			},
+			{
+				"Emer": false,
+				"NextSignal": "P2",
+				"ARSCodes": "1",
+				"Repeater": false,
+				"Lights": "2-1",
+				"Manual": true,
+				"RouteName": "x1-p2",
+				"Switches": "d8+,d10-,d12-"
 			},
 			{
 				"Emer": false,
 				"NextSignal": "P1A",
 				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "2-2-1",
 				"Repeater": false,
-				"Switches": "d8-,d7-,d11+",
-				"RouteName": "x2-p1"
+				"Lights": "2-2-1",
+				"Manual": true,
+				"RouteName": "x2-p1",
+				"Switches": "d8-,d7-,d11+"
 			},
 			{
 				"Emer": false,
 				"NextSignal": "P2",
 				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "2-1",
 				"Repeater": false,
-				"Switches": "d8+,d10-,d12-",
-				"RouteName": "x2-p2"
+				"Lights": "2-1",
+				"Manual": true,
+				"RouteName": "x2-p2",
+				"Switches": "d8+,d10-,d12-"
 			}
 		],
 		"NonAutoStop": true,
@@ -654,21 +654,21 @@
 				"Emer": false,
 				"NextSignal": "M14B",
 				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "2-2-2-1",
 				"Repeater": false,
-				"Switches": "d6+,d4-,d2+,d56-",
-				"RouteName": "n1-m12"
+				"Lights": "2-2-2-1",
+				"Manual": true,
+				"RouteName": "n1-m12",
+				"Switches": "d6+,d4-,d2+,d56-"
 			},
 			{
 				"Emer": false,
 				"NextSignal": "M14B",
 				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "2-2-1",
 				"Repeater": false,
-				"Switches": "d6+,d4-,d2+,d56+",
-				"RouteName": "n1-m14"
+				"Lights": "2-2-1",
+				"Manual": true,
+				"RouteName": "n1-m14",
+				"Switches": "d6+,d4-,d2+,d56+"
 			},
 			{
 				"Emer": false,
@@ -696,11 +696,11 @@
 				"Emer": false,
 				"NextSignal": "E2A",
 				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "2-2-1",
 				"Repeater": false,
-				"Switches": "d6-,d5-,d3-,d1-",
-				"RouteName": "n1-m10"
+				"Lights": "2-2-1",
+				"Manual": true,
+				"RouteName": "n1-m10",
+				"Switches": "d6-,d5-,d3-,d1-"
 			},
 			{
 				"Emer": false,
@@ -779,11 +779,11 @@
 				"Emer": false,
 				"NextSignal": " IK2",
 				"ARSCodes": "1",
-				"Manual": false,
+				"Repeater": false,
 				"Lights": "3",
-				"Switches": "",
 				"RouteName": "",
-				"Repeater": false
+				"Switches": "",
+				"Manual": false
 			},
 			{
 				"Emer": false,
@@ -791,10 +791,10 @@
 				"ARSCodes": "1114",
 				"Repeater": false,
 				"EnRou": true,
-				"Lights": "3-3-3-1",
 				"Manual": true,
-				"Switches": "ik6-,ik3-,ik1-",
-				"RouteName": "ik4-1"
+				"Lights": "3-3-3-1",
+				"RouteName": "ik4-1",
+				"Switches": "ik6-,ik3-,ik1-"
 			},
 			{
 				"Emer": false,
@@ -831,38 +831,38 @@
 			},
 			{
 				"Manual": true,
-				"Switches": "ik4+",
+				"RouteName": "ik2-4",
 				"Emer": false,
 				"Lights": "3",
+				"Switches": "ik4+",
 				"ARSCodes": "1",
-				"RouteName": "ik2-4",
 				"Repeater": false
 			},
 			{
 				"Repeater": false,
-				"RouteName": "ik2-4r",
+				"Switches": "ik4+",
 				"Emer": false,
 				"Lights": "3",
+				"RouteName": "ik2-4r",
 				"ARSCodes": "1",
-				"Switches": "ik4+",
 				"Manual": true
 			},
 			{
 				"Manual": true,
-				"RouteName": "ikd-4",
+				"Switches": "ik3-",
 				"Emer": false,
 				"Lights": "3",
+				"RouteName": "ikd-4",
 				"ARSCodes": "1",
-				"Switches": "ik3-",
 				"Repeater": false
 			},
 			{
 				"Manual": true,
-				"Switches": "ik3-",
+				"ARSCodes": "1",
 				"Emer": false,
 				"Lights": "3",
+				"Switches": "ik3-",
 				"RouteName": "ikd-4r",
-				"ARSCodes": "1",
 				"Repeater": false
 			}
 		],
@@ -887,11 +887,11 @@
 				"Emer": false,
 				"NextSignal": " IK1",
 				"ARSCodes": "1",
-				"Manual": false,
+				"Repeater": false,
 				"Lights": "3",
-				"Switches": "",
 				"RouteName": "",
-				"Repeater": false
+				"Switches": "",
+				"Manual": false
 			},
 			{
 				"Emer": false,
@@ -899,10 +899,10 @@
 				"ARSCodes": "1114",
 				"Repeater": false,
 				"EnRou": true,
-				"Lights": "3-3-3-1",
 				"Manual": true,
-				"RouteName": "ik3-1",
-				"Switches": "ik5+,ik3+,ik1-,ik4+,ik6+"
+				"Lights": "3-3-3-1",
+				"Switches": "ik5+,ik3+,ik1-,ik4+,ik6+",
+				"RouteName": "ik3-1"
 			},
 			{
 				"Emer": false,
@@ -939,38 +939,38 @@
 			},
 			{
 				"Manual": true,
+				"Switches": "ik4-",
+				"Emer": false,
+				"Lights": "3",
 				"RouteName": "ik2-3",
-				"Emer": false,
-				"Lights": "3",
 				"ARSCodes": "1",
-				"Switches": "ik4-",
 				"Repeater": false
 			},
 			{
 				"Manual": true,
-				"ARSCodes": "1",
+				"Switches": "ik4-",
 				"Emer": false,
 				"Lights": "3",
+				"ARSCodes": "1",
 				"RouteName": "ik2-3r",
-				"Switches": "ik4-",
 				"Repeater": false
 			},
 			{
 				"Manual": true,
-				"ARSCodes": "1",
-				"Emer": false,
-				"Lights": "3",
-				"Switches": "ik3+",
 				"RouteName": "ikd-3",
+				"Emer": false,
+				"Lights": "3",
+				"ARSCodes": "1",
+				"Switches": "ik3+",
 				"Repeater": false
 			},
 			{
 				"Manual": true,
-				"Switches": "ik3+",
+				"ARSCodes": "1",
 				"Emer": false,
 				"Lights": "3",
+				"Switches": "ik3+",
 				"RouteName": "ikd-3r",
-				"ARSCodes": "1",
 				"Repeater": false
 			}
 		],
@@ -1002,41 +1002,41 @@
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "114",
-				"Repeater": false,
-				"Lights": "3-3-1",
 				"Manual": true,
-				"Switches": "ik2+",
-				"RouteName": "ike-2"
+				"Lights": "3-3-1",
+				"Repeater": false,
+				"RouteName": "ike-2",
+				"Switches": "ik2+"
 			},
 			{
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "114",
-				"Manual": true,
+				"Repeater": false,
 				"Lights": "3-3-2",
-				"Repeater": false,
-				"Switches": "ik2+",
-				"RouteName": "ike-2r"
+				"Manual": true,
+				"RouteName": "ike-2r",
+				"Switches": "ik2+"
 			},
 			{
 				"Emer": false,
 				"NextSignal": "IKE",
 				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "3",
 				"Repeater": false,
-				"Switches": "ik2+",
-				"RouteName": "ik2-2"
+				"Lights": "3",
+				"Manual": true,
+				"RouteName": "ik2-2",
+				"Switches": "ik2+"
 			},
 			{
 				"Emer": false,
 				"NextSignal": "IKE",
 				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "3",
 				"Repeater": false,
-				"Switches": "ik2+",
-				"RouteName": "ik2-2r"
+				"Lights": "3",
+				"Manual": true,
+				"RouteName": "ik2-2r",
+				"Switches": "ik2+"
 			}
 		],
 		"NonAutoStop": true,
@@ -1067,21 +1067,21 @@
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "114",
-				"Repeater": false,
-				"Lights": "3-3-1",
 				"Manual": true,
-				"Switches": "ik1+",
-				"RouteName": "ikg-1"
+				"Lights": "3-3-1",
+				"Repeater": false,
+				"RouteName": "ikg-1",
+				"Switches": "ik1+"
 			},
 			{
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "1114",
-				"Manual": true,
-				"Lights": "3-3-3-2",
 				"Repeater": false,
-				"Switches": "ik1+",
-				"RouteName": "ikg-1r"
+				"Lights": "3-3-3-2",
+				"Manual": true,
+				"RouteName": "ikg-1r",
+				"Switches": "ik1+"
 			},
 			{
 				"Repeater": false,
@@ -1260,41 +1260,41 @@
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "1",
-				"Manual": true,
+				"Repeater": false,
 				"Lights": "2-2-1",
-				"Switches": "d3+,d1+,d5+,d7+,d11+",
 				"RouteName": "m2-p1",
-				"Repeater": false
-			},
-			{
-				"Emer": false,
-				"NextSignal": "*",
-				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "2-2-1",
-				"Switches": "d3+,d1+,d5-,d6-",
-				"RouteName": "m2-m16",
-				"Repeater": false
-			},
-			{
-				"Emer": false,
-				"NextSignal": "*",
-				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "2-2-1",
-				"Repeater": false,
-				"Switches": "d3+,d1+,d5-,d6-",
-				"RouteName": "x1-p2"
-			},
-			{
-				"Emer": false,
-				"NextSignal": "*",
-				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "2-2-1",
-				"Repeater": false,
 				"Switches": "d3+,d1+,d5+,d7+,d11+",
-				"RouteName": "x1-p1"
+				"Manual": true
+			},
+			{
+				"Emer": false,
+				"NextSignal": "*",
+				"ARSCodes": "1",
+				"Repeater": false,
+				"Lights": "2-2-1",
+				"RouteName": "m2-m16",
+				"Switches": "d3+,d1+,d5-,d6-",
+				"Manual": true
+			},
+			{
+				"Emer": false,
+				"NextSignal": "*",
+				"ARSCodes": "1",
+				"Repeater": false,
+				"Lights": "2-2-1",
+				"Manual": true,
+				"RouteName": "x1-p2",
+				"Switches": "d3+,d1+,d5-,d6-"
+			},
+			{
+				"Emer": false,
+				"NextSignal": "*",
+				"ARSCodes": "1",
+				"Repeater": false,
+				"Lights": "2-2-1",
+				"Manual": true,
+				"RouteName": "x1-p1",
+				"Switches": "d3+,d1+,d5+,d7+,d11+"
 			}
 		],
 		"NonAutoStop": true,
@@ -1329,31 +1329,31 @@
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-1",
-				"Switches": "d4+,d5+,d3+,d2+,d6+",
 				"RouteName": "m4-m16",
-				"Manual": true
+				"Switches": "d4+,d5+,d3+,d2+,d6+",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "2-2-1",
 				"Repeater": false,
-				"Switches": "d4+,d5+,d3+,d2+,d6+",
-				"RouteName": "x2-p1"
+				"Lights": "2-2-1",
+				"Manual": true,
+				"RouteName": "x2-p1",
+				"Switches": "d4+,d5+,d3+,d2+,d6+"
 			},
 			{
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "2-2-1",
 				"Repeater": false,
-				"Switches": "d4+,d5+,d3+,d2+,d6+",
-				"RouteName": "x2-p2"
+				"Lights": "2-2-1",
+				"Manual": true,
+				"RouteName": "x2-p2",
+				"Switches": "d4+,d5+,d3+,d2+,d6+"
 			}
 		],
 		"NonAutoStop": true,
@@ -1503,11 +1503,11 @@
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "14",
-				"Manual": true,
-				"Lights": "3-1-1-2",
 				"Repeater": false,
-				"Switches": "",
-				"RouteName": "x2-p2"
+				"Lights": "3-1-1-2",
+				"Manual": true,
+				"RouteName": "x2-p2",
+				"Switches": ""
 			},
 			{
 				"Manual": true,
@@ -1697,13 +1697,13 @@
 				"Repeater": false
 			},
 			{
-				"Manual": true,
-				"RouteName": "ik3-1",
 				"Emer": false,
-				"Lights": "3",
 				"NextSignal": "IKDM",
 				"ARSCodes": "1",
-				"Repeater": false
+				"Manual": true,
+				"Lights": "3",
+				"Repeater": false,
+				"RouteName": "ik3-1"
 			},
 			{
 				"Manual": true,
@@ -1715,13 +1715,13 @@
 				"Repeater": false
 			},
 			{
-				"Manual": true,
-				"RouteName": "ik4-1",
 				"Emer": false,
-				"Lights": "3",
 				"NextSignal": "IKDM",
 				"ARSCodes": "1",
-				"Repeater": false
+				"Manual": true,
+				"Lights": "3",
+				"Repeater": false,
+				"RouteName": "ik4-1"
 			},
 			{
 				"Manual": true,
@@ -2150,11 +2150,11 @@
 				"Emer": false,
 				"NextSignal": "G1",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-1",
-				"RouteName": "d22-g1",
 				"Switches": "d13-,d15+,d17+,d27+",
-				"Manual": true
+				"RouteName": "d22-g1",
+				"Repeater": false
 			}
 		],
 		"NonAutoStop": true,
@@ -2185,11 +2185,11 @@
 				"Emer": false,
 				"NextSignal": "G1",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"RouteName": "d21-g1",
-				"Switches": "d13-,d15+,d17+,d27-,d29-"
+				"Lights": "2-1",
+				"Repeater": false,
+				"Switches": "d13-,d15+,d17+,d27-,d29-",
+				"RouteName": "d21-g1"
 			}
 		],
 		"NonAutoStop": true,
@@ -2220,11 +2220,11 @@
 				"Emer": false,
 				"NextSignal": "G1",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"RouteName": "d20-g1",
-				"Switches": "d13-,d15+,d17+,d27-,d29+"
+				"Lights": "2-1",
+				"Repeater": false,
+				"Switches": "d13-,d15+,d17+,d27-,d29+",
+				"RouteName": "d20-g1"
 			}
 		],
 		"NonAutoStop": true,
@@ -2255,11 +2255,11 @@
 				"Emer": false,
 				"NextSignal": "G1",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"RouteName": "d19-g1",
-				"Switches": "d13-,d15+,d17-,d19-,d23+"
+				"Lights": "2-1",
+				"Repeater": false,
+				"Switches": "d13-,d15+,d17-,d19-,d23+",
+				"RouteName": "d19-g1"
 			}
 		],
 		"NonAutoStop": true,
@@ -2290,11 +2290,11 @@
 				"Emer": false,
 				"NextSignal": "G1",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"RouteName": "d18-g1",
-				"Switches": "d13-,d15+,d17-,d19-,d23-"
+				"Lights": "2-1",
+				"Repeater": false,
+				"Switches": "d13-,d15+,d17-,d19-,d23-",
+				"RouteName": "d18-g1"
 			}
 		],
 		"NonAutoStop": true,
@@ -2325,11 +2325,11 @@
 				"Emer": false,
 				"NextSignal": "G1",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"RouteName": "d17-g1",
-				"Switches": "d13-,d15+,d17-,d19+,d21+,d25-"
+				"Lights": "2-1",
+				"Repeater": false,
+				"Switches": "d13-,d15+,d17-,d19+,d21+,d25-",
+				"RouteName": "d17-g1"
 			}
 		],
 		"NonAutoStop": true,
@@ -2360,11 +2360,11 @@
 				"Emer": false,
 				"NextSignal": "G1",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"RouteName": "d16-g1",
-				"Switches": "d13-,d15+,d17-,d19+,d21+,d25+"
+				"Lights": "2-1",
+				"Repeater": false,
+				"Switches": "d13-,d15+,d17-,d19+,d21+,d25+",
+				"RouteName": "d16-g1"
 			}
 		],
 		"NonAutoStop": true,
@@ -2395,11 +2395,11 @@
 				"Emer": false,
 				"NextSignal": "G1",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"RouteName": "d15-g1",
-				"Switches": "d13-,d15+,d17-,d19+,d21-"
+				"Lights": "2-1",
+				"Repeater": false,
+				"Switches": "d13-,d15+,d17-,d19+,d21-",
+				"RouteName": "d15-g1"
 			}
 		],
 		"NonAutoStop": true,
@@ -2430,11 +2430,11 @@
 				"Emer": false,
 				"NextSignal": "G2",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"RouteName": "d14-g2",
-				"Switches": "d14+,d16+,d18-,d20+"
+				"Lights": "2-1",
+				"Repeater": false,
+				"Switches": "d14+,d16+,d18-,d20+",
+				"RouteName": "d14-g2"
 			}
 		],
 		"NonAutoStop": true,
@@ -2465,11 +2465,11 @@
 				"Emer": false,
 				"NextSignal": "G2",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"RouteName": "d13-g2",
-				"Switches": "d14+,d16+,d18-,d20-"
+				"Lights": "2-1",
+				"Repeater": false,
+				"Switches": "d14+,d16+,d18-,d20-",
+				"RouteName": "d13-g2"
 			}
 		],
 		"NonAutoStop": true,
@@ -2500,11 +2500,11 @@
 				"Emer": false,
 				"NextSignal": "G2",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"RouteName": "d12-g2",
-				"Switches": "d14+,d16+,d18+,d22+"
+				"Lights": "2-1",
+				"Repeater": false,
+				"Switches": "d14+,d16+,d18+,d22+",
+				"RouteName": "d12-g2"
 			}
 		],
 		"NonAutoStop": true,
@@ -2535,11 +2535,11 @@
 				"Emer": false,
 				"NextSignal": "G2",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"RouteName": "d11-g2",
-				"Switches": "d14+,d16+,d18+,d22-"
+				"Lights": "2-1",
+				"Repeater": false,
+				"Switches": "d14+,d16+,d18+,d22-",
+				"RouteName": "d11-g2"
 			}
 		],
 		"NonAutoStop": true,
@@ -2570,11 +2570,11 @@
 				"Emer": false,
 				"NextSignal": "G2",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"RouteName": "d10-g2",
-				"Switches": "d14+,d16-,d24+,d26-,d28-"
+				"Lights": "2-1",
+				"Repeater": false,
+				"Switches": "d14+,d16-,d24+,d26-,d28-",
+				"RouteName": "d10-g2"
 			}
 		],
 		"NonAutoStop": true,
@@ -2605,11 +2605,11 @@
 				"Emer": false,
 				"NextSignal": "G2",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"RouteName": "d9-g2",
-				"Switches": "d14+,d16-,d24+,d26-,d28+"
+				"Lights": "2-1",
+				"Repeater": false,
+				"Switches": "d14+,d16-,d24+,d26-,d28+",
+				"RouteName": "d9-g2"
 			}
 		],
 		"NonAutoStop": true,
@@ -2640,11 +2640,11 @@
 				"Emer": false,
 				"NextSignal": "G2",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"RouteName": "d8-g2",
-				"Switches": "d14+,d16-,d24+,d26+"
+				"Lights": "2-1",
+				"Repeater": false,
+				"Switches": "d14+,d16-,d24+,d26+",
+				"RouteName": "d8-g2"
 			}
 		],
 		"NonAutoStop": true,
@@ -2675,11 +2675,11 @@
 				"Emer": false,
 				"NextSignal": "G2",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"RouteName": "d7-g2",
-				"Switches": "d14+,d16-,d24-"
+				"Lights": "2-1",
+				"Repeater": false,
+				"Switches": "d14+,d16-,d24-",
+				"RouteName": "d7-g2"
 			}
 		],
 		"NonAutoStop": true,
@@ -2710,11 +2710,11 @@
 				"Emer": false,
 				"NextSignal": "G2",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"RouteName": "d6-g2",
-				"Switches": "d14-,d30+,d32-"
+				"Lights": "2-1",
+				"Repeater": false,
+				"Switches": "d14-,d30+,d32-",
+				"RouteName": "d6-g2"
 			}
 		],
 		"NonAutoStop": true,
@@ -2745,11 +2745,11 @@
 				"Emer": false,
 				"NextSignal": "G2",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"RouteName": "d5-g2",
-				"Switches": "d14-,d30+,d32+,d34-"
+				"Lights": "2-1",
+				"Repeater": false,
+				"Switches": "d14-,d30+,d32+,d34-",
+				"RouteName": "d5-g2"
 			}
 		],
 		"NonAutoStop": true,
@@ -2780,11 +2780,11 @@
 				"Emer": false,
 				"NextSignal": "G2",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"RouteName": "d4-g2",
-				"Switches": "d14-,d30+,d32+,d34+"
+				"Lights": "2-1",
+				"Repeater": false,
+				"Switches": "d14-,d30+,d32+,d34+",
+				"RouteName": "d4-g2"
 			}
 		],
 		"NonAutoStop": true,
@@ -2815,11 +2815,11 @@
 				"Emer": false,
 				"NextSignal": "G2",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"RouteName": "d3-g2",
-				"Switches": "d14-,d30-,d36+,d40-"
+				"Lights": "2-1",
+				"Repeater": false,
+				"Switches": "d14-,d30-,d36+,d40-",
+				"RouteName": "d3-g2"
 			}
 		],
 		"NonAutoStop": true,
@@ -2850,11 +2850,11 @@
 				"Emer": false,
 				"NextSignal": "G2",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"RouteName": "d2-g2",
-				"Switches": "d14-,d30-,d36+,d40+"
+				"Lights": "2-1",
+				"Repeater": false,
+				"Switches": "d14-,d30-,d36+,d40+",
+				"RouteName": "d2-g2"
 			}
 		],
 		"NonAutoStop": true,
@@ -2885,21 +2885,21 @@
 				"Emer": false,
 				"NextSignal": "G2",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"RouteName": "d1-g2",
-				"Switches": "d14-,d30-,d36-,d38-"
+				"Lights": "2-1",
+				"Repeater": false,
+				"Switches": "d14-,d30-,d36-,d38-",
+				"RouteName": "d1-g2"
 			},
 			{
 				"Emer": false,
 				"NextSignal": "M20A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-1",
-				"RouteName": "d1-m20",
 				"Switches": "d36+,d38+",
-				"Manual": true
+				"RouteName": "d1-m20",
+				"Repeater": false
 			}
 		],
 		"NonAutoStop": true,
@@ -2921,21 +2921,21 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"Switches": "",
-				"RouteName": ""
+				"Lights": "2",
+				"Manual": false,
+				"RouteName": "",
+				"Switches": ""
 			},
 			{
 				"Emer": false,
 				"NextSignal": "D1B",
 				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "2-2-1",
 				"Repeater": false,
-				"Switches": "d36+,d38+",
-				"RouteName": "m20-d1"
+				"Lights": "2-2-1",
+				"Manual": true,
+				"RouteName": "m20-d1",
+				"Switches": "d36+,d38+"
 			}
 		],
 		"NonAutoStop": true,
@@ -2961,21 +2961,21 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2",
 				"Manual": false,
-				"RouteName": "",
-				"Switches": "d10+,d12+"
+				"Lights": "2",
+				"Repeater": false,
+				"Switches": "d10+,d12+",
+				"RouteName": ""
 			},
 			{
 				"Emer": false,
 				"NextSignal": "P2A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-1",
-				"RouteName": "m18-p2",
 				"Switches": "d10+,d12+",
-				"Manual": true
+				"RouteName": "m18-p2",
+				"Repeater": false
 			}
 		],
 		"NonAutoStop": true,
@@ -2999,32 +2999,32 @@
 		"Routes": [
 			{
 				"Manual": false,
-				"Switches": "",
+				"RouteName": "",
 				"Emer": false,
 				"Lights": "2",
+				"Switches": "",
 				"ARSCodes": "1",
-				"RouteName": "",
 				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "M14",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-2-1",
 				"Manual": true,
-				"Switches": "d56-,d2+",
-				"RouteName": "m12-m18"
+				"Lights": "2-2-1",
+				"Repeater": false,
+				"RouteName": "m12-m18",
+				"Switches": "d56-,d2+"
 			},
 			{
 				"Emer": false,
 				"NextSignal": "M16A",
 				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "2-2-1",
 				"Repeater": false,
-				"RouteName": "m12-m16",
-				"Switches": "d56-,d2-,d4-,d6+"
+				"Lights": "2-2-1",
+				"Manual": true,
+				"Switches": "d56-,d2-,d4-,d6+",
+				"RouteName": "m12-m16"
 			}
 		],
 		"NonAutoStop": true,
@@ -3050,31 +3050,31 @@
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2",
 				"Manual": false,
-				"Switches": "",
-				"RouteName": ""
+				"Lights": "2",
+				"Repeater": false,
+				"RouteName": "",
+				"Switches": ""
 			},
 			{
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"Switches": "d56+,d2+",
-				"RouteName": "m14-m18"
+				"Lights": "2-1",
+				"Repeater": false,
+				"RouteName": "m14-m18",
+				"Switches": "d56+,d2+"
 			},
 			{
 				"Emer": false,
 				"NextSignal": "M16A",
 				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "2-2-1",
 				"Repeater": false,
-				"RouteName": "m14-m16",
-				"Switches": "d56+,d2-,d4-,d6+"
+				"Lights": "2-2-1",
+				"Manual": true,
+				"Switches": "d56+,d2-,d4-,d6+",
+				"RouteName": "m14-m16"
 			}
 		],
 		"NonAutoStop": true,
@@ -3108,41 +3108,31 @@
 				"Emer": false,
 				"NextSignal": "M9",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-2-2-1",
 				"Manual": true,
-				"RouteName": "g1-m10",
-				"Switches": "d11-,d9-,d1+"
+				"Lights": "2-2-2-1",
+				"Repeater": false,
+				"Switches": "d11-,d9-,d1+",
+				"RouteName": "g1-m10"
 			},
 			{
 				"Emer": false,
 				"NextSignal": "E2A",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-2-2-1",
 				"Manual": true,
-				"RouteName": "g1-5/7-m10",
-				"Switches": "d11+,d7+,d5+,d3-,d1-"
+				"Lights": "2-2-2-1",
+				"Repeater": false,
+				"Switches": "d11+,d7+,d5+,d3-,d1-",
+				"RouteName": "g1-5/7-m10"
 			},
 			{
 				"Emer": false,
 				"NextSignal": "E2A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-13",
-				"Manual": true,
-				"RouteName": "g1-e1",
-				"Switches": "d11+,d7+,d5+,d3+,d1-"
-			},
-			{
-				"Emer": false,
-				"NextSignal": "N1",
-				"ARSCodes": "1",
 				"Repeater": false,
-				"Lights": "2-13",
-				"Manual": true,
-				"RouteName": "g1-n1",
-				"Switches": "d11+,d7-,d8-"
+				"Switches": "d11+,d7+,d5+,d3+,d1-",
+				"RouteName": "g1-e1"
 			},
 			{
 				"Emer": false,
@@ -3152,7 +3142,17 @@
 				"Lights": "2-13",
 				"Repeater": false,
 				"Switches": "d11+,d7-,d8-",
-				"RouteName": "g1-e2"
+				"RouteName": "g1-n1"
+			},
+			{
+				"Emer": false,
+				"NextSignal": "N1",
+				"ARSCodes": "1",
+				"Repeater": false,
+				"Lights": "2-13",
+				"Manual": true,
+				"RouteName": "g1-e2",
+				"Switches": "d11+,d7-,d8-"
 			}
 		],
 		"NonAutoStop": true,
@@ -3187,11 +3187,11 @@
 				"Emer": false,
 				"NextSignal": "M13A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-1",
-				"RouteName": "m24-m13",
 				"Switches": "d49-",
-				"Manual": true
+				"RouteName": "m24-m13",
+				"Repeater": false
 			}
 		],
 		"NonAutoStop": true,
@@ -3226,11 +3226,11 @@
 				"Emer": false,
 				"NextSignal": "M9",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-1",
-				"RouteName": "m9-m10",
 				"Switches": "d9+,d11+,d1+",
-				"Manual": true
+				"RouteName": "m9-m10",
+				"Repeater": false
 			}
 		],
 		"NonAutoStop": true,
@@ -3254,32 +3254,32 @@
 		"Routes": [
 			{
 				"Manual": false,
-				"Switches": "",
+				"RouteName": "",
 				"Emer": false,
 				"Lights": "2",
+				"Switches": "",
 				"ARSCodes": "1",
-				"RouteName": "",
 				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "P1A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-1",
-				"RouteName": "m22-p1",
 				"Switches": "d9-,d11-",
-				"Manual": true
+				"RouteName": "m22-p1",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "M13A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-1",
-				"RouteName": "m22-m13",
 				"Switches": "d9+,d11+",
-				"Manual": true
+				"RouteName": "m22-m13",
+				"Repeater": false
 			}
 		],
 		"NonAutoStop": true,
@@ -3314,11 +3314,11 @@
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-1",
-				"RouteName": "m7-mt",
 				"Switches": "d51+",
-				"Manual": true
+				"RouteName": "m7-mt",
+				"Repeater": false
 			}
 		],
 		"NonAutoStop": true,
@@ -3353,11 +3353,11 @@
 				"Emer": false,
 				"NextSignal": "MTA",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-1",
-				"RouteName": "m5-mt",
 				"Switches": "d51-",
-				"Manual": true
+				"RouteName": "m5-mt",
+				"Repeater": false
 			}
 		],
 		"NonAutoStop": true,
@@ -3391,21 +3391,21 @@
 				"Emer": false,
 				"NextSignal": "M24",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-1",
-				"RouteName": "m8-m24",
 				"Switches": "d51+",
-				"Manual": true
+				"RouteName": "m8-m24",
+				"Repeater": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "M5A",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": true,
 				"Lights": "2-2-1",
-				"RouteName": "m8-m5",
 				"Switches": "d51-",
-				"Manual": true
+				"RouteName": "m8-m5",
+				"Repeater": false
 			}
 		],
 		"NonAutoStop": true,
@@ -3439,21 +3439,21 @@
 				"Emer": false,
 				"NextSignal": "M7A",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-2-1",
 				"Manual": true,
-				"RouteName": "m13-m7",
-				"Switches": "d49-"
+				"Lights": "2-2-1",
+				"Repeater": false,
+				"Switches": "d49-",
+				"RouteName": "m13-m7"
 			},
 			{
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
 				"Manual": true,
-				"RouteName": "m13-m9",
-				"Switches": "d49+"
+				"Lights": "2-1",
+				"Repeater": false,
+				"Switches": "d49+",
+				"RouteName": "m13-m9"
 			}
 		],
 		"NonAutoStop": true,
@@ -3593,12 +3593,12 @@
 				"Emer": false,
 				"NextSignal": "6AN",
 				"ARSCodes": "1114",
-				"Manual": true,
+				"Repeater": false,
 				"EnRou": true,
 				"Lights": "3-3-3-1",
 				"RouteName": "ms3-2",
 				"Switches": "ms5-,ms2-,ms4-,ms6+",
-				"Repeater": false
+				"Manual": true
 			},
 			{
 				"Emer": false,
@@ -3689,31 +3689,31 @@
 				"Emer": false,
 				"NextSignal": "MSG",
 				"ARSCodes": "1",
-				"Manual": false,
+				"Repeater": false,
 				"Lights": "3",
-				"Repeater": false,
-				"Switches": "",
-				"RouteName": ""
+				"Manual": false,
+				"RouteName": "",
+				"Switches": ""
 			},
 			{
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "004",
-				"Manual": true,
-				"Lights": "3-3-1",
 				"Repeater": false,
-				"Switches": "ms2+",
-				"RouteName": "msg-2"
+				"Lights": "3-3-1",
+				"Manual": true,
+				"RouteName": "msg-2",
+				"Switches": "ms2+"
 			},
 			{
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "004",
-				"Manual": true,
-				"Lights": "3-3-1",
 				"Repeater": false,
-				"Switches": "ms2+",
-				"RouteName": "msg-2r"
+				"Lights": "3-3-1",
+				"Manual": true,
+				"RouteName": "msg-2r",
+				"Switches": "ms2+"
 			},
 			{
 				"Manual": true,
@@ -3908,21 +3908,21 @@
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "114",
-				"Manual": true,
+				"Repeater": false,
 				"Lights": "3-3-1",
-				"RouteName": "mse-1",
 				"Switches": "ms1+",
-				"Repeater": false
+				"RouteName": "mse-1",
+				"Manual": true
 			},
 			{
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "114",
-				"Manual": true,
-				"Lights": "3-3-2",
 				"Repeater": false,
-				"Switches": "ms1+",
-				"RouteName": "mse-1r"
+				"Lights": "3-3-2",
+				"Manual": true,
+				"RouteName": "mse-1r",
+				"Switches": "ms1+"
 			},
 			{
 				"Manual": true,
@@ -3985,11 +3985,11 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "0",
-				"Manual": true,
+				"Repeater": false,
 				"Lights": "4",
-				"RouteName": "mse-1",
 				"Switches": "ms1+",
-				"Repeater": false
+				"RouteName": "mse-1",
+				"Manual": true
 			},
 			{
 				"Emer": false,
@@ -4171,21 +4171,21 @@
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "00067778",
-				"Manual": false,
-				"Lights": "3-1",
 				"Repeater": false,
-				"Switches": "",
-				"RouteName": ""
+				"Lights": "3-1",
+				"Manual": false,
+				"RouteName": "",
+				"Switches": ""
 			},
 			{
 				"Emer": true,
 				"NextSignal": "*",
 				"ARSCodes": "00067778",
-				"Manual": false,
+				"Repeater": false,
 				"Lights": "3-3-3-3-3-2",
-				"Switches": "",
 				"RouteName": "4-2",
-				"Repeater": false
+				"Switches": "",
+				"Manual": false
 			}
 		],
 		"NonAutoStop": true,
@@ -9760,11 +9760,11 @@
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "004467",
-				"Repeater": false,
+				"Manual": false,
 				"Lights": "",
-				"RouteName": "",
 				"Switches": "ms1+",
-				"Manual": false
+				"RouteName": "",
+				"Repeater": false
 			},
 			{
 				"Repeater": false,
@@ -9777,11 +9777,11 @@
 			},
 			{
 				"Manual": false,
-				"Switches": "ms1-",
+				"ARSCodes": "0",
 				"Emer": true,
 				"Repeater": false,
-				"ARSCodes": "0",
-				"RouteName": "10-1"
+				"RouteName": "10-1",
+				"Switches": "ms1-"
 			}
 		],
 		"NonAutoStop": true,
@@ -9807,11 +9807,11 @@
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "0047",
-				"Repeater": false,
+				"Manual": false,
 				"Lights": "",
-				"RouteName": "",
 				"Switches": "ms1+",
-				"Manual": false
+				"RouteName": "",
+				"Repeater": false
 			},
 			{
 				"Repeater": false,
@@ -10209,7 +10209,7 @@
 		"RouteNumberSetup": "",
 		"LensesStr": "",
 		"RouteNumber": "2",
-		"TwoToSix": false,
+		"TwoToSix": true,
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": true,
 		"SignalType": 0.0,
@@ -10285,7 +10285,7 @@
 		"Approve0": false,
 		"RouteNumberSetup": "",
 		"LensesStr": "",
-		"TwoToSix": false,
+		"TwoToSix": true,
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": true,
 		"SignalType": 0.0,
@@ -10361,7 +10361,7 @@
 		"Approve0": false,
 		"RouteNumberSetup": "",
 		"LensesStr": "",
-		"TwoToSix": false,
+		"TwoToSix": true,
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": true,
 		"SignalType": 0.0,
@@ -10584,7 +10584,7 @@
 		"RouteNumberSetup": "",
 		"LensesStr": "",
 		"RouteNumber": "1",
-		"TwoToSix": false,
+		"TwoToSix": true,
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": false,
 		"SignalType": 0.0,
@@ -10622,9 +10622,9 @@
 			},
 			{
 				"Repeater": false,
-				"RouteName": "ik3-1",
-				"Emer": false,
 				"Manual": true,
+				"Emer": false,
+				"RouteName": "ik3-1",
 				"NextSignal": "*",
 				"ARSCodes": "04"
 			},
@@ -10638,9 +10638,9 @@
 			},
 			{
 				"Repeater": false,
-				"RouteName": "ik4-1",
-				"Emer": false,
 				"Manual": true,
+				"Emer": false,
+				"RouteName": "ik4-1",
 				"NextSignal": "*",
 				"ARSCodes": "04"
 			},
@@ -10661,7 +10661,7 @@
 		"RouteNumberSetup": "",
 		"LensesStr": "",
 		"RouteNumber": "1",
-		"TwoToSix": false,
+		"TwoToSix": true,
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": true,
 		"SignalType": 0.0,
@@ -10676,11 +10676,11 @@
 				"Emer": false,
 				"NextSignal": "3755",
 				"ARSCodes": "1",
-				"Manual": false,
+				"Repeater": false,
 				"Lights": "3",
-				"Switches": "ik1+",
 				"RouteName": "",
-				"Repeater": false
+				"Switches": "ik1+",
+				"Manual": false
 			},
 			{
 				"Manual": true,
@@ -10716,7 +10716,7 @@
 		"Approve0": false,
 		"RouteNumberSetup": "",
 		"LensesStr": "",
-		"TwoToSix": false,
+		"TwoToSix": true,
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": false,
 		"SignalType": 0.0,
@@ -10817,7 +10817,7 @@
 		"RouteNumberSetup": "",
 		"LensesStr": "",
 		"RouteNumber": "",
-		"TwoToSix": false,
+		"TwoToSix": true,
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": true,
 		"SignalType": 0.0,
@@ -10832,11 +10832,11 @@
 				"Emer": false,
 				"NextSignal": "314",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "3",
 				"Repeater": false,
-				"Switches": "ik2+",
-				"RouteName": "ik2p"
+				"Lights": "3",
+				"Manual": false,
+				"RouteName": "ik2p",
+				"Switches": "ik2+"
 			},
 			{
 				"Manual": true,
@@ -11027,8 +11027,8 @@
 		"Double": false,
 		"Name": "11A",
 		"ARSOnly": true,
-		"Angles": "{0 90.0255 0}",
-		"Pos": "[7876.8599 -189.5608 8225.9004]",
+		"Angles": "{0 89.8363 0}",
+		"Pos": "[7753.6313 -193.4507 8225.7383]",
 		"Routes": [
 			{
 				"Repeater": false,
@@ -11172,53 +11172,69 @@
 		"Double": false,
 		"Name": "M5N",
 		"ARSOnly": true,
-		"Angles": "{0 270.3421 0}",
-		"Pos": "[7785.5527 -189.8172 8225.7666]",
+		"Angles": "{0 270.0587 0}",
+		"Pos": "[7760.8428 -193.4576 8225.7383]",
 		"Routes": [
 			{
 				"Repeater": false,
-				"RouteName": "",
+				"ARSCodes": "1",
 				"Emer": false,
 				"Lights": "3",
 				"NextSignal": "",
-				"ARSCodes": "1",
+				"RouteName": "",
 				"Manual": false
 			},
 			{
-				"Repeater": false,
+				"Manual": true,
+				"Switches": "ms5+,ms3+,ms1-",
+				"Emer": false,
+				"ARSCodes": "0004",
+				"NextSignal": "11AN",
 				"RouteName": "ms3-1",
+				"Repeater": false
+			},
+			{
+				"Manual": true,
+				"Switches": "ms5+,ms3+,ms1-",
 				"Emer": false,
 				"ARSCodes": "0004",
 				"NextSignal": "11AN",
-				"Switches": "ms5+,ms3+,ms1-",
-				"Manual": true
-			},
-			{
-				"Repeater": false,
 				"RouteName": "ms3-1r",
-				"Emer": false,
-				"ARSCodes": "0004",
-				"NextSignal": "11AN",
-				"Switches": "ms5+,ms3+,ms1-",
-				"Manual": true
+				"Repeater": false
 			},
 			{
-				"Repeater": true,
-				"RouteName": "",
+				"Manual": false,
+				"Switches": "ms5-",
 				"Emer": false,
 				"ARSCodes": "0004",
 				"NextSignal": "6AN",
-				"Switches": "ms5-",
-				"Manual": false
+				"RouteName": "",
+				"Repeater": true
 			},
 			{
-				"Repeater": true,
-				"RouteName": "",
+				"Manual": false,
+				"Switches": "ms3-",
 				"Emer": false,
 				"ARSCodes": "0004",
 				"NextSignal": "11AN",
-				"Switches": "ms3-",
-				"Manual": false
+				"RouteName": "",
+				"Repeater": true
+			},
+			{
+				"Manual": true,
+				"RouteName": "ms3-2",
+				"Emer": false,
+				"Repeater": false,
+				"NextSignal": "6AN",
+				"ARSCodes": "04"
+			},
+			{
+				"Manual": true,
+				"RouteName": "ms3-2r",
+				"Emer": false,
+				"Repeater": false,
+				"NextSignal": "6AN",
+				"ARSCodes": "04"
 			}
 		],
 		"NonAutoStop": true,
@@ -11308,11 +11324,11 @@
 				"Emer": false,
 				"NextSignal": "1113",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "3",
 				"Manual": false,
-				"Switches": "ms1+",
-				"RouteName": "ms1p"
+				"Lights": "3",
+				"Repeater": false,
+				"RouteName": "ms1p",
+				"Switches": "ms1+"
 			},
 			{
 				"Manual": false,
@@ -11593,13 +11609,13 @@
 				"Switches": "ms6-,ms3-"
 			},
 			{
-				"Repeater": false,
+				"Manual": true,
 				"Switches": "ms2-",
 				"Emer": false,
 				"ARSCodes": "004",
 				"NextSignal": "1174",
 				"RouteName": "ms3-2",
-				"Manual": true
+				"Repeater": false
 			},
 			{
 				"Repeater": false,
@@ -11765,7 +11781,7 @@
 		"Name": "10AN",
 		"ARSOnly": true,
 		"Angles": "{0 232.5741 0}",
-		"Pos": "[5418.5 5602.748 7358.4531]",
+		"Pos": "[5415.8486 5604.7769 7358.5332]",
 		"Routes": [
 			{
 				"Repeater": false,
@@ -11820,6 +11836,22 @@
 				"NextSignal": "310N",
 				"Switches": "ik2-",
 				"Repeater": false
+			},
+			{
+				"Manual": true,
+				"Repeater": false,
+				"RouteName": "ik4-1",
+				"Emer": false,
+				"ARSCodes": "04",
+				"NextSignal": "5AN"
+			},
+			{
+				"Manual": true,
+				"Repeater": false,
+				"Emer": false,
+				"RouteName": "ik3-1",
+				"NextSignal": "5AN",
+				"ARSCodes": "04"
 			}
 		],
 		"NonAutoStop": true,
@@ -11837,8 +11869,8 @@
 		"Double": false,
 		"Name": "5AN",
 		"ARSOnly": true,
-		"Angles": "{0 220.4029 0}",
-		"Pos": "[5664.3296 5916.1992 7358.4531]",
+		"Angles": "{357.8983 226.3942 0}",
+		"Pos": "[5252.3901 6386.1743 7345.8149]",
 		"Routes": [
 			{
 				"Repeater": false,
@@ -11858,13 +11890,13 @@
 				"RouteName": ""
 			},
 			{
-				"Manual": true,
-				"RouteName": "ik3-1",
 				"Emer": false,
-				"ARSCodes": "004",
 				"NextSignal": "375",
+				"ARSCodes": "004",
+				"Manual": true,
+				"Repeater": false,
 				"Switches": "ik1-",
-				"Repeater": false
+				"RouteName": "ik3-1"
 			},
 			{
 				"Repeater": false,
@@ -11876,13 +11908,13 @@
 				"Manual": true
 			},
 			{
-				"Manual": true,
-				"RouteName": "ik4-1",
 				"Emer": false,
-				"ARSCodes": "004",
 				"NextSignal": "375",
+				"ARSCodes": "004",
+				"Manual": true,
+				"Repeater": false,
 				"Switches": "ik1-",
-				"Repeater": false
+				"RouteName": "ik4-1"
 			},
 			{
 				"Manual": true,
@@ -12512,11 +12544,11 @@
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "04",
-				"Repeater": false,
-				"Lights": "3",
 				"Manual": false,
-				"Switches": "",
-				"RouteName": ""
+				"Lights": "3",
+				"Repeater": false,
+				"RouteName": "",
+				"Switches": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -12541,11 +12573,11 @@
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "3",
 				"Manual": false,
-				"Switches": "",
-				"RouteName": ""
+				"Lights": "3",
+				"Repeater": false,
+				"RouteName": "",
+				"Switches": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -12647,11 +12679,11 @@
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "006",
-				"Repeater": false,
+				"Manual": false,
 				"Lights": "",
-				"RouteName": "",
 				"Switches": "ms1+",
-				"Manual": false
+				"RouteName": "",
+				"Repeater": false
 			},
 			{
 				"Repeater": false,
@@ -12887,11 +12919,11 @@
 				"Emer": false,
 				"NextSignal": "5A",
 				"ARSCodes": "1",
-				"Manual": false,
+				"Repeater": false,
 				"Lights": "3",
-				"Switches": "",
 				"RouteName": "",
-				"Repeater": false
+				"Switches": "",
+				"Manual": false
 			},
 			{
 				"Repeater": false,
@@ -12946,7 +12978,7 @@
 		"RouteNumberSetup": "",
 		"LensesStr": "",
 		"RouteNumber": "2",
-		"TwoToSix": false,
+		"TwoToSix": true,
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": true,
 		"SignalType": 0.0,
@@ -12961,11 +12993,11 @@
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "3",
 				"Repeater": false,
-				"Switches": "",
-				"RouteName": "ik2p"
+				"Lights": "3",
+				"Manual": false,
+				"RouteName": "ik2p",
+				"Switches": ""
 			},
 			{
 				"Manual": true,
@@ -12994,7 +13026,7 @@
 		"RouteNumberSetup": "",
 		"LensesStr": "",
 		"RouteNumber": "",
-		"TwoToSix": false,
+		"TwoToSix": true,
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": true,
 		"SignalType": 0.0,
@@ -13037,11 +13069,11 @@
 				"Emer": false,
 				"NextSignal": "6A",
 				"ARSCodes": "1",
-				"Manual": false,
+				"Repeater": false,
 				"Lights": "3",
-				"Switches": "",
 				"RouteName": "",
-				"Repeater": false
+				"Switches": "",
+				"Manual": false
 			},
 			{
 				"Repeater": false,
@@ -13159,7 +13191,7 @@
 		"RouteNumberSetup": "",
 		"LensesStr": "WR",
 		"RouteNumber": "",
-		"TwoToSix": false,
+		"TwoToSix": true,
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": true,
 		"SignalType": 2.0,
@@ -13203,11 +13235,11 @@
 				"Emer": false,
 				"NextSignal": "D21A",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": "d29-"
+				"Lights": "2",
+				"Manual": false,
+				"Switches": "d29-",
+				"RouteName": ""
 			},
 			{
 				"Manual": false,
@@ -13271,11 +13303,11 @@
 				"Emer": false,
 				"NextSignal": "D20A",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": ""
+				"Lights": "2",
+				"Manual": false,
+				"Switches": "",
+				"RouteName": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -13301,11 +13333,11 @@
 				"Emer": false,
 				"NextSignal": "D19A",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": "d19-,d23+"
+				"Lights": "2",
+				"Manual": false,
+				"Switches": "d19-,d23+",
+				"RouteName": ""
 			},
 			{
 				"Manual": false,
@@ -13349,11 +13381,11 @@
 				"Emer": false,
 				"NextSignal": "D18A",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": ""
+				"Lights": "2",
+				"Manual": false,
+				"Switches": "",
+				"RouteName": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -13379,11 +13411,11 @@
 				"Emer": false,
 				"NextSignal": "D16A",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": ""
+				"Lights": "2",
+				"Manual": false,
+				"Switches": "",
+				"RouteName": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -13409,11 +13441,11 @@
 				"Emer": false,
 				"NextSignal": "D17A",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": "d25-"
+				"Lights": "2",
+				"Manual": false,
+				"Switches": "d25-",
+				"RouteName": ""
 			},
 			{
 				"Manual": false,
@@ -13448,11 +13480,11 @@
 				"Emer": false,
 				"NextSignal": "D17A",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": "d21+"
+				"Lights": "2",
+				"Manual": false,
+				"Switches": "d21+",
+				"RouteName": ""
 			},
 			{
 				"Manual": false,
@@ -13487,11 +13519,11 @@
 				"Emer": false,
 				"NextSignal": "D14A",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": ""
+				"Lights": "2",
+				"Manual": false,
+				"Switches": "",
+				"RouteName": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -13517,11 +13549,11 @@
 				"Emer": false,
 				"NextSignal": "D13A",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": "d20-"
+				"Lights": "2",
+				"Manual": false,
+				"Switches": "d20-",
+				"RouteName": ""
 			},
 			{
 				"Manual": false,
@@ -13556,11 +13588,11 @@
 				"Emer": false,
 				"NextSignal": "D12A",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": ""
+				"Lights": "2",
+				"Manual": false,
+				"Switches": "",
+				"RouteName": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -13586,11 +13618,11 @@
 				"Emer": false,
 				"NextSignal": "D9A",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": ""
+				"Lights": "2",
+				"Manual": false,
+				"Switches": "",
+				"RouteName": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -13616,11 +13648,11 @@
 				"Emer": false,
 				"NextSignal": "D8A",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": ""
+				"Lights": "2",
+				"Manual": false,
+				"Switches": "",
+				"RouteName": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -13646,11 +13678,11 @@
 				"Emer": false,
 				"NextSignal": "D5A",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": ""
+				"Lights": "2",
+				"Manual": false,
+				"Switches": "",
+				"RouteName": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -13676,11 +13708,11 @@
 				"Emer": false,
 				"NextSignal": "D2A",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": ""
+				"Lights": "2",
+				"Manual": false,
+				"Switches": "",
+				"RouteName": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -13706,11 +13738,11 @@
 				"Emer": false,
 				"NextSignal": "D2A",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": "d40+"
+				"Lights": "2",
+				"Manual": false,
+				"Switches": "d40+",
+				"RouteName": ""
 			},
 			{
 				"Manual": true,
@@ -13745,11 +13777,11 @@
 				"Emer": false,
 				"NextSignal": "D6A",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": ""
+				"Lights": "2",
+				"Manual": false,
+				"Switches": "",
+				"RouteName": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -13775,11 +13807,11 @@
 				"Emer": false,
 				"NextSignal": "D4A",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": "d32+,d34+"
+				"Lights": "2",
+				"Manual": false,
+				"Switches": "d32+,d34+",
+				"RouteName": ""
 			},
 			{
 				"Manual": false,
@@ -13823,11 +13855,11 @@
 				"Emer": false,
 				"NextSignal": "D1B",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": "d30-,d36-,d38-"
+				"Lights": "2",
+				"Manual": false,
+				"Switches": "d30-,d36-,d38-",
+				"RouteName": ""
 			},
 			{
 				"Manual": false,
@@ -13871,11 +13903,11 @@
 				"Emer": false,
 				"NextSignal": "D8A",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": "d26+"
+				"Lights": "2",
+				"Manual": false,
+				"Switches": "d26+",
+				"RouteName": ""
 			},
 			{
 				"Manual": false,
@@ -13919,11 +13951,11 @@
 				"Emer": false,
 				"NextSignal": "D10A",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": "d24+"
+				"Lights": "2",
+				"Manual": false,
+				"Switches": "d24+",
+				"RouteName": ""
 			},
 			{
 				"Manual": false,
@@ -13958,11 +13990,11 @@
 				"Emer": false,
 				"NextSignal": "D11A",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": "d18+,d22-"
+				"Lights": "2",
+				"Manual": false,
+				"Switches": "d18+,d22-",
+				"RouteName": ""
 			},
 			{
 				"Manual": false,
@@ -14006,11 +14038,11 @@
 				"Emer": false,
 				"NextSignal": "D1B",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": ""
+				"Lights": "2",
+				"Manual": false,
+				"Switches": "",
+				"RouteName": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -14181,11 +14213,11 @@
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"Switches": "",
-				"RouteName": ""
+				"Lights": "2",
+				"Manual": false,
+				"RouteName": "",
+				"Switches": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -14265,11 +14297,11 @@
 				"Emer": false,
 				"NextSignal": "M20A",
 				"ARSCodes": "1",
-				"Manual": false,
-				"Lights": "2",
 				"Repeater": false,
-				"Switches": "",
-				"RouteName": ""
+				"Lights": "2",
+				"Manual": false,
+				"RouteName": "",
+				"Switches": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -14316,11 +14348,11 @@
 				"Emer": false,
 				"NextSignal": "M14B",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2",
 				"Manual": false,
-				"RouteName": "",
-				"Switches": "d2+,d56+"
+				"Lights": "2",
+				"Repeater": false,
+				"Switches": "d2+,d56+",
+				"RouteName": ""
 			},
 			{
 				"Manual": false,
@@ -14422,11 +14454,11 @@
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": false,
 				"Lights": "123456",
-				"RouteName": "",
 				"Switches": "d3+",
-				"Manual": false
+				"RouteName": "",
+				"Repeater": false
 			},
 			{
 				"Repeater": false,
@@ -14462,11 +14494,11 @@
 				"Emer": false,
 				"NextSignal": "M10AA",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "123456",
 				"Manual": false,
-				"RouteName": "",
-				"Switches": ""
+				"Lights": "123456",
+				"Repeater": false,
+				"Switches": "",
+				"RouteName": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -14492,11 +14524,11 @@
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": false,
 				"Lights": "123456",
-				"RouteName": "",
 				"Switches": "d5+",
-				"Manual": false
+				"RouteName": "",
+				"Repeater": false
 			},
 			{
 				"Repeater": false,
@@ -14634,21 +14666,21 @@
 				"Emer": false,
 				"NextSignal": "*",
 				"ARSCodes": "00466778",
-				"Repeater": false,
+				"Manual": false,
 				"Lights": "3-1",
-				"RouteName": "",
 				"Switches": "",
-				"Manual": false
+				"RouteName": "",
+				"Repeater": false
 			},
 			{
 				"Emer": true,
 				"NextSignal": "*",
 				"ARSCodes": "00466778",
-				"Repeater": false,
-				"Lights": "3-3-3-3-3-2",
 				"Manual": false,
-				"Switches": "",
-				"RouteName": "10-1"
+				"Lights": "3-3-3-3-3-2",
+				"Repeater": false,
+				"RouteName": "10-1",
+				"Switches": ""
 			}
 		],
 		"NonAutoStop": true,
