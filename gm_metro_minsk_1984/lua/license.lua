@@ -15,8 +15,8 @@ License for:
   \sounds\*.*				Sounds for the map
 	
 --------------------------------------------------------------------------------
-       Copyright (C) 2019-2021 MetroPack
-        Last updated: 28th november, 2021
+       Copyright (C) 2019-2022 MetroPack
+        Last updated: 23th july, 2022
 					
 These files contain proprietary code and assets that belong to MetroPack team
 and are provided solely for limited personal use with the Garry's Mod.
@@ -50,7 +50,7 @@ and are provided solely for limited personal use with the Garry's Mod.
 --------------------------------------------------------------------------------
 License for: other assets and files not covered by license above	
 --------------------------------------------------------------------------------
-Copyright (C) MetroPack team 2019-2021
+Copyright (C) MetroPack team 2019-2022
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
