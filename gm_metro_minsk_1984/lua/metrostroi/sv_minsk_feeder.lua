@@ -10,7 +10,7 @@
 -----------------------------------------------------------------------------------------
 
 
-local function getFile(path)
+local function loadFile(path)
     local data,found
     if file.Exists(path..".txt", "DATA") then
         data = util.JSONToTable(file.Read(path..".txt", "DATA"))
@@ -24,7 +24,15 @@ local function getFile(path)
     return data
 end
 
-local function setFile(path, data)
+local data = loadFile("metrostroi_data/feeder_"..game.GetMap())
+if (not data) then return end       -- Return, if config file dont found
+
+----   Local functions   ----
+
+-- Save data in file.
+-- (path) - Full path to file, no extension.
+-- (data) - Data written to file.
+local function saveFile(path, data)
     path = path..".txt"
     if not file.Exists(path, "DATA") then
         file.Append(path)
@@ -33,14 +41,63 @@ local function setFile(path, data)
     file.Write(path, data)
 end
 
-local data = getFile("metrostroi_data/feeder_"..game.GetMap())
-if (not data) then return end       -- Return, if config file dont found
+-- Separate text by characters to strings with a specific length.
+-- (sourceString) - Source string.
+-- (maxLen) - Max out strings length.
+-- (...) - Many string-separator, separating the string.
+-- RETURN - Separated strings table.
+local function textSeparator(sourceString, maxLen, ...)
+    local separators = { ... }
+    local len = string.len(sourceString)
+    local currentPos = 1
+    local protector = 1
+    local separeteStrings = {}
+
+    while (currentPos <= len) do
+        local separeteString = string.sub(sourceString, currentPos, currentPos + (maxLen - 1))
+        local separeteLen = string.len(separeteString)
+
+        if (separeteLen == maxLen) then
+            for _, separator in ipairs(separators) do
+                if (separeteString[#separeteString] != separator) then
+                    local separatorFind = string.find(string.reverse(separeteString), separator)
+    
+                    if (separatorFind != nil) then
+                        separeteLen = #separeteString - separatorFind
+                        separeteString = string.sub(sourceString, currentPos, currentPos + separeteLen)
+                        break
+                    end
+                end
+            end
+        end
+
+        table.insert(separeteStrings, separeteString)
+        currentPos = currentPos + separeteLen + 1
+
+        if (protector > 100) then break end
+        protector = protector + 1
+    end
+
+    return separeteStrings
+end
+
+-- Print text to player chat taking into account the maximum allowable transmission length.
+-- (ply) - The player who received the message.
+-- (sourceString) - String to be sent. 
+local function ExtendedChatPrintConfig(ply, sourceString)
+    local printStings = textSeparator(sourceString, 200, "\n")
+    for i, printString in ipairs(printStings) do
+        if (i > 1) then printString = " \n"..printString end
+
+        ply:ChatPrint(printString)
+    end
+end
 
 ----   API definition   ----
 
 Metrostroi.Feeder = {}
 
--- Initialize feeders
+-- Initialize feeders.
 function Metrostroi.Feeder.Initialize()
     Metrostroi.CurrentLimits = {}
     Metrostroi.VoltagesLimits = {}
@@ -71,9 +128,9 @@ function Metrostroi.Feeder.Initialize()
     print("Metrostroi: Feeder loaded")
 end
 
--- Set current limit on feeder
--- (feeder) - feeder number
--- (voltage) - current limit > 0 
+-- Set current limit on feeder.
+-- (feeder) - Feeder number.
+-- (voltage) - Current limit > 0. 
 function Metrostroi.Feeder.SetCurrent(feeder, current)
     feeder = tonumber(feeder)
     current = tonumber(current)
@@ -85,9 +142,9 @@ function Metrostroi.Feeder.SetCurrent(feeder, current)
     end
 end
 
--- Set voltage limit on feeder
--- (feeder) - feeder number 
--- (voltage) - voltage limit > 0 
+-- Set voltage limit on feeder.
+-- (feeder) - Feeder number 
+-- (voltage) - voltage limit > 0. 
 function Metrostroi.Feeder.SetVoltage(feeder, voltage)
     feeder = tonumber(feeder)
     voltage = tonumber(voltage)
@@ -99,8 +156,8 @@ function Metrostroi.Feeder.SetVoltage(feeder, voltage)
     end
 end
 
--- Set current limit on all feeder
--- (voltage) - current limit > 0 
+-- Set current limit on all feeder.
+-- (voltage) - Current limit > 0.
 function Metrostroi.Feeder.SetAllCurrent(current)
     current = tonumber(current)
 
@@ -111,9 +168,9 @@ function Metrostroi.Feeder.SetAllCurrent(current)
     end
 end
 
--- Set voltage limit on all feeder
--- (feeder) - feeder number 
--- (voltage) - voltage limit > 0 
+-- Set voltage limit on all feeder.
+-- (feeder) - Feeder number.
+-- (voltage) - Voltage limit > 0.
 function Metrostroi.Feeder.SetAllVoltage(voltage)
     voltage = tonumber(voltage)
 
@@ -124,8 +181,8 @@ function Metrostroi.Feeder.SetAllVoltage(voltage)
     end
 end
 
--- Turn on feeder, supply current start
--- (feeder) - feeder number
+-- Turn on feeder, supply current start.
+-- (feeder) - Feeder number.
 function Metrostroi.Feeder.On(feeder)
     feeder = tonumber(feeder)
     if (feeder ~= nil and Metrostroi.FeedersOn[feeder] ~= nil) then
@@ -134,7 +191,7 @@ function Metrostroi.Feeder.On(feeder)
 end
 
 -- Turns off feeder, supply current stops.
--- (feeder) - feeder number 
+-- (feeder) - Feeder number. 
 function Metrostroi.Feeder.Off(feeder)
     feeder = tonumber(feeder)
     if (feeder ~= nil and Metrostroi.FeedersOn[feeder] ~= nil) then
@@ -142,7 +199,7 @@ function Metrostroi.Feeder.Off(feeder)
     end
 end
 
--- Turn on all feeder, supply current start
+-- Turn on all feeder, supply current start.
 function Metrostroi.Feeder.AllOn()
     for k, _ in pairs(Metrostroi.FeedersOn) do
         Metrostroi.FeedersOn[k] = true
@@ -156,34 +213,129 @@ function Metrostroi.Feeder.AllOff()
     end
 end
 
--- Return a table of info about feeders
-function Metrostroi.Feeder.GetInfoTable()
+-- Return a table with current feeders info.
+-- (selectFeeder) - Select feeder number. If nil select all.
+-- RETRUN - Table of current feeders or feeder info.
+function Metrostroi.Feeder.GetInfoTable(selectFeeder)
     local info = {}
     
-    for feeder, _ in pairs(Metrostroi.FeedersOn) do
-        info[feeder] = {}
-        info[feeder]["Current Limit"] = Metrostroi.CurrentLimits[feeder]
-        info[feeder]["Voltages"] = Metrostroi.VoltagesLimits[feeder]
-        info[feeder]["State"] = ((Metrostroi.FeedersOn[feeder]) and "On" or "Off")
+    local function getFeeder(feeder)
+        if (!Metrostroi.Voltages[feeder]) then return end
+        
+        return {
+            ["Voltage"] = Metrostroi.Voltages[feeder],
+            ["Current"] = Metrostroi.Currents[feeder],
+            ["On"] = Metrostroi.FeedersOn[feeder],
+            ["Fail"] = (Metrostroi.VoltageRestoreTimers[feeder] != nil),
+        }
+    end
+
+    if (selectFeeder) then
+        info[selectFeeder] = getFeeder(selectFeeder)
+    else
+        for feeder, _ in pairs(Metrostroi.FeedersOn) do
+            info[feeder] = getFeeder(feeder)
+        end
     end
 
     return info
 end
 
--- Return a string of info about feeders
-function Metrostroi.Feeder.GetInfoString()
-    local info = "Feeder info: \n"
+-- Retrun a table with config of feeders.
+-- (selectFeeder) - Select feeder number. If nil select all.
+-- RETRUN - Table of feeders or feeder config.
+function Metrostroi.Feeder.GetConfigTable(selectFeeder)
+    local info = {}
     
-    for feeder, _ in pairs(Metrostroi.FeedersOn) do
-        info = info..feeder..": "
-        info = info.." "..Metrostroi.VoltagesLimits[feeder].."; "
-        info = info..Metrostroi.CurrentLimits[feeder].."; "
-        info = info..((Metrostroi.FeedersOn[feeder]) and "On" or "Off")..";\n"
+    local function getFeeder(feeder)
+        if (!Metrostroi.Voltages[feeder]) then return end
+        
+        return {
+            ["CurrentLimit"] = Metrostroi.VoltagesLimits[feeder],
+            ["Voltages"] = Metrostroi.CurrentLimits[feeder],
+        }
+    end
+
+    if (selectFeeder) then
+        info[selectFeeder] = getFeeder(selectFeeder)
+    else
+        for feeder, _ in pairs(Metrostroi.FeedersOn) do
+            info[feeder] = getFeeder(feeder)
+        end
     end
 
     return info
 end
 
+-- Return string of current feeders info.
+-- RETRUN - Format string with feeders current info.
+function Metrostroi.Feeder.GetInfoString(selectFeeder)
+    local info = "Feeder info:\n"
+
+    local function getFeeder(feeder)
+        if (!Metrostroi.Voltages[feeder]) then return end
+        
+        return string.format("%s: Voltage: %-5.1f Current: %-7.1f Stage: %-5s Fall: %-5s\n", 
+            feeder, 
+            Metrostroi.Voltages[feeder],
+            Metrostroi.Currents[feeder],
+            ((Metrostroi.FeedersOn[feeder]) and "On" or "Off"),
+            (Metrostroi.VoltageRestoreTimers[feeder] != nil)
+        )
+    end
+
+    if (selectFeeder) then
+        local feeder = getFeeder(selectFeeder)
+        if (feeder) then info = info..feeder
+        else return
+        end
+    else
+        for feeder, _ in pairs(Metrostroi.FeedersOn) do
+            info = info..getFeeder(feeder)
+        end
+    end
+    
+    return info
+end
+
+-- Return string of feeders config.
+-- RETRUN - Format string with feeders config.
+function Metrostroi.Feeder.GetConfigString(selectFeeder)
+    local function getFeeder(feeder)
+        if (!Metrostroi.Voltages[feeder]) then return end
+        
+        return string.format("%s: Voltages: %-7.1f Current limit: %-7.1f\n", 
+            feeder, 
+            Metrostroi.VoltagesLimits[feeder],
+            Metrostroi.CurrentLimits[feeder]
+        )
+    end
+
+    local info = "Feeder config info:\n"
+    
+    if (selectFeeder) then
+        local feeder = getFeeder(selectFeeder)
+        if (feeder) then info = info..feeder
+        else return
+        end
+    else
+        for feeder, _ in pairs(Metrostroi.FeedersOn) do
+            info = info..getFeeder(feeder)
+        end
+    end
+
+    return info
+end
+
+-- Load feeders config on file. 
+function Metrostroi.Feeder.Load()
+    loadFile("metrostroi_data/feeder_"..game.GetMap())
+    if (not data) then return end
+
+    Metrostroi.Feeder.Initialize()
+end
+
+-- Save feeders config to file.
 function Metrostroi.Feeder.Save()
     local data = {} 
 
@@ -194,16 +346,15 @@ function Metrostroi.Feeder.Save()
         }
     end
 
-    setFile("metrostroi_data/feeder_"..game.GetMap(), util.TableToJSON(data, true))
+    saveFile("metrostroi_data/feeder_"..game.GetMap(), util.TableToJSON(data, true))
 end
 
 ----   Hook inject   ----
-
+-- Calcul voltage.
 timer.Simple(1, function ()
     local Rfeed = 0.03
     local hookName = "Metrostroi_ElectricConsumptionThink"
     local m_hookFunc = hook.GetTable()["Think"][hookName]
-    hook.Remove(hookName)
 
     local function ElectricConsumptionFeederThink()
         m_hookFunc()
@@ -213,12 +364,15 @@ timer.Simple(1, function ()
                 if Metrostroi.Currents[feeder] > Metrostroi.CurrentLimits[feeder] then
                     Metrostroi.VoltageRestoreTimers[feeder] = CurTime() + 7.0
                 end
-                if Metrostroi.VoltageRestoreTimers[feeder] and CurTime() < Metrostroi.VoltageRestoreTimers[feeder] then 
-                    Metrostroi.Voltage = 0 
-                    Metrostroi.VoltageRestoreTimers[feeder] = nil
-                end
                 
-                Metrostroi.Voltages[feeder] = (Metrostroi.FeedersOn[feeder]) and math.max(0, Metrostroi.VoltagesLimits[feeder] - Metrostroi.Currents[feeder] * Rfeed) or 0
+                if (Metrostroi.VoltageRestoreTimers[feeder]) then
+                    Metrostroi.Voltages[feeder] = 0 
+                    if (CurTime() > Metrostroi.VoltageRestoreTimers[feeder]) then
+                        Metrostroi.VoltageRestoreTimers[feeder] = nil
+                    end
+                else
+                    Metrostroi.Voltages[feeder] = (Metrostroi.FeedersOn[feeder]) and math.max(0, Metrostroi.VoltagesLimits[feeder] - Metrostroi.Currents[feeder] * Rfeed) or 0
+                end
             end
         end
     end
@@ -241,7 +395,6 @@ if (Metrostroi.Version == 1537278077) then
         
         local prevTime
 
-        hook.Remove("Think", "Metrostroi_ElectricConsumptionThink")
         hook.Add("Think", "Metrostroi_ElectricConsumptionThink", function()
             -- Change in time
             prevTime = prevTime or CurTime()
@@ -323,7 +476,9 @@ if (Metrostroi.Version == 1537278077) then
             --print(Format("%5.1f v %.0f A",Metrostroi.Voltage,Metrostroi.Current))
         end) 
     end)
-end   
+end  
+
+
 ----   Console command definition   ----
 
 concommand.Add("metrostroi_current_limit_feeder", function(ply, _, args)
@@ -364,14 +519,26 @@ concommand.Add("metrostroi_feeder_off", function(ply, _, args)
     end
 end)
 
-concommand.Add("metrostroi_feeder_info", function(ply, _, _)
-    ply:ChatPrint(Metrostroi.Feeder.GetInfoString())
+concommand.Add("metrostroi_feeder_info", function(ply, _, args)
+    local printString = Metrostroi.Feeder.GetInfoString(tonumber(args[1]))
+    if (printString) then ExtendedChatPrintConfig(ply, printString) end
+end)
+
+concommand.Add("metrostroi_feeder_config", function(ply, _, args)
+    local printString = Metrostroi.Feeder.GetConfigString(tonumber(args[1]))
+    if (printString) then ExtendedChatPrintConfig(ply, printString) end
+end)
+
+concommand.Add("metrostroi_feeder_load", function(ply, _, _)
+    if (ply and ply != NULL and not ply:IsAdmin()) then return end
+    Metrostroi.Feeder.Load()
 end)
 
 concommand.Add("metrostroi_feeder_save", function(ply, _, _)
     if (ply and ply != NULL and not ply:IsAdmin()) then return end
     Metrostroi.Feeder.Save()
 end)
+
 
 -- Initialization
 Metrostroi.Feeder.Initialize()
