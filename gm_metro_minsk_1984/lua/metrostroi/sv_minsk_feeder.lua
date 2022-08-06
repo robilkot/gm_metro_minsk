@@ -329,7 +329,7 @@ end
 
 -- Load feeders config on file. 
 function Metrostroi.Feeder.Load()
-    loadFile("metrostroi_data/feeder_"..game.GetMap())
+    data = loadFile("metrostroi_data/feeder_"..game.GetMap())
     if (not data) then return end
 
     Metrostroi.Feeder.Initialize()
