@@ -44,36 +44,46 @@ end
 -- Separate text by characters to strings with a specific length.
 -- (sourceString) - Source string.
 -- (maxLen) - Max out strings length.
+-- (noPatterns) - Disable patterns lua string patterns.
 -- (...) - Many string-separator, separating the string.
 -- RETURN - Separated strings table.
-local function textSeparator(sourceString, maxLen, ...)
+local function textSeparator(sourceString, maxLen, noPatterns, ...)
     local separators = { ... }
     local len = string.len(sourceString)
     local currentPos = 1
     local protector = 1
     local separeteStrings = {}
-
+	
     while (currentPos <= len) do
         local separeteString = string.sub(sourceString, currentPos, currentPos + (maxLen - 1))
         local separeteLen = string.len(separeteString)
 
         if (separeteLen == maxLen) then
             for _, separator in ipairs(separators) do
-                if (separeteString[#separeteString] != separator) then
-                    local separatorFind = string.find(string.reverse(separeteString), separator)
-    
-                    if (separatorFind != nil) then
-                        separeteLen = #separeteString - separatorFind
-                        separeteString = string.sub(sourceString, currentPos, currentPos + separeteLen)
-                        break
-                    end
-                end
+                local separatorFind
+				local tempFind = 0
+				
+				while(protector < 100) do
+					tempFind = string.find(separeteString, separator, tempFind + 1, 0, noPatterns)
+					
+					if (tempFind) then separatorFind = tempFind
+					else break end
+					
+					protector = protector + 1
+				end
+				
+				if (separatorFind != nil) then
+					separeteLen = separatorFind - 1
+					separeteString = string.sub(sourceString, currentPos, currentPos + separeteLen)
+					break
+				end
             end
         end
 
         table.insert(separeteStrings, separeteString)
         currentPos = currentPos + separeteLen + 1
-
+		
+		protector = 1
         if (protector > 100) then break end
         protector = protector + 1
     end
@@ -84,8 +94,10 @@ end
 -- Print text to player chat taking into account the maximum allowable transmission length.
 -- (ply) - The player who received the message.
 -- (sourceString) - String to be sent. 
-local function ExtendedChatPrintConfig(ply, sourceString)
-    local printStings = textSeparator(sourceString, 200, "\n")
+-- (noPatterns) - Disable patterns lua string patterns.
+-- (...) - Many string-separator, separating the string.
+local function ExtendedChatPrintConfig(ply, sourceString, noPatterns, ...)
+    local printStings = textSeparator(sourceString, 200, noPatterns, ...)
     for i, printString in ipairs(printStings) do
         if (i > 1) then printString = " \n"..printString end
 
@@ -296,6 +308,20 @@ function Metrostroi.Feeder.GetInfoString(selectFeeder)
     end
     
     return info
+end
+
+function Metrostroi.Feeder.GetTrainInfoString(train)
+	local info = "Feeder train info : \n"
+	if (!IsValid(train) or !train.WagonList) then return end
+	
+	for _, wagon in pairs(train.WagonList) do
+		print(wagon)
+		info = info..Format("Вагон № %04d (%s)\n", wagon.WagonNumber, wagon.ClassName)
+		info = info.."\t\t 1-я тележка на фидере № "..(wagon.FrontBogey.Feeder or "nil").."\n"
+		info = info.."\t\t 2-я тележка на фидере № "..(wagon.RearBogey.Feeder or "nil").."\n"
+	end
+	
+	return info
 end
 
 -- Return string of feeders config.
@@ -521,12 +547,14 @@ end)
 
 concommand.Add("metrostroi_feeder_info", function(ply, _, args)
     local printString = Metrostroi.Feeder.GetInfoString(tonumber(args[1]))
-    if (printString) then ExtendedChatPrintConfig(ply, printString) end
+	if (ply == NULL) then print(printString); return end
+    if (printString) then ExtendedChatPrintConfig(ply, printString, true, "\n") end
 end)
 
 concommand.Add("metrostroi_feeder_config", function(ply, _, args)
     local printString = Metrostroi.Feeder.GetConfigString(tonumber(args[1]))
-    if (printString) then ExtendedChatPrintConfig(ply, printString) end
+	if (ply == NULL) then print(printString); return end
+    if (printString) then ExtendedChatPrintConfig(ply, printString, true, "\n") end
 end)
 
 concommand.Add("metrostroi_feeder_load", function(ply, _, _)
@@ -537,6 +565,17 @@ end)
 concommand.Add("metrostroi_feeder_save", function(ply, _, _)
     if (ply and ply != NULL and not ply:IsAdmin()) then return end
     Metrostroi.Feeder.Save()
+end)
+
+concommand.Add("metrostroi_feeder_train_info", function(ply, _, _)
+	if (ply == NULL) then return end
+	
+	local traceEnt = ply:GetEyeTrace().Entity
+	
+	if (IsValid(traceEnt)) then 
+		local printString = Metrostroi.Feeder.GetTrainInfoString(traceEnt)
+		if (printString) then ExtendedChatPrintConfig(ply, printString, true, ".\n") end
+	end	
 end)
 
 
