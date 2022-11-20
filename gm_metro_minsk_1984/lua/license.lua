@@ -4,6 +4,7 @@ SawMal - Дмитрий Олегович Атрашков
 VitroMod - Виктор Андреевич Троицкий
 FeDoT - Фёдор Николаевич Боломатов
 ArtPalu - Павел Алексеевич Лудилов
+Klusandr - Андрей Дмитриевич Клусевич
 
 --------------------------------------------------------------------------------
 License for:
@@ -13,10 +14,9 @@ License for:
   \materials\*.*			Art assets for the map
   \scripts\*.*			    Scripts for the map
   \sounds\*.*				Sounds for the map
-	
 --------------------------------------------------------------------------------
        Copyright (C) 2019-2022 MetroPack
-        Last updated: 23th july, 2022
+        Last updated: 20th november, 2022
 					
 These files contain proprietary code and assets that belong to MetroPack team
 and are provided solely for limited personal use with the Garry's Mod.
