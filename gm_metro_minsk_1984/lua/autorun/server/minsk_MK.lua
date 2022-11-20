@@ -9,9 +9,10 @@
 --  Дополнительная информация в файле lua/licence.lua
 -----------------------------------------------------------------------------------------
 
-
+-- Check map.
 if (game.GetMap() != "gm_metro_minsk_1984") then return end
 
+-- MK names list.
 local MKNameList = {
     "MK1",
 	"MK3",
@@ -44,15 +45,18 @@ local function getFile(path, name)
     return data
 end
 
-
 ----   API definition   ----
 
 Minsk = Minsk or {}
 Minsk.MK = Minsk.MK or {}
 
-function Minsk.MK.Initialize()
-    Minsk.MK.List = {}
+-- List of MK.
+Minsk.MK.List = Minsk.MK.List or {}
+-- Is all MK button lock.
+Minsk.MK.IsAllButtonLock = Minsk.MK.IsAllButtonLock or false
 
+-- Initialize MK system.
+function Minsk.MK.Initialize()
     for _, MKName in pairs(MKNameList) do
         Minsk.MK.List[MKName] = {}
     end
@@ -103,6 +107,8 @@ function Minsk.MK.Initialize()
     end
 end
 
+-- Returns mk table info.
+-- RETURN - Table of MK info.
 function Minsk.MK.GetTableMKInfo()
     local mkInfo = {}
 
@@ -122,10 +128,14 @@ function Minsk.MK.GetTableMKInfo()
     return mkInfo
 end
 
+-- Used for single player and server not have online pults,
+-- MK signals control.
 if (not Minsk.Server and Metrostroi) then
     
-    function Minsk.MK.LoadSignals(name)
-        local data = getFile("metrostroi_data/mk_signs_%s", name or game.GetMap())
+    -- Load MK signlas for map.
+    -- (name) - Map name.
+    function Minsk.MK.LoadSignals(mapName)
+        local data = getFile("metrostroi_data/mk_signs_%s", mapName or game.GetMap())
         
         if (not data) then return end
 
@@ -142,9 +152,10 @@ if (not Minsk.Server and Metrostroi) then
         end 
     end
 
+    -- Think function, calling every tick server.
     function Minsk.MK.Think()
         for MKName, MK in pairs(Minsk.MK.List) do
-            if (MK.Entity:IsValid() and MK.SignalList) then
+            if (IsValid(MK.Entity) and MK.SignalList) then
                 local mkRotation = MK.Entity:GetInternalVariable("m_angAbsRotation")[2]
 
                 if (mkRotation != 0) then
@@ -164,10 +175,12 @@ if (not Minsk.Server and Metrostroi) then
         end
     end
 
+    -- Close signal for MK.
+    -- (MKName) - Name of MK.
     function Minsk.MK.CloseSignals(MKName)
         if (Minsk.MK.List[MKName]) then
             for _, signal in pairs(Minsk.MK.List[MKName].SignalList) do
-                if (signal:IsValid()) then
+                if (IsValid(signal)) then
                     local sig = ""
                     local lenses = ""
 
@@ -191,10 +204,12 @@ if (not Minsk.Server and Metrostroi) then
         end
     end
 
+    -- Open signal for MK.
+    -- (MKName) - Name of MK.
     function Minsk.MK.OpenSignals(MKName)
         if (Minsk.MK.List[MKName]) then
             for _, signal in pairs(Minsk.MK.List[MKName].SignalList) do
-                if (signal:IsValid()) then
+                if (IsValid(signal)) then
                     signal.ControllerLogic = false
                 end
             end
@@ -203,6 +218,8 @@ if (not Minsk.Server and Metrostroi) then
 
 end
 
+-- Close button lock.
+-- (MKName) - Name of MK.
 function Minsk.MK.CloseButtonLock(MKName)
     if (Minsk.MK.List[MKName]) then
         if (IsValid(Minsk.MK.List[MKName].CloseButton)) then
@@ -211,75 +228,95 @@ function Minsk.MK.CloseButtonLock(MKName)
     end
 end
 
+-- Close button unlock.
+-- (MKName) - Name of MK.
 function Minsk.MK.CloseButtonUnlock(MKName)
     if (IsValid(Minsk.MK.List[MKName].CloseButton)) then
         Minsk.MK.List[MKName].CloseButton:Fire("Unlock")
     end
 end
 
+-- Set indicator to lock stage.
+-- (MKName) - Name of MK.
 function Minsk.MK.IndicatorLock(MKName)
     if (IsValid(Minsk.MK.List[MKName].Indicator)) then
         Minsk.MK.List[MKName].Indicator:Fire("Skin", "1") 
     end
 end
 
+-- Set indicator to unlock stage.
+-- (MKName) - Name of MK.
 function Minsk.MK.IndicatorUnlock(MKName)
     if (IsValid(Minsk.MK.List[MKName].Indicator)) then
         Minsk.MK.List[MKName].Indicator:Fire("Skin", "0") 
     end
 end
 
-
+-- Open button lock.
+-- (MKName) - Name of MK.
 function Minsk.MK.OpenButtonLock(MKName)
     if (IsValid(Minsk.MK.List[MKName].OpenButton)) then
         Minsk.MK.List[MKName].OpenButton:Fire("Lock")
     end
 end
 
+-- Close button unlock.
+-- (MKName) - Name of MK.
 function Minsk.MK.OpenButtonUnlock(MKName)
     if (IsValid(Minsk.MK.List[MKName].OpenButton)) then
         Minsk.MK.List[MKName].OpenButton:Fire("Unlock")
     end
 end
 
+-- Lock all MK button.
 function Minsk.MK.AllButtonLock()
+    Minsk.MK.IsAllButtonLock = true
+
     for _, MKName in pairs(MKNameList) do
         Minsk.MK.CloseButtonLock(MKName)
         Minsk.MK.OpenButtonLock(MKName)
     end
 end
 
+-- Unlock all MK button.
 function Minsk.MK.AllButtonUnlock()
+    Minsk.MK.IsAllButtonLock = false
+
     for _, MKName in pairs(MKNameList) do
         Minsk.MK.CloseButtonUnlock(MKName)
         Minsk.MK.OpenButtonUnlock(MKName)
     end
 end
 
+-- Lock MK control.
 function Minsk.MK.Lock(MKName)
     Minsk.MK.CloseButtonLock(MKName)
     Minsk.MK.IndicatorLock(MKName)
 end 
 
+-- Unlock MK control.
 function Minsk.MK.Unlock(MKName)
-    Minsk.MK.CloseButtonUnlock(MKName)
+    if (not Minsk.MK.IsAllButtonLock) then
+        Minsk.MK.CloseButtonUnlock(MKName)
+    end
+    
     Minsk.MK.IndicatorUnlock(MKName)
 end
 
-
 ----   Console command definition   ----
 
+-- Lock all MK buttons for players. Used admin only.
 concommand.Add("minsk_mk_lock", function(ply, _, args)
     if (ply and ply != NULL and not ply:IsAdmin()) then return end
     Minsk.MK.AllButtonLock()
 end)
 
+-- Unlock all MK buttons for players. Used admin only.
 concommand.Add("minsk_mk_unlock", function(ply, _, args)
     if (ply and ply != NULL and not ply:IsAdmin()) then return end
     Minsk.MK.AllButtonUnlock()
 end)
 
 
--- Initialization
+-- Initialization on start.
 hook.Add("InitPostEntity", "Minsk.MK.Initialize", Minsk.MK.Initialize)
-Minsk.MK.Initialize()
