@@ -1,0 +1,16 @@
+"VertexlitGeneric"
+{
+	$basetexture models/depot/depot_environment3_snowy
+//	$bumpmap models/depot/depot_environment3_n
+	$envmapmask models/depot/depot_environment3_env
+	$envmap "env_cubemap"
+	$envmaptint "[.6 .6 .6]"
+	
+	$detail detail\noise_detail_01 
+	$detailscale 48
+	$detailblendfactor 0.2
+	$detailblendmode 0
+	
+	$selfillum 1
+	$selfillummask models/depot/depot_environment3_si
+}
