@@ -208,12 +208,12 @@ function ENT:PreInitalize()
 		elseif v.NextSignal == "*" then
 		else
 			if not v.NextSignal then
-				ErrorNoHalt(Format("Metrostroi: No next signal name in signal %s! Check it now!\n", self.Name))
+				--ErrorNoHalt(Format("Metrostroi: No next signal name in signal %s! Check it now!\n", self.Name))
 				self.AutostopOverride = true
 			else
 				self.NextSignals[v.NextSignal] = Metrostroi.GetSignalByName(v.NextSignal)
 				if not self.NextSignals[v.NextSignal] then
-					print(Format("Metrostroi: Signal %s, signal not found(%s)", self.Name, v.NextSignal))
+					--print(Format("Metrostroi: Signal %s, signal not found(%s)", self.Name, v.NextSignal))
 					self.AutostopOverride = true
 				end
 			end
@@ -556,11 +556,11 @@ function ENT:Think()
 	end
 	if not self.ControllerLogic then
 		if not self.Routes or #self.Routes == 0 then
-			ErrorNoHalt(Format("Metrostroi:Signal %s don't have a routes!\n",self.Name))
+			--ErrorNoHalt(Format("Metrostroi:Signal %s don't have a routes!\n",self.Name))
 			return
 		end
 		if not self.Routes[self.Route or 1] then
-			ErrorNoHalt(Format("Metrostroi:Signal %s have a null %s route!!\n",self.Name,self.Route))
+			--ErrorNoHalt(Format("Metrostroi:Signal %s have a null %s route!!\n",self.Name,self.Route))
 			return
 		end
 

@@ -27,15 +27,25 @@ end
 
 if (CLIENT) then
     if (not game.SinglePlayer()) then
+        local adminOnlyCommands = {}
 
         -- Send console command and arguments to server.
         -- (command) - Console command.
         -- (argStr) - String of console command arguments.
-        local function sendConCommandToServer(_, command, _, argStr)
-            if (argStr) then command = command.." "..argStr end
-    
+        local function sendConCommandToServer(ply, command, _, argStr)
+            if (adminOnlyCommands[command]) then
+                if (not LocalPlayer():IsAdmin()) then
+                    print("У вас недостаточно прав для использования этой команды.")
+                    return
+                end
+            end
+
+            local message = command
+
+            if (argStr) then message = message.." "..argStr end
+
             net.Start("client-views-console-commands")
-                net.WriteString(command)
+                net.WriteString(message)
             net.SendToServer()
         end
         
@@ -47,19 +57,24 @@ if (CLIENT) then
         --          (argStr) - String of command arguments.
         --          (argNum) - Number of the current argument, where cursore is located.
         -- (helpText) - The text to display should a user run 'help cmdName'.
-        function concommand.AddClientView(name, autoComplete, helpText)
+        -- (isAdminOnly) - Only the admin can use the command.
+        function concommand.AddClientView(command, autoComplete, helpText, isAdminOnly)
             local autoCompleteEx
             if (autoComplete) then
                 autoCompleteEx = function(command, argStr)
                     return autoComplete(command, argStr, charCount(argStr, ' '))
                 end
             end
-    
-            concommand.Add(name, sendConCommandToServer, autoCompleteEx, helpText)
+            
+            if (isAdminOnly) then
+                adminOnlyCommands[command] = true
+            end
+
+            concommand.Add(command, sendConCommandToServer, autoCompleteEx, helpText)
         end
     else
         -- Null function for singleplayer.
-        function concommand.AddClientView(name, autoComplete, helpText) end
+        function concommand.AddClientView() end
     end
 end
 
@@ -107,7 +122,7 @@ if (SERVER) then
         net.Receive("client-views-console-commands", receievConCommand)
 
         -- Null function for multiplayer.
-        function concommand.AddClientView(name, autoComplete, helpText, flags) end
+        function concommand.AddClientView() end
     else
         -- Add function of the auto complete for console commands.
         -- (command) - Console commands.
@@ -124,7 +139,7 @@ if (SERVER) then
         --          (command) - Console command.
         --          (argStr) - String of command arguments.
         --          (argNum) - Number of the current argument, where cursore is located.
-        function concommand.AddClientView(name, autoComplete)
+        function concommand.AddClientView(command, autoComplete)
             local autoCompleteEx
     
             if (autoComplete) then
@@ -132,7 +147,7 @@ if (SERVER) then
                     return autoComplete(command, argStr, charCount(argStr, ' '))
                 end
 
-                addAutoComplete(name, autoCompleteEx)
+                addAutoComplete(command, autoCompleteEx)
             end
         end
     end 

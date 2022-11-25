@@ -14798,12 +14798,12 @@
 	},
 	"365": {
 		"Invertred": false,
-		"Angles": "{0 177.8778 0}",
+		"Angles": "{0 95 0}",
 		"Class": "gmod_track_switch",
 		"NotChangePos": true,
 		"Channel": 2.0,
 		"Name": "ms3",
-		"Pos": "[6245.8027 -488.318 8172.1187]"
+		"Pos": "[6254.8677 -154.2939 8188.0313]"
 	},
 	"366": {
 		"Invertred": false,
