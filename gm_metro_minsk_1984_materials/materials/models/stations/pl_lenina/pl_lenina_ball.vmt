@@ -1,0 +1,15 @@
+"VertexlitGeneric"
+{
+	$basetexture models/stations/pl_lenina/pl_lenina_ball
+	$bumpmap models/stations/pl_lenina/pl_lenina_ball_n
+	$phong 1
+	$phongexponent  200
+	$phongboost .7
+	$phongfresnelranges "[.5 1 2]"
+	$envmap env_cubemap
+	$envmaptint "[.01 .01 .01]"
+	$rimlight 1
+	$rimlightboost .5
+	$selfillum 1
+	$selfillummask models/gray
+}
