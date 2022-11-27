@@ -1,0 +1,21 @@
+lightmappedreflective
+{
+	$basetexture models/stations/oktyabrskaya/oktyabrskaya_platform1_ref
+	$bumpmap models/stations/oktyabrskaya/oktyabrskaya_platform1_n
+	$normalmap dev/flat_normal
+	
+	$surfaceprop concrete
+	
+	//$envmapmask models/stations/akadem_nauk/akadem_nauk_platform_env
+
+	$refracttexture "_rt_WaterRefraction"
+	$refracttint "[0 0 0]"
+	
+	$reflecttexture "_rt_WaterReflection"
+
+	$reflecttint "[.7 .7 .7]"
+
+	$fresnelpower 10
+	$minreflectivity 0.1
+	$maxreflectivity 0.9
+}

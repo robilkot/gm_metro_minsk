@@ -1,0 +1,15 @@
+LightmappedGeneric
+{
+	$basetexture depot/wall_paint_w
+	$basetexturetransform "center .5 .5 scale 2 2 rotate 0 translate 0 -0.1"
+	$surfaceprop Concrete
+	$bumpmap depot/wall_paint_n
+	
+	$envmap env_cubemap
+	$envmaptint "[0.1 0.1 0.1]"
+	$fresnelreflection 0
+	
+	$detail depot/wall_paint_detail1
+	$detailscale .5
+	$detailblendfactor 1
+}
