@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "9351"
-	"mapversion" "3221"
+	"mapversion" "3225"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -140,7 +140,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "3221"
+	"mapversion" "3225"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -122864,6 +122864,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
+	"lightingorigin" "PCH-MS22_info_lighting_1"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/mn_r/mn_t_rn2_sb2.mdl"
@@ -151752,7 +151753,7 @@ entity
 	"spawnflags" "1"
 	"style" "0"
 	"targetname" "PCH-MS22"
-	"origin" "116 15139 8025"
+	"origin" "116 15156 8023"
 	editor
 	{
 		"color" "220 30 220"
@@ -196766,13 +196767,27 @@ entity
 		"logicalpos" "[0 1000]"
 	}
 }
+entity
+{
+	"id" "2188381"
+	"classname" "info_lighting"
+	"targetname" "PCH-MS22_info_lighting_1"
+	"origin" "95 15239 7922"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
 cameras
 {
 	"activecamera" "-1"
 }
 cordon
 {
-	"mins" "(-8844 14371 6236)"
-	"maxs" "(-2759 16266 6653)"
+	"mins" "(-7212 -2282 7555)"
+	"maxs" "(16122 16310 8803)"
 	"active" "0"
 }
